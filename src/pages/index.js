@@ -12,7 +12,7 @@ const HomePage = () => (
     </Head>
     <div className={styles.home}>
       <div>
-        <img src="images/camp-cosmos-home-page.svg" alt="Camp Cosmos home page image" />
+        <img src="/images/camp-cosmos-home-page.svg" alt="Camp Cosmos home page image" />
       </div>
     </div>
   </Layout>
