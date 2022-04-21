@@ -1,6 +1,13 @@
+/* @tailwind */
 @import "~tailwindcss/base";
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
+
+/* @components */
+@import '../src/components/header/header.css';
+
+/* @pages */
+@import '../src/pages/home/home.css';
 
 html,
 body {
