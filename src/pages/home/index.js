@@ -1,9 +1,9 @@
 import React from 'react';
 import Head from 'next/head'
-import Layout from '../components/layout';
-import styles from '../styles/home.module.scss';
+import Layout from '../../components/layout';
+import styles from './home.module.scss';
 
-const HomePage = () => (
+const Home = () => (
   <Layout>
     <Head>
       <title>Camp Cosmos</title>
@@ -12,10 +12,10 @@ const HomePage = () => (
     </Head>
     <div className={styles.home}>
       <div>
-        <img src="images/camp-cosmos-home-page.svg" alt="Camp Cosmos home page image" />
+        <img src="/images/camp-cosmos-home-page.svg" alt="Camp Cosmos home page image" />
       </div>
     </div>
   </Layout>
 );
 
-export default HomePage;
+export default Home;
