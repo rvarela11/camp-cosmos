@@ -11,7 +11,7 @@ const HomePage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <div className={styles.home}>
-      <div>
+      <div className={styles.homeImg}>
         <img src="images/camp-cosmos-home-page.svg" alt="Camp Cosmos home page image" />
       </div>
     </div>
