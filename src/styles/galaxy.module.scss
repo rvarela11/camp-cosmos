@@ -1,24 +1,30 @@
 .galaxy--background {
   height: 100vh;
-  width: 100vw;
   background-image: url("/images/camp-cosmos-galaxy-page.svg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  position: fixed;
-  top: 0;
 }
 
 .galaxy--description {
-  border: 1px solid red;
+  max-width: 607px;
   margin-top: 27px;
   margin-left: 80px;
+
+  p {
+    font-family: 'Helvetica Neue';
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #E2E2E2;
+    margin: 22px 0;
+  }
 }
 
 .galaxy--description__title {
+  display: flex;
+  flex-direction: column;
   font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 600;
   font-size: 60px;
   line-height: 60px;
+  margin: 0;
 }
