@@ -1,4 +1,4 @@
-.galaxy {
+.galaxy--background {
   height: 100vh;
   width: 100vw;
   background-image: url("/images/camp-cosmos-galaxy-page.svg");
@@ -9,3 +9,16 @@
   top: 0;
 }
 
+.galaxy--description {
+  border: 1px solid red;
+  margin-top: 27px;
+  margin-left: 80px;
+}
+
+.galaxy--description__title {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+}
