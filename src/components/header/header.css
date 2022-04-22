@@ -37,6 +37,7 @@
 .header--nav .h-button:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
+  /* leaving here if i need this later */
   /* background: linear-gradient(91.94deg, #9B51E0 3.46%, #3081ED 96.46%); */
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
