@@ -8,6 +8,7 @@
 
 /* @pages */
 @import '../src/pages/home/home.css';
+@import '../src/pages/galaxy/galaxy.css';
 
 html,
 body {
