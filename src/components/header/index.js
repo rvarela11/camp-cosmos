@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Twitter } from './icons/twitter';
 import { Discord } from './icons/discord';
 import { Instagram } from './icons/instagram';
@@ -6,13 +7,21 @@ import { Instagram } from './icons/instagram';
 const Header = () => (
   <header className="header">
     <div className="header--logo">
-      <img src='images/camp_cosmos_logo.svg' alt='Camp Cosmos' />
+      <Link href="/">
+        <img src='images/camp_cosmos_logo.svg' alt='Camp Cosmos' />
+      </Link>
     </div>
     <div className="header--nav">
       <div className="h-button--group" aria-label="nav menu">
-        <button type="button" className="h-button">THE GALAXY</button>
-        <button type="button" className="h-button">FIRESIDE</button>
-        <button type="button" className="h-button">SHOP</button>
+        <Link href="/galaxy">
+          <button type="button" className="h-button">THE GALAXY</button>
+        </Link>
+        <Link href="/fireside">
+          <button type="button" className="h-button">FIRESIDE</button>
+        </Link>
+        <Link href="/shop">
+          <button type="button" className="h-button">SHOP</button>
+        </Link>
       </div>
     </div>
     <div className="header--socials">
