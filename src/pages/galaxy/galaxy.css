@@ -1,20 +1,10 @@
 .galaxy--background {
-  height: 100vh;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.galaxy--background img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  opacity: .65;
+  position: relative;
 }
 
 .galaxy--description {
+  position: absolute;
+  z-index: 1;
   max-width: 50%;
   padding-top: 6rem;
   margin-left: 80px;
