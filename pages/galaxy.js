@@ -1,5 +1,5 @@
 import React from 'react';
-import Galaxy from '../components/pages/galaxy';
+import Galaxy from '../src/pages/galaxy';
 
 const GalaxyPage = () => <Galaxy />;
 

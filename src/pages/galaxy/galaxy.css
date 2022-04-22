@@ -10,14 +10,14 @@
   max-width: 607px;
   margin-top: 27px;
   margin-left: 80px;
+}
 
-  p {
-    font-family: 'Helvetica Neue';
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    color: #E2E2E2;
-    margin: 22px 0;
-  }
+.galaxy--description p {
+	font-family: 'Helvetica Neue';
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	color: #E2E2E2;
+	margin: 22px 0;
 }
 
 .galaxy--description__title {
