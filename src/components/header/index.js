@@ -2,25 +2,24 @@ import React from 'react';
 import { Twitter } from './icons/twitter';
 import { Discord } from './icons/discord';
 import { Instagram } from './icons/instagram';
-import styles from './header.module.scss';
 
 const Header = () => (
-  <header className={styles.header}>
-    <div className={styles.logo}>
+  <header className="header">
+    <div className="header--logo">
       <img src='images/camp_cosmos_logo.svg' alt='Camp Cosmos' />
     </div>
-    <div className={styles.nav}>
-      <div className={styles.buttonGroup} aria-label="nav menu">
-        <button type="button" className={styles.button}>THE GALAXY</button>
-        <button type="button" className={styles.button}>FIRESIDE</button>
-        <button type="button" className={styles.button}>SHOP</button>
+    <div className="header--nav">
+      <div className="h-button--group" aria-label="nav menu">
+        <button type="button" className="h-button">THE GALAXY</button>
+        <button type="button" className="h-button">FIRESIDE</button>
+        <button type="button" className="h-button">SHOP</button>
       </div>
     </div>
-    <div className={styles.socials}>
-      <div className={styles.buttonGroup} aria-label="socials menu">
-        <button type="button" className={styles.button}><Twitter /></button>
-        <button type="button" className={styles.button}><Instagram /></button>
-        <button type="button" className={styles.button}><Discord /></button>
+    <div className="header--socials">
+      <div className="h-button--group" aria-label="socials menu">
+        <button type="button" className="h-button"><Twitter /></button>
+        <button type="button" className="h-button"><Instagram /></button>
+        <button type="button" className="h-button"><Discord /></button>
       </div>
     </div>
   </header>
