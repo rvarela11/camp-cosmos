@@ -1,10 +1,7 @@
-<<<<<<< HEAD:src/styles/globals.scss
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@600&display=swap');
-=======
-/* @tailwind */
-@import "~tailwindcss/base";
-@import "~tailwindcss/components";
-@import "~tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /* @components */
 @import '../src/components/header/header.css';
@@ -12,7 +9,6 @@
 /* @pages */
 @import '../src/pages/home/home.css';
 @import '../src/pages/galaxy/galaxy.css';
->>>>>>> main:styles/globals.css
 
 html,
 body {
@@ -28,13 +24,13 @@ body {
 h2 {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  font-size: '60px';
+  font-size: 60px;
 }
 
 h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: '24px';
+  font-size: 24px;
 }
 
 p {

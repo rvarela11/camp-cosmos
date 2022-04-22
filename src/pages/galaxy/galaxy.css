@@ -1,15 +1,32 @@
 .galaxy--background {
   height: 100vh;
-  background-image: url("/images/camp-cosmos-galaxy-page.svg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.galaxy--background img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .65;
+}
+
 .galaxy--description {
-  max-width: 607px;
-  margin-top: 27px;
+  max-width: 50%;
+  padding-top: 6rem;
   margin-left: 80px;
+}
+
+.galaxy--description__title {
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+  letter-spacing: -2px;
+  color: #FFF;
+  margin: 0;
 }
 
 .galaxy--description p {
@@ -21,16 +38,4 @@
   letter-spacing: 0.5px;
   color: #E2E2E2;
   margin: 22px 0;
-}
-
-.galaxy--description__title {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 60px;
-  letter-spacing: -2px;
-  color: #FFF;
-  margin: 0;
 }
