@@ -10,8 +10,8 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <div className="home">
-      <div>
-        <img src="/images/camp-cosmos-home-page.svg" alt="Camp Cosmos home page image" />
+      <div className="home--img">
+        <img src="images/camp-cosmos-home-page.svg" alt="Camp Cosmos home page image" />
       </div>
     </div>
   </Layout>
