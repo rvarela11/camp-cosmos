@@ -10,11 +10,13 @@ const Galaxy = () => (
         <p>‍‍Camp Cosmos was founded in the year 2022 by Pandora Altair, an extraterrestrial anthropologist from deep in the Andromeda galaxy. After being sent to Planet Earth on assignment and given strict orders not to intervene, Pandora fell in love with Earth’s culture and saw no option but to use her omnipresent knowledge to save the world from the impending climate crisis, even if it meant being exiled from her home planet.</p>
         <p>‍‍Camp Cosmos is Altair’s brainchild, serving as a constant reminder of the virtues and action necessary to sustain and nurture a healthy planet and treat all living things with the preciousness and dignity that they deserve.</p>
       </div>
-      <img className="w-full transform h-screen object-cover overlay-item z-10 hidden lg:block" src='/images/camp-cosmos-galaxy-page.svg' alt='cosmos' />
+      <img
+        className="w-full transform h-screen object-cover overlay-item z-10 hidden lg:block"
+        src="/images/camp-cosmos-galaxy-page.png"
+        alt="Camp Cosmos galaxy page image"
+      />
     </div>
   </Layout>
 );
 
 export default Galaxy;
-
-// transform hidden lg:block h-screen object-cover overlay-item z-10 /
