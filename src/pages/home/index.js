@@ -11,7 +11,7 @@ const Home = () => (
     </Head>
     <div className="home">
       <div className="home--img">
-        <img src="images/camp-cosmos-home-page.png" alt="Camp Cosmos home page image" />
+        <img src="images/camp-cosmos-home-page.svg" alt="Camp Cosmos home page image" />
       </div>
     </div>
   </Layout>
