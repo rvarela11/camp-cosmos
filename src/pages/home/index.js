@@ -1,8 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Layout from '../../components/layout';
-import CampCosmosHomePageImage from '../../../public/images/camp-cosmos-home-page.svg'
 
 const Home = () => (
   <Layout>
@@ -13,11 +11,7 @@ const Home = () => (
     </Head>
     <div className="home">
       <div className="home--img">
-        <Image
-          src={CampCosmosHomePageImage}
-          priority={true}
-          alt="Camp Cosmos home page image"
-        />
+        <img src="images/camp-cosmos-home.png" alt="Camp Cosmos home image" />
       </div>
     </div>
   </Layout>
