@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../../components/layout';
 
@@ -13,6 +14,18 @@ const Home = () => (
       <div className="home--img">
         <img src="images/camp-cosmos-home.png" alt="Camp Cosmos home page image" />
       </div>
+      <Link href="/cosmos">
+        <div className="home--card">
+          <div>
+            <h6 className="home--card__title">ARE YOU READY?</h6>
+            <h3 className="home--card__content">Follow me!</h3>
+          </div>
+          <div className="home--card__action">
+            <div className="long-arrow long-arrow--inactive"></div>
+            <div className="long-arrow long-arrow--active sliding hidden"></div>
+          </div>
+        </div>
+      </Link>
     </div>
   </Layout>
 );
