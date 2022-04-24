@@ -25,7 +25,9 @@ const Header = () => {
                 <button
                   type="button"
                   className={classNames("h-button", { ["h-button-selected"]: pathname === route })}
-                >{label}</button>
+                >
+                  <span>{label}</span>
+                </button>
               </Link>
             ))
           }
