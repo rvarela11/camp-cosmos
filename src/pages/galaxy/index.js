@@ -12,7 +12,7 @@ const Galaxy = () => (
       </div>
       <img
         className="w-full transform h-screen object-cover overlay-item z-10 hidden lg:block"
-        src="/images/camp-cosmos-galaxy-page.png"
+        src="/images/camp-cosmos-galaxy-page.svg"
         alt="Camp Cosmos galaxy page image"
       />
     </div>
