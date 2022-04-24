@@ -12,7 +12,7 @@
 }
 
 .h-button--group {
-  background-color: rgba(0,0,0, 0.5);
+  background-color: #FFFFFF;
   border-radius: 45px;
 }
 
@@ -24,10 +24,8 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 22px;
-  color: #fff;
   transition: all 0.6s ease;
 }
-
 
 .h-button:first-of-type {
   border-radius: 45px 0 0 45px;
@@ -39,15 +37,21 @@
   padding-right: 20px;
 }
 
-.header--nav .h-button:hover {
+.header--nav .h-button:hover,
+.h-button.h-button-selected {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-  /* leaving here if i need this later */
-  /* background: linear-gradient(91.94deg, #9B51E0 3.46%, #3081ED 96.46%); */
-  /* -webkit-background-clip: text;
+  background-image: linear-gradient(91.94deg, #9B51E0 3.46%, #3081ED 96.46%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; */
+  background-clip: text;
+}
+
+.h-button.h-button-selected span:after {
+  content:"";
+  background-image: linear-gradient(91.94deg, #9B51E0 3.46%, #3081ED 96.46%);
+  display: block;
+  height: 2px;
+  width: 100%;
 }
 
 .header--socials .h-button--group {
@@ -61,11 +65,14 @@
 }
 
 .header--socials .h-button svg {
-  fill: #fff;
+  fill: #000000;
 }
 
-/* needed for socials hover */
 .header--socials .h-button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header--nav-hide {
+  display: none;
 }
