@@ -8,7 +8,7 @@ const Header = () => (
   <header className="header">
     <div className="header--logo">
       <Link href="/">
-        <img src='images/camp_cosmos_logo.svg' alt='Camp Cosmos' />
+        <img src="images/camp-cosmos-logo.svg" alt="Camp Cosmos logo" />
       </Link>
     </div>
     <div className="header--nav">
