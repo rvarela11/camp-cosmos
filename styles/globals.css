@@ -4,6 +4,7 @@
 @import 'tailwindcss/utilities';
 
 /* @components */
+@import '../src/components/arrow/arrow.css';
 @import '../src/components/header/header.css';
 
 /* @pages */

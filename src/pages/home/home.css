@@ -45,47 +45,9 @@
   line-height: 22px;
 }
 
-.home--card:hover .long-arrow--inactive {
+.home--card:hover .arrow--inactive {
   display: none;
 }
-.home--card:hover .long-arrow--active {
+.home--card:hover .arrow--active {
   display: block;
-}
-
-.home--card__action .long-arrow {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 25px;
-  height: 25px;
-  border-top: 2px solid #FFFFFF;
-  border-left: 2px solid #FFFFFF;
-  transform: rotate(90deg);
-}
-.home--card__action .long-arrow::after{
-  content: "";
-  display: block;
-  width: 2px;
-  height: 45px;
-  background-color: #FFFFFF;
-  transform: rotate(-45deg) translate(15.18px, 4px);
-}
-
-.home--card__action .sliding {
-  -webkit-animation: slide 1s linear infinite; 
-  animation: slide 1s linear infinite;
-}
-@-webkit-keyframes slide{
-    0% { top: 16px; right: 16px; }	
-   25% { top: 18px; right: 18px; }		
-   50% { top: 16px; right: 16px; }	
-   75% { top: 18px; right: 18px; }
-  100% { top: 16px; right: 16px; }
-}
-@keyframes slide {
-    0% { top: 16px; right: 16px; }	
-   25% { top: 18px; right: 18px; }		
-   50% { top: 16px; right: 16px; }	
-   75% { top: 18px; right: 18px; }
-  100% { top: 16px; right: 16px; }
 }

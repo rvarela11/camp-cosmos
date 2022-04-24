@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../../components/layout';
+import Arrow from '../../components/arrow';
 import { ROUTES } from '../../../src/utils/routes';
 
 const Home = () => (
@@ -22,8 +23,8 @@ const Home = () => (
             <h3 className="home--card__content">Follow me!</h3>
           </div>
           <div className="home--card__action">
-            <div className="long-arrow long-arrow--inactive"></div>
-            <div className="long-arrow long-arrow--active sliding hidden"></div>
+            <Arrow className="arrow--inactive" />
+            <Arrow className="arrow--active arrow-sliding hidden" />
           </div>
         </div>
       </Link>
