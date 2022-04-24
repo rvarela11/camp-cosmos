@@ -1,14 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Twitter } from './icons/twitter';
 import { Discord } from './icons/discord';
 import { Instagram } from './icons/instagram';
+import CampCosmosLogo from '../../../public/images/camp-cosmos-logo.svg';
 
 const Header = () => (
   <header className="header">
     <div className="header--logo">
       <Link href="/">
-        <img src='images/camp_cosmos_logo.svg' alt='Camp Cosmos' />
+        <Image
+          src={CampCosmosLogo}
+          alt="Camp Cosmos logo"
+        />
       </Link>
     </div>
     <div className="header--nav">
