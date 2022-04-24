@@ -9,6 +9,7 @@
 /* @pages */
 @import '../src/pages/home/home.css';
 @import '../src/pages/galaxy/galaxy.css';
+@import '../src/pages/lore/lore.css';
 
 html,
 body {
