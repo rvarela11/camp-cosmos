@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../../components/layout';
+import { ROUTES } from '../../../src/utils/routes';
 
 const Home = () => (
   <Layout>
@@ -14,7 +15,7 @@ const Home = () => (
       <div className="home--img">
         <img src="images/camp-cosmos-home.png" alt="Camp Cosmos home image" />
       </div>
-      <Link href="/cosmos">
+      <Link href={ROUTES.COSMOS}>
         <div className="home--card">
           <div>
             <h6 className="home--card__title">ARE YOU READY?</h6>
