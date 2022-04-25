@@ -60,8 +60,15 @@
 
 @media screen and (max-width: 500px) {
   .home--card {
+    padding: 12px;
     right: initial;
     bottom: 50px;
+  }
+  .home--card__title {
+    font-size: 0.75rem;
+  }
+  .home--card__content {
+    font-size: 1.5rem;
   }
 }
 
