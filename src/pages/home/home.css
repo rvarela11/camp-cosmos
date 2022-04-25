@@ -32,7 +32,7 @@
 .home--card__title {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 22px;
   letter-spacing: 1.5px;
   margin-bottom: 8px;
@@ -41,7 +41,7 @@
 
 .home--card__content {
   font-family: 'Work Sans', sans-serif;
-  font-size: 35px;
+  font-size: 2rem;
   line-height: 22px;
 }
 
@@ -50,4 +50,23 @@
 }
 .home--card:hover .arrow--active {
   display: block;
+}
+
+@media screen and (max-width: 915px) {
+  .home--img img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home--card {
+    right: initial;
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .home--card {
+    width: 260px;
+  }
 }
