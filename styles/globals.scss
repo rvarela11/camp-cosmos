@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@600&display=swap');
 
 /* @components */
-@import '../src/components/header/header.css';
+@import '../src/components/header/header.scss';
 
 /* @pages */
-@import '../src/pages/home/home.css';
-@import '../src/pages/galaxy/galaxy.css';
-@import '../src/pages/lore/lore.css';
+@import '../src/pages/home/home.scss';
+@import '../src/pages/galaxy/galaxy.scss';
+@import '../src/pages/lore/lore.scss';
 
 html,
 body {
