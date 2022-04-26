@@ -43,3 +43,45 @@
     margin: 22px 0;
   }
 }
+
+@media screen and (max-width: 1735px) {
+  .lore--background {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .lore--background {
+    width: auto;
+    height: auto;
+  }
+  .lore--description {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .lore--description__title {
+    margin-bottom: 40px;
+    font-size: 4rem;
+    line-height: 50px;
+  }
+  .lore--description__content {
+    width: 50%;
+  }
+  .lore--description {
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lore--description__content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .lore--description__title {
+    font-size: 2.5rem;
+  }
+}

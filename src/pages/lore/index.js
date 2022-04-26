@@ -12,7 +12,7 @@ const Lore = () => (
           <p>‍‍Camp Cosmos is Altair’s brainchild, serving as a constant reminder of the virtues and action necessary to sustain and nurture a healthy planet and treat all living things with the preciousness and dignity that they deserve.</p>
         </div>
       </div>
-      <img className="lore--background" src='/images/camp-cosmos-pandora.png' alt='cosmos' />
+      <img className="lore--background" src="/images/camp-cosmos-lore.png" alt="Lore page background image" />
     </div>
   </Layout>
 );
