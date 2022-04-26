@@ -3,13 +3,15 @@
   height: 300px;
   border: 1px solid red;
   position: relative;
+  cursor: pointer;
+
+  &:hover .long-arrow-right {
+    display: block;
+  }
 }
 
-.explore--item:hover .long-arrow-right {
-  display: block;
-}
-
-.long-arrow-right{
+.long-arrow-right {
+  display: none;
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -17,25 +19,24 @@
   height: 25px;
   border-top: 2px solid #000;
   border-left: 2px solid #000;
-}
-.long-arrow-right{
- transform: rotate(90deg);
+  transform: rotate(90deg);
+
+  &::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background-color: black;
+    transform: rotate(-45deg) translate(15.18px, 4px);
+  }
+
+  &.sliding {
+    -webkit-animation: slide 1s linear infinite; 
+    animation: slide 1s linear infinite;
+  }
 }
 
-.long-arrow-right::after{
-  content: "";
-  display: block;
-  width: 2px;
-  height: 45px;
-  background-color: black;
-  transform: rotate(-45deg) translate(15.18px, 4px);
-}
-
-.sliding {
-  -webkit-animation: slide 1s linear infinite; 
-          animation: slide 1s linear infinite;
-}
-@-webkit-keyframes slide{
+@-webkit-keyframes slide {
     0% { top: 16px; right: 16px; }	
    25% { top: 18px; right: 18px; }		
    50% { top: 16px; right: 16px; }	

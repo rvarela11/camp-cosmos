@@ -5,6 +5,7 @@
 .lore--background {
   width: 100%;
   height: 100vh;
+  position: fixed;
 }
 
 .lore--description {
@@ -32,14 +33,16 @@
   width: 35%;
 }
 
-.lore--description__content p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 22px;
-  color: #E2E2E2;
-  margin: 22px 0;
+.lore--description__content {
+  p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #E2E2E2;
+    margin: 22px 0;
+  }
 }
 
 @media screen and (max-width: 912px) {
@@ -59,8 +62,10 @@
   .lore--description__content {
     width: 50%;
   }
-  .lore--description p {
-    font-size: 15px;
+  .lore--description {
+    p {
+      font-size: 15px;
+    }
   }
 }
 
