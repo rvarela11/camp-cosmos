@@ -24,7 +24,7 @@ const Home = () => (
           </div>
           <div className="home--card__action">
             <Arrow className="arrow--inactive" />
-            <Arrow className="arrow--active arrow-sliding hidden" />
+            <Arrow className="arrow--active arrow-sliding" />
           </div>
         </div>
       </Link>
