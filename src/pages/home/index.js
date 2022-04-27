@@ -16,12 +16,10 @@ const Home = () => (
       <div className="home--img">
         <img src="images/camp-cosmos-home.png" alt="Camp Cosmos home image" />
       </div>
-      <Link href={ROUTES.COSMOS}>
+      <Link href={ROUTES.COSMOS} passHref>
         <div className="home--card">
-          <div>
-            <h6 className="home--card__title">ARE YOU READY?</h6>
-            <h3 className="home--card__content">Follow me!</h3>
-          </div>
+          <h6 className="home--card__title">ARE YOU READY?</h6>
+          <h3 className="home--card__content">Follow me!</h3>
           <div className="home--card__action">
             <Arrow className="arrow--inactive" />
             <Arrow className="arrow--active arrow-sliding" />
