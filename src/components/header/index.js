@@ -13,21 +13,25 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header--logo">
-        <Link href={ROUTES.HOME} passHref>
-          <img src="images/camp-cosmos-logo.svg" alt="Camp Cosmos" />
+        <Link href={ROUTES.HOME}>
+          <a>
+            <img src="images/camp-cosmos-logo.svg" alt="Camp Cosmos" />
+          </a>
         </Link>
       </div>
       <div className={classNames("header--nav", { ["header--nav-hide"]: pathname === ROUTES.HOME })}>
         <div className="h-button--group" aria-label="nav menu">
           {
             Object.entries(NAV_ROUTES).map(([label, route]) => (
-              <Link key={route} href={route} passHref>
-                <button
-                  type="button"
-                  className={classNames("h-button", { ["h-button-selected"]: pathname === route })}
-                >
-                  <span>{label}</span>
-                </button>
+              <Link key={route} href={route}>
+                <a>
+                  <button
+                    type="button"
+                    className={classNames("h-button", { ["h-button-selected"]: pathname === route })}
+                  >
+                    <span>{label}</span>
+                  </button>
+                </a>
               </Link>
             ))
           }

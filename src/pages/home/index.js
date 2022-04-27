@@ -16,11 +16,13 @@ const Home = () => (
       <div className="home--img">
         <img src="images/camp-cosmos-home.png" alt="Camp Cosmos home image" />
       </div>
-      <Link href={ROUTES.COSMOS} passHref>
-        <ArrowCard className="home--card">
-          <h6 className="home--card__title">ARE YOU READY?</h6>
-          <h3 className="home--card__content">Follow me!</h3>
-        </ArrowCard>
+      <Link href={ROUTES.COSMOS}>
+        <a>
+          <ArrowCard className="home--card">
+            <h6 className="home--card__title">ARE YOU READY?</h6>
+            <h3 className="home--card__content">Follow me!</h3>
+          </ArrowCard>
+        </a>
       </Link>
     </div>
   </Layout>
