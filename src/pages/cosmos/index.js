@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/layout';
 
-const Galaxy = () => (
+const Cosmos = () => (
   <Layout>
     <div className='explore--container'>
       <div className='explore--item'>
@@ -11,4 +11,4 @@ const Galaxy = () => (
   </Layout>
 );
 
-export default Galaxy;
+export default Cosmos;

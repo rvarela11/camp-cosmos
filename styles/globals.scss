@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@600&display=swap');
 
 /* @components */
+@import '../src/components/arrow/arrow.scss';
+@import '../src/components/arrow-card/arrow-card.scss';
 @import '../src/components/header/header.scss';
 
 /* @pages */
 @import '../src/pages/home/home.scss';
-@import '../src/pages/galaxy/galaxy.scss';
+@import '../src/pages/cosmos/cosmos.scss';
 @import '../src/pages/lore/lore.scss';
 
 html,
