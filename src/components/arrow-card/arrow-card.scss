@@ -1,4 +1,6 @@
 .arrow-card {
+  position: relative;
+
   & .arrow--active {
     display: none;
   }
