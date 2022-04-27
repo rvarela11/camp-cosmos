@@ -26,10 +26,6 @@
   bottom: 91px;
   color: #FFFFFF;
   cursor: pointer;
-
-  & .arrow--active {
-    display: none;
-  }
 }
 
 .home--card__title {
@@ -47,15 +43,6 @@
   font-size: 2rem;
   line-height: 22px;
   margin: 0;
-}
-
-.home--card:hover {
-  & .arrow--inactive {
-    display: none;
-  }
-  & .arrow--active {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 915px) {

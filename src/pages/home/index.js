@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../../components/layout';
-import Arrow from '../../components/arrow';
+import ArrowCard from '../../components/arrow-card';
 import { ROUTES } from '../../../src/utils/routes';
 
 const Home = () => (
@@ -17,14 +17,10 @@ const Home = () => (
         <img src="images/camp-cosmos-home.png" alt="Camp Cosmos home image" />
       </div>
       <Link href={ROUTES.COSMOS} passHref>
-        <div className="home--card">
+        <ArrowCard className="home--card">
           <h6 className="home--card__title">ARE YOU READY?</h6>
           <h3 className="home--card__content">Follow me!</h3>
-          <div className="home--card__action">
-            <Arrow className="arrow--inactive" />
-            <Arrow className="arrow--active arrow-sliding" />
-          </div>
-        </div>
+        </ArrowCard>
       </Link>
     </div>
   </Layout>
