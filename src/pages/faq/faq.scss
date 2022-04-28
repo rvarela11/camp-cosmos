@@ -1,0 +1,32 @@
+.faq {
+	padding: 5rem 5rem 0 5rem;
+
+	.faq--accordion {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: #FFFFFF;
+		.MuiAccordionSummary-expandIconWrapper {
+      color: #FFFFFF;
+			margin-right: 1rem;
+    }
+	}
+
+	h4 {
+		margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 38px;
+    color: #FFFFFF;
+	}
+
+	p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+		color: #E2E2E2;
+  }
+}
