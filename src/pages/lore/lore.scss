@@ -5,6 +5,7 @@
 .lore--background {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
 }
 
 .lore--description {
@@ -44,11 +45,11 @@
   }
 }
 
-@media screen and (max-width: 1735px) {
-  .lore--background {
-    height: auto;
-  }
-}
+// @media screen and (max-width: 1735px) {
+//   .lore--background {
+//     height: auto;
+//   }
+// }
 
 @media screen and (max-width: 912px) {
   .lore--background {
