@@ -5,16 +5,16 @@
     color: #FFFFFF;
   }
 
-	.faq--accordion {
+  .faq--accordion {
     background-color: transparent;
     border: none;
     box-shadow: none;
     .MuiAccordionSummary-expandIconWrapper {
       margin-right: 1rem;
     }
-	}
+  }
 
-	.faq--title {
+  .faq--title {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -25,18 +25,18 @@
     font-size: 55px;
     line-height: 55px;
     letter-spacing: -2px;
-	}
+  }
 
-	h4 {
+  h4 {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 25px;
-	}
+  }
 
-	p {
+  p {
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
