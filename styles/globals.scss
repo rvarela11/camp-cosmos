@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 /* @components */
 @import '../src/components/arrow/arrow.scss';
@@ -10,6 +11,8 @@
 @import '../src/pages/cosmos/cosmos.scss';
 @import '../src/pages/faq/faq.scss';
 @import '../src/pages/lore/lore.scss';
+@import '../src/pages/team/team.scss';
+@import '../src/pages/team/tabs/alexandra/alexandra.scss';
 
 html,
 body {
@@ -22,9 +25,11 @@ body {
 }
 
 h2 {
+  margin: 0;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   font-size: 60px;
+  color: #FFFFFF;
 }
 
 h6 {
@@ -46,6 +51,16 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 * {
