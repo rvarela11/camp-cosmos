@@ -1,14 +1,18 @@
+.team {
+  padding: 10rem 5rem;
+}
+
 .team--tabs {
   border-top: 1px solid #C4C4C4;
 
   & .MuiTabs-indicator {
-		height: 3px;
+    height: 3px;
     top: 0;
     background-color: #FFFFFF;
   }
 
   .team--tabs__tab {
-		max-width: none;
+    max-width: none;
     height: 116px;
     text-transform: none;
     font-family: 'Work Sans', sans-serif;
@@ -29,6 +33,18 @@
 
     &.Mui-selected {
       color: #FFFFFF;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team {
+    padding: 9rem 2rem;
+  }
+
+  .team--tabs {
+    .team--tabs__tab {
+      font-size: 1rem;
     }
   }
 }
