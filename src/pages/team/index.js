@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Alexandra from './tabs/alexandra';
+import AlexandraTab from './tabs/alexandra';
+import TeamTab from './tabs/team';
 import Layout from '../../components/layout';
-import { TABS } from './constants';
+import { TABS, WEST_COAST_MEMBERS, CORE_MEMBERS } from './constants';
 
 const TabContent = {
-  0: <Alexandra />,
-  1: "Item 2",
-  2: "Item 3",
+  0: <AlexandraTab />,
+  1: <TeamTab members={WEST_COAST_MEMBERS} title="West Coast" />,
+  2: <TeamTab members={CORE_MEMBERS} title="Core Team" />,
 };
 
 const Team = () => {

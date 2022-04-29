@@ -12,7 +12,8 @@
 @import '../src/pages/faq/faq.scss';
 @import '../src/pages/lore/lore.scss';
 @import '../src/pages/team/team.scss';
-@import '../src/pages/team/tabs/alexandra/alexandra.scss';
+@import '../src/pages/team/tabs/alexandra/alexandra-tab.scss';
+@import '../src/pages/team/tabs/team/team-tab.scss';
 
 html,
 body {
@@ -29,7 +30,6 @@ h2 {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   font-size: 60px;
-  color: #FFFFFF;
 }
 
 h6 {
@@ -61,6 +61,10 @@ button {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+svg {
+  fill: #FFFFFF;
 }
 
 * {
