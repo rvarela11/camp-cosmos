@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { Twitter } from './icons/twitter';
 import { Discord } from './icons/discord';
 import { Instagram } from './icons/instagram';
+import DragHandleIcon from '@mui/icons-material/DragHandle';
 import { NAV_ROUTES, ROUTES } from '../../../src/utils/routes';
 
 const Header = () => {
@@ -43,6 +44,9 @@ const Header = () => {
           <button type="button" className="h-button"><Instagram /></button>
           <button type="button" className="h-button"><Discord /></button>
         </div>
+      </div>
+      <div className="header--menu">
+        <button type="button" className="h-button"><DragHandleIcon /></button>
       </div>
     </header>
   );
