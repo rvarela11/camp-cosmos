@@ -35,7 +35,8 @@
   }
 }
 
-.team-tab-grid__card:hover {
+.team-tab-grid__card:hover,
+.team-tab-grid__card:active {
   cursor: pointer;
 
   .team-tab-grid__card-front {
