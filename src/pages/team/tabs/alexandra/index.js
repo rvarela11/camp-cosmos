@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Alexandra = () => (
+const AlexandraTab = () => (
   <div className="alexandra">
     <div className="alexandra--description">
       <h2 className="alexandra--description__title">Alexandra "Zutto"</h2>
@@ -19,4 +19,4 @@ const Alexandra = () => (
   </div>
 );
 
-export default Alexandra;
+export default AlexandraTab;
