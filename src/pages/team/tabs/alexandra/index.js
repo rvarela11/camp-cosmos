@@ -9,7 +9,7 @@ const Alexandra = () => (
         <p>Zutto uses vivid hues and hand-drawn, liquid textures to create enchanting and complex scenes. Zuttos world is a playground of the bright, colorful and surreal, drawing the viewer in to absorb its beautiful complexity.</p>
       </div>
       <div className="alexandra--description__actions">
-        <button type="button" className="alexandra--description__action alexandra--description__action--color">More about 'Zutto'</button>
+        <button type="button" className="alexandra--description__action alexandra--description__action--color">More about "Zutto"</button>
         <button type="button" className="alexandra--description__action alexandra--description__action--clear">Website</button>
       </div>
     </div>
