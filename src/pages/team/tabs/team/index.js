@@ -7,9 +7,9 @@ const TeamTab = ({ members, title }) => (
     <h2 className="team-tab-title">{title}</h2>
     <div className="team-tab-grid">
       {
-        members.map(({ member, name, position, social }) => {
+        members.map(({ member, name, position, social }, index) => {
           return ( 
-            <div className="team-tab-grid__card">
+            <div key={index} className="team-tab-grid__card">
               <img className="team-tab-grid__card-image" src={`/images/team-members/${member}.png`} alt={`${member} image`} />
               <div className="team-tab-grid__card-role">
                 <p>{name}</p>
