@@ -10,11 +10,11 @@ import { TABS, WEST_COAST_MEMBERS, CORE_MEMBERS } from './constants';
 const TabContent = {
   0: <AlexandraTab />,
   1: <TeamTab members={WEST_COAST_MEMBERS} title="West Coast" />,
-  2:  <TeamTab members={CORE_MEMBERS} title="Core Team" />,
+  2: <TeamTab members={CORE_MEMBERS} title="Core Team" />,
 };
 
 const Team = () => {
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState(0);
 
   const handleChange = (_, newValue) => {
     setValue(newValue);
