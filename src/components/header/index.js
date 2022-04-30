@@ -16,7 +16,7 @@ const Header = () => {
       <div className="header--logo">
         <Link href={ROUTES.HOME}>
           <a>
-            <img src="images/camp-cosmos-logo.svg" alt="Camp Cosmos" />
+            <img src="images/camp-cosmos-logo.png" alt="Camp Cosmos" />
           </a>
         </Link>
       </div>
