@@ -33,19 +33,56 @@
       line-height: 24px;
     }
   }
+
+  .team-tab-grid__card-about {
+    display: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+
+    &.Mui-expanded {
+      margin: 0;
+    }
+
+    .MuiAccordionSummary-root {
+      padding: 0;
+    }
+
+    .MuiAccordionSummary-expandIconWrapper {
+      margin-right: 1rem;
+      color: #FFFFFF;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 25px;
+      letter-spacing: 0.5px;
+    }
+  }
 }
 
-.team-tab-grid__card:hover,
-.team-tab-grid__card:active {
-  cursor: pointer;
+@media screen and (min-width: 789px) {
+  .team-tab-grid__card:hover,
+  .team-tab-grid__card:active {
+    cursor: pointer;
 
-  .team-tab-grid__card-front {
-    display: none;
+    .team-tab-grid__card-front {
+      display: none;
+    }
+    .team-tab-grid__card-back {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
   }
-  .team-tab-grid__card-back {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+}
+
+@media screen and (max-width: 789px) {
+  .team-tab-grid__card {
+    .team-tab-grid__card-about {
+      display: block;
+    }
   }
 }
 
