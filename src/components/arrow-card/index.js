@@ -5,10 +5,10 @@ import Arrow from '../arrow';
 const ArrowCard = ({ className, children }) => (
   <div className={`${className} arrow-card`}>
     {children}
-    <div>
+    <>
       <Arrow className="arrow--inactive" />
       <Arrow className="arrow--active arrow-sliding" />
-    </div>
+    </>
   </div>
 );
 

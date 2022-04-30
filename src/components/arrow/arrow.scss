@@ -1,20 +1,26 @@
-.arrow {
+.arrow-container {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  width: 25px;
-  height: 25px;
-  border-top: 2px solid #FFFFFF;
-  border-left: 2px solid #FFFFFF;
-  transform: rotate(90deg);
+  background-color: #fff;
+  width: 2.5rem;
+  border-radius: .75rem 0 .75rem .75rem;
+}
 
+.arrow {
+  margin: .75rem;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  transform: rotate(90deg);
   &::after{
     content: "";
     display: block;
     width: 2px;
-    height: 45px;
-    background-color: #FFFFFF;
-    transform: rotate(-45deg) translate(15.18px, 4px);
+    height: 20px;
+    background-color: black;
+    transform: rotate(-45deg) translate(6.4px, 2px);
   }
 }
 
