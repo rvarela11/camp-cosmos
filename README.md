@@ -15,7 +15,7 @@ This website is built with `Next.js` and uses `yarn` and `Node.js`. [Install the
 
 ### Technologies
 
-1. React - https://reactjs.org
-2. Next.js - https://nextjs.org
+1. Next.js - https://nextjs.org
+2. React - https://reactjs.org
 3. MUI - https://mui.com
 4. SASS - https://sass-lang.com
