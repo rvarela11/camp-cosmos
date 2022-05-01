@@ -49,8 +49,8 @@ const Cosmos = () => {
                         </div>
                       </div>
                       <Accordion
-                        key={`explore--item__card-about-${id}`}
-                        className="explore--item__card-about"
+                        key={`explore--item-accordion-${id}`}
+                        className="explore--item-accordion"
                         expanded={expanded === id}
                         onChange={handleChange(id)}
                         sx={{ '&:before': { display: 'none' } }}

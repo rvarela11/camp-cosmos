@@ -14,7 +14,7 @@ export const COSMOS_COLUMNS = {
 			description: (
 			<>
 				<p>"Zutto" is a highly acclaimed freelance illustrator based in Brooklyn, New York. Originally from a small town in central Russia, Alexandra has spent over a decade developing her unique style. She is completely self-taught, and over the last ten years, she's worked with high-profile brands such as Apple, The Washington Post, and more.</p>
-				<p>Zutto uses vivid hues and hand-drawn, liquid textures complexity.</p>
+        <p>Zutto uses vivid hues and hand-drawn, liquid textures complexity.</p>
 			</>
 			),
 		},
@@ -30,7 +30,7 @@ export const COSMOS_COLUMNS = {
 			description: (
 			<>
 				<p>"Zutto" is a highly acclaimed freelance illustrator based in Brooklyn, New York. Originally from a small town in central Russia, Alexandra has spent over a decade developing her unique style. She is completely self-taught, and over the last ten years, she's worked with high-profile brands such as Apple, The Washington Post, and more.</p>
-				<p>Zutto uses vivid hues and hand-drawn, liquid textures complexity.</p>
+        <p>Zutto uses vivid hues and hand-drawn, liquid textures complexity.</p>
 			</>
 			),
 		},

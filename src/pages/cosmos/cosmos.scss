@@ -4,91 +4,66 @@
   padding-right: 5rem;
   display: flex;
   flex-direction: row;
-
-  .explore--item__card-about {
-    display: none;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0 1rem;
-
-    &.Mui-expanded {
-      margin: 0;
-    }
-
-    .MuiAccordionSummary-root {
-      padding: 0;
-    }
-
-    .MuiAccordionSummary-expandIconWrapper {
-      margin-right: 1rem;
-      color: #FFFFFF;
-    }
-
-    p {
-      margin: 0;
-      font-size: 1rem;
-      line-height: 25px;
-      letter-spacing: 0.5px;
-    }
-  }
 }
 
-.explore--item-container.container--one {
+// left container styles
+.container--one {
   width: 60%;
-
-  .explore--item {
-    background: linear-gradient(69.99deg, rgba(45, 60, 103, 0.87) 21.75%, rgba(30, 39, 49, 0) 70.24%);
-  }
-
-  .explore--item .explore--background {
-    position: absolute;
-    z-index: -1;
-    object-fit: cover;
-    height: 120%;
-  }
-
-  .explore--item-0 .explore--background {
-    top: -5rem;
-    right: -8rem;
-  }
-
-  .explore--item-1 .explore--background {
-    right: -5rem;
-    top: -2rem;
-  }
 }
 
-.explore--item-container.container--two {
-  width: 40%;
+.container--one .explore--item {
+  background: linear-gradient(69.99deg, rgba(45, 60, 103, 0.87) 21.75%, rgba(30, 39, 49, 0) 70.24%);
+}
 
-  .explore--item {
-    background: linear-gradient(51.3deg, rgba(45, 60, 103, 0.87) 25.7%, rgba(30, 39, 49, 0) 81.46%);
-  }
+.container--one .explore--item .explore--background {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  height: 120%;
+}
+
+.container--one .explore--item-0 .explore--background {
+  top: -5rem;
+  right: -8rem;
+}
+
+.container--one .explore--item-1 .explore--background {
+  right: -5rem;
+  top: -2rem;
+}
+
+// right container styles
+.container--two {
+  width: 40%;
 
   h3 {
     width: 80%;
   }
-
-  .explore--item .explore--background {
-    position: absolute;
-    z-index: -1;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .explore--item-0 .explore--background {
-    top: -4rem;
-    left: 0;
-  }
-
-  .explore--item-1 .explore--background {
-    left: 0;
-    bottom: 0;
-    height: 100%;
-  }
 }
 
+.container--two .explore--item {
+  background: linear-gradient(51.3deg, rgba(45, 60, 103, 0.87) 25.7%, rgba(30, 39, 49, 0) 81.46%);
+}
+
+.container--two .explore--item .explore--background {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.container--two .explore--item-0 .explore--background {
+  top: -4rem;
+  left: 0;
+}
+
+.container--two .explore--item-1 .explore--background {
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+// item card
 .explore--item {
   position: relative;
   display: flex;
@@ -122,10 +97,11 @@
   }
 }
 
-.explore--item:last-child {
+.explore--item-1 {
   margin-top: 2rem;
 }
 
+// arrow styles
 .explore--arrow-container {
   background-color: #fff;
   width: 2.5rem;
@@ -150,6 +126,7 @@
   }
 }
 
+// on hover detail styles
 .explore--details {
   display: none;
   flex-direction: column;
@@ -164,7 +141,7 @@
   padding: 2rem;
   overflow: scroll;
 
-  p {
+  .container-one p {
     width: 70%;
   }
 
@@ -182,21 +159,55 @@
   }
 }
 
+// accordion styles
+.explore--container .explore--item-accordion {
+  display: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+  margin: 0 1rem;
+
+  &.Mui-expanded {
+    margin: 0 1rem;
+  }
+
+  .MuiAccordionSummary-root {
+    padding: 0;
+  }
+
+  .MuiAccordionSummary-expandIconWrapper {
+    margin-right: 1rem;
+    color: #FFFFFF;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+}
+
 @media screen and (min-width: 1001px) {
+  .container--one .explore--item-0,
+  .container--two .explore--item-1 {
+    height: 600px;
+  }
+
   .explore--item:hover .explore--details,
   .explore--item:active .explore--details {
     display: flex;
   }
-
-  .explore--item-container.container--one .explore--item-0,
-  .explore--item-container.container--two .explore--item-1 {
-    height: 600px;
-  }
 }
 
 @media screen and (max-width: 1190px) {
-  .explore--item-container.container--two,
-  .explore--item-container.container--one {
+  .container--two,
+  .container--one {
     h3 {
       width: 100%;
       margin-top: .25rem;
@@ -216,19 +227,25 @@
       width: 100%;
     }
   }
+
+  .container--two {
+    .explore--item-0 .explore--background{
+      top: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .explore--container {
     flex-direction: column;
 
-    .explore--item__card-about {
+    .explore--item-accordion {
       display: block;
     }
   }
 
-  .explore--item-container.container--two,
-  .explore--item-container.container--one {
+  .container--two,
+  .container--one {
     width: 100%;
 
     .explore--item {
@@ -236,7 +253,7 @@
     }
   }
 
-  .explore--item-container.container--one {
+  .container--one {
     .explore--item .explore--background {
       height: 150%;
     }
@@ -247,7 +264,7 @@
     }
   }
 
-  .explore--item-container.container--two {
+  .container--two {
     .explore--item-0 .explore--background,
     .explore--item-1 .explore--background {
       top: -12rem;
@@ -286,7 +303,7 @@
     padding-top: 5rem;
   }
   
-  .explore--item-container.container--two {
+  .container--two {
     .explore--item-0 .explore--background,
     .explore--item-1 .explore--background {
       top: -5rem;
