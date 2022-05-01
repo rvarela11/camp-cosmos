@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import Accordion from '@mui/material/Accordion';
@@ -28,26 +29,31 @@ const Cosmos = () => {
                     subTitle,
                     image,
                     secondaryTitle,
-                    description
+                    description,
+                    route,
                   }, index) => (
                     <>
-                      <div key={`explore--item-${id}`} className={`explore--item explore--item-${index}`}>
-                        <h6>{subTitle}</h6>
-                        <h3>{title}</h3>
-                        <button className='explore--arrow-container'>
-                          <div className='explore--arrow'></div>
-                        </button>
-                        <img className="explore--background" src={image.src} alt={image.alt} />
-                        <div className='explore--details'>
-                          <div>
-                            <h3>{secondaryTitle}</h3>
-                            {description}
+                      <Link href={route}>
+                        <a>
+                          <div key={`explore--item-${id}`} className={`explore--item explore--item-${index}`}>
+                            <h6>{subTitle}</h6>
+                            <h3>{title}</h3>
+                            <button className='explore--arrow-container'>
+                              <div className='explore--arrow'></div>
+                            </button>
+                            <img className="explore--background" src={image.src} alt={image.alt} />
+                            <div className='explore--details'>
+                              <div>
+                                <h3>{secondaryTitle}</h3>
+                                {description}
+                              </div>
+                              <button className='explore--arrow-container'>
+                                <div className='explore--arrow'></div>
+                              </button>
+                            </div>
                           </div>
-                          <button className='explore--arrow-container'>
-                            <div className='explore--arrow'></div>
-                          </button>
-                        </div>
-                      </div>
+                        </a>
+                      </Link>
                       <Accordion
                         key={`explore--item-accordion-${id}`}
                         className="explore--item-accordion"
