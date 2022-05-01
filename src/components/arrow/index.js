@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Arrow = ({ className = "" }) => (
-  <div className={`${className} arrow`}></div>
+  <button className={`${className} arrow-container`}>
+    <div className='arrow'></div>
+  </button>
 );
 
 export default Arrow;
