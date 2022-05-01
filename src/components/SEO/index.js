@@ -13,11 +13,11 @@ const socialTags = ({
   url,
 }) => [
     { name: "twitter:card", content: "summary_large_image" },
-		{ name: "twitter:creator", content: twitter },
-		{ name: "twitter:description", content: description },
-		{ name: "twitter:image:src", content: image },
-		{ name: "twitter:site", content: twitter },
-		{ name: "twitter:title", content: title },
+    { name: "twitter:creator", content: twitter },
+    { name: "twitter:description", content: description },
+    { name: "twitter:image:src", content: image },
+    { name: "twitter:site", content: twitter },
+    { name: "twitter:title", content: title },
     { name: "og:description", content: description },
     { name: "og:image", content: image },
     { name: "og:published_time", content: createdAt || new Date().toISOString() },
@@ -64,7 +64,7 @@ SEO.propTypes = {
   image: PropTypes.string,
   openGraphType: PropTypes.string,
   schemaType: PropTypes.string,
-	social: PropTypes.shape({
+  social: PropTypes.shape({
     twitter: PropTypes.string,
   }),
   title: PropTypes.string,
@@ -76,7 +76,7 @@ SEO.defaultProps = {
   image: '/images/camp-cosmos-home.png',
   openGraphType: 'website',
   schemaType: 'Article',
-	social: {
+  social: {
     twitter: '@campcosmos'
   },
   title: 'Camp Cosmos',
