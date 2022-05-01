@@ -10,7 +10,6 @@
 
 .about-tab--description {
   position: absolute;
-  z-index: 1;
   padding: 10rem 5rem;
 }
 
@@ -51,26 +50,15 @@
     width: auto;
     height: auto;
   }
-  .about-tab--description {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-  .about-tab--description__title {
-    margin-bottom: 40px;
-    font-size: 4rem;
-    line-height: 50px;
-  }
   .about-tab--description__content {
     width: 100%;
   }
-  .about-tab--description {
-    p {
-      font-size: 15px;
-    }
-  }
 }
 
-@media screen and (max-width: 522px) {
+@media screen and (max-width: 600px) {
+  .about-tab--description {
+    padding: 9rem 2rem;
+  }
   .about-tab--description__title {
     font-size: 2.5rem;
   }

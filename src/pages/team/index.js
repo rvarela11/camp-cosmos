@@ -25,7 +25,7 @@ const Team = () => {
   return (
     <Layout>
       <Box className={value === 0 ? "" : "team"} sx={{ width: '100%' }}>
-        <div className="team--tabs-content">{ TabContent[value]}</div>
+        <div className="team--tabs-content">{TabContent[value]}</div>
         <Box sx={{
           backgroundColor: 'rgba(0,0,0,0.3)',
           position: 'fixed',
