@@ -59,18 +59,12 @@
     line-height: 50px;
   }
   .lore--description__content {
-    width: 50%;
+    width: 100%;
   }
   .lore--description {
     p {
       font-size: 15px;
     }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .lore--description__content {
-    width: 100%;
   }
 }
 

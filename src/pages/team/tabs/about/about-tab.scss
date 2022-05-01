@@ -1,0 +1,65 @@
+.about-tab {
+  position: relative;
+}
+
+.about-tab--background {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.about-tab--description {
+  position: absolute;
+  padding: 10rem 5rem;
+}
+
+.about-tab--description__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 40px;
+  line-height: normal;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 55px;
+}
+
+.about-tab--description__content {
+  width: 35%;
+}
+
+.about-tab--description__content {
+  p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: 0.005em;
+  }
+}
+
+@media screen and (max-width: 1735px) {
+  .about-tab--background {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .about-tab--background {
+    width: auto;
+    height: auto;
+  }
+  .about-tab--description__content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-tab--description {
+    padding: 9rem 2rem;
+  }
+  .about-tab--description__title {
+    font-size: 2.5rem;
+  }
+}

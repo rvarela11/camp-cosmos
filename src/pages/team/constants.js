@@ -1,14 +1,18 @@
 export const TABS = [
   {
     id: 0,
-    label: "Alexandra 'Zutto'"
+    label: "About"
   },
   {
     id: 1,
-    label: "West Coast"
+    label: "Alexandra 'Zutto'"
   },
   {
     id: 2,
+    label: "West Coast"
+  },
+  {
+    id: 3,
     label: "Core Team"
   },
 ];

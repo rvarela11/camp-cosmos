@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import AboutTab from './tabs/about';
 import AlexandraTab from './tabs/alexandra';
 import TeamTab from './tabs/team';
 import Layout from '../../components/layout';
 import { TABS, WEST_COAST_MEMBERS, CORE_MEMBERS } from './constants';
 
 const TabContent = {
-  0: <AlexandraTab />,
-  1: <TeamTab members={WEST_COAST_MEMBERS} title="West Coast" />,
-  2: <TeamTab members={CORE_MEMBERS} title="Core Team" />,
+  0: <AboutTab />,
+  1: <AlexandraTab />,
+  2: <TeamTab members={WEST_COAST_MEMBERS} title="West Coast" />,
+  3: <TeamTab members={CORE_MEMBERS} title="Core Team" />,
 };
 
 const Team = () => {
@@ -22,8 +24,8 @@ const Team = () => {
 
   return (
     <Layout>
-      <Box className="team" sx={{ width: '100%' }}>
-        <div className="team--tabs-content">{ TabContent[value]}</div>
+      <Box className={value === 0 ? "" : "team"} sx={{ width: '100%' }}>
+        <div className="team--tabs-content">{TabContent[value]}</div>
         <Box sx={{
           backgroundColor: 'rgba(0,0,0,0.3)',
           position: 'fixed',
