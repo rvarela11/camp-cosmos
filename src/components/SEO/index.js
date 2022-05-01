@@ -72,7 +72,7 @@ SEO.propTypes = {
 };
 
 SEO.defaultProps = {
-  description: 'Camp Cosmos description',
+  description: 'A collection of 10,000 Campers from across the cosmos spreading wonder and joy.',
   image: '/images/camp-cosmos-home.png',
   openGraphType: 'website',
   schemaType: 'Article',
