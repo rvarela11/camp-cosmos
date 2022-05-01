@@ -5,113 +5,75 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Layout from '../../components/layout';
+import { COSMOS_COLUMNS } from './constants';
 
 const Cosmos = () => {
   const [expanded, setExpanded] = useState(false);
 
-  const handleChange = (index) => (_, newExpanded) => {
-    setExpanded(newExpanded ? index : false);
+  const handleChange = (id) => (_, newExpanded) => {
+    setExpanded(newExpanded ? id : false);
   };
 
   return (
     <Layout>
       <div className='explore--container'>
-        <div className='explore--item-container container--left'>
-          <div className='explore--item'>
-            <h6>LEARN ABOUT US</h6>
-            <h3>Light The Fireside!</h3>
-            <button className='explore--arrow-container'>
-              <div className='explore--arrow'></div>
-            </button>
-            <img className="explore--background" src="/images/camp-cosmos-cosmos.png" alt="Explore background image" />
-            <div className='explore--details'>
-              <div>
-                <h3>
-                  Explore The Cosmos
-                </h3>
-                <p>
-                  "Zutto" is a highly acclaimed freelance illustrator based in Brooklyn, New York. Originally from a small town in central Russia, Alexandra has spent over a decade developing her unique style. She is completely self-taught, and over the last ten years, she's worked with high-profile brands such as Apple, The Washington Post, and more.
-                  <br /><br />            
-                  Zutto uses vivid hues and hand-drawn, liquid textures complexity.
-                </p>
+        {
+          Object.keys(COSMOS_COLUMNS).map((column) => {
+            return (
+              <div key={`container--${column}`} className={`explore--item-container container--${column}`}>
+                {
+                  COSMOS_COLUMNS[column].map(({
+                    id,
+                    title,
+                    subTitle,
+                    image,
+                    secondaryTitle,
+                    description
+                  }, index) => (
+                    <>
+                      <div key={`explore--item-${id}`} className={`explore--item explore--item-${index}`}>
+                        <h6>{subTitle}</h6>
+                        <h3>{title}</h3>
+                        <button className='explore--arrow-container'>
+                          <div className='explore--arrow'></div>
+                        </button>
+                        <img className="explore--background" src={image.src} alt={image.alt} />
+                        <div className='explore--details'>
+                          <div>
+                            <h3>{secondaryTitle}</h3>
+                            {description}
+                          </div>
+                          <button className='explore--arrow-container'>
+                            <div className='explore--arrow'></div>
+                          </button>
+                        </div>
+                      </div>
+                      <Accordion
+                        key={`explore--item__card-about-${id}`}
+                        className="explore--item__card-about"
+                        expanded={expanded === id}
+                        onChange={handleChange(id)}
+                        sx={{ '&:before': { display: 'none' } }}
+                      >
+                        <AccordionSummary
+                          aria-controls="panel1d-content"
+                          id="panel1d-header"
+                          expandIcon={(expanded === id) ? <RemoveIcon /> : <AddIcon/>}
+                          sx={{ flexDirection: 'row-reverse' }}
+                        >
+                          <p>More details</p>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          {description}
+                        </AccordionDetails>
+                      </Accordion>
+                    </>
+                  ))
+                }
               </div>
-              <button className='explore--arrow-container'>
-                <div className='explore--arrow'></div>
-              </button>
-            </div>
-          </div>
-          <div className='explore--item'>
-            <h6>LEARN ABOUT US</h6>
-            <h3>Read The Lore!</h3>
-            <button className='explore--arrow-container'>
-              <div className='explore--arrow'></div>
-            </button>
-            <img className="explore--background" src="/images/camp-cosmos-cosmos.png" alt="Explore background image" />
-            <div className='explore--details'>
-              <div>
-                <h3>
-                  Explore The Cosmos
-                </h3>
-                <p>
-                  "Zutto" is a highly acclaimed freelance illustrator based in Brooklyn, New York. Originally from a small town in central Russia, Alexandra has spent over a decade developing her unique style. She is completely self-taught, and over the last ten years, she's worked with high-profile brands such as Apple, The Washington Post, and more.
-                  <br /><br />            
-                  Zutto uses vivid hues and hand-drawn, liquid textures complexity.
-                </p>
-              </div>
-              <button className='explore--arrow-container'>
-                <div className='explore--arrow'></div>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className='explore--item-container container--right'>
-          <div className='explore--item'>
-            <h6>LEARN ABOUT US</h6>
-            <h3>Meet The Team!</h3>
-            <button className='explore--arrow-container'>
-              <div className='explore--arrow'></div>
-            </button>
-            <img className="explore--background" src="/images/team-members/rob.png" alt="Explore background image" />
-            <div className='explore--details'>
-              <div>
-                <h3>
-                  Explore The Cosmos
-                </h3>
-                <p>
-                  "Zutto" is a highly acclaimed freelance illustrator based in Brooklyn, New York. Originally from a small town in central Russia, Alexandra has spent over a decade developing her unique style. She is completely self-taught, and over the last ten years, she's worked with high-profile brands such as Apple, The Washington Post, and more.
-                  <br /><br />            
-                  Zutto uses vivid hues and hand-drawn, liquid textures complexity.
-                </p>
-              </div>
-              <button className='explore--arrow-container'>
-                <div className='explore--arrow'></div>
-              </button>
-            </div>
-          </div>
-          <div className='explore--item'>
-            <h6>LEARN ABOUT US</h6>
-            <h3>FAQs</h3>
-            <button className='explore--arrow-container'>
-              <div className='explore--arrow'></div>
-            </button>
-            <img className="explore--background" src="/images/team-members/Winter.jpeg" alt="Explore background image" />
-            <div className='explore--details'>
-              <div>
-                <h3>
-                  Explore The Cosmos
-                </h3>
-                <p>
-                  "Zutto" is a highly acclaimed freelance illustrator based in Brooklyn, New York. Originally from a small town in central Russia, Alexandra has spent over a decade developing her unique style. She is completely self-taught, and over the last ten years, she's worked with high-profile brands such as Apple, The Washington Post, and more.
-                  <br /><br />            
-                  Zutto uses vivid hues and hand-drawn, liquid textures complexity.
-                </p>
-              </div>
-              <button className='explore--arrow-container'>
-                <div className='explore--arrow'></div>
-              </button>
-            </div>
-          </div>
-        </div>
+            )
+          })
+        }
       </div>
     </Layout>
   )
