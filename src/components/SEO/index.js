@@ -38,9 +38,9 @@ const SEO = (props) => {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content={description} />
-      <meta itemprop="name" content={title} />
-      <meta itemprop="description" content={description} />
-      <meta itemprop="image" content={image} />
+      <meta itemProp="name" content={title} />
+      <meta itemProp="description" content={description} />
+      <meta itemProp="image" content={image} />
       { socialTags(props).map(({ name, content }) => <meta key={name} name={name} content={content} /> ) }
       <script
         type="application/ld+json"
