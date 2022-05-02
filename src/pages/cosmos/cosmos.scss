@@ -1,6 +1,7 @@
-.explore--container {
+.explore--container.page-layout {
   display: flex;
   flex-direction: row;
+  padding-top: 8rem;
 }
 
 // left container styles
@@ -245,7 +246,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .explore--container {
+  .explore--container.page-layout {
     flex-direction: column;
 
     .explore--item-accordion {
@@ -305,6 +306,9 @@
 }
 
 @media screen and (max-width: 700px) {
+  .explore--container.page-layout {
+    padding: 5rem 2rem 3rem 2rem;
+  }
   .container--two {
     .explore--item-0 .explore--background,
     .explore--item-1 .explore--background {
