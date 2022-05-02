@@ -45,13 +45,10 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1465px) {
+@media screen and (max-width: 915px) {
   .home--img {
     height: auto;
   }
-}
-
-@media screen and (max-width: 915px) {
   .home--card-container {
     margin: 0 0 1rem 0;
     justify-content: center;
