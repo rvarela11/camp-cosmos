@@ -23,12 +23,6 @@
   width: 35%;
 }
 
-@media screen and (max-width: 1735px) {
-  .about-tab--background {
-    height: auto;
-  }
-}
-
 @media screen and (max-width: 912px) {
   .about-tab--background {
     width: auto;
@@ -42,5 +36,6 @@
 @media screen and (max-width: 600px) {
   .about-tab--description {
     padding: 9rem 2rem;
+    padding-bottom: 3rem;
   }
 }
