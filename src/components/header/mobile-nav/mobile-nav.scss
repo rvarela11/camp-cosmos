@@ -1,7 +1,8 @@
 .mobile-nav {
   .MuiDrawer-paper {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px);
     box-sizing: 'border-box';
     padding: 1rem;
   }

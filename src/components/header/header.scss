@@ -74,7 +74,8 @@
 
   .h-button {
     padding: 0;
-    background-color: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px);
     border-radius: 10px;
     width: 34px;
     height: 34px;

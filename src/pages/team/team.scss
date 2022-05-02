@@ -17,7 +17,7 @@
 
   .team--tabs__tab {
     max-width: none;
-    height: 116px;
+    height: 100px;
     text-transform: none;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -28,23 +28,24 @@
     color: #FFFFFF;
     flex: 1;
     border-right: 1px solid #C4C4C4;
-    border-left: 1px solid #C4C4C4;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 
-    &:first-of-type,
     &:last-of-type {
-      border: none;
+      border-right: none;
     }
 
     &.Mui-selected {
       color: #FFFFFF;
-      background-color: rgba(0,0,0,0.8),
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(150px);
     }
   }
 }
 
 @media screen and (max-width: 600px) {
   .team {
-    padding: 9rem 2rem;
+    padding: 8rem 2rem;
   }
 
   .team--tabs {

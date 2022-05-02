@@ -9,6 +9,10 @@
 // left container styles
 .container--one {
   width: 60%;
+
+  h2 {
+    width: 50%;
+  }
 }
 
 .container--one .explore--item {
@@ -36,7 +40,7 @@
 .container--two {
   width: 40%;
 
-  h3 {
+  h2 {
     width: 80%;
   }
 }
@@ -77,13 +81,8 @@
   padding: 2rem;
   overflow: hidden;
 
-  h3 {
+  h2 {
     margin: 1rem 0;
-    width: 50%;
-    font-family: 'Work Sans';
-    font-weight: 500;
-    font-size: 55px;
-    line-height: 55px;
     color: #FFFFFF;
   }
 
@@ -141,10 +140,6 @@
   padding: 2rem;
   overflow: scroll;
 
-  .container-one p {
-    width: 70%;
-  }
-
   .explore--arrow-container {
     background: linear-gradient(95.34deg, #5A6FE8 7.87%, #9B51E0 100.96%);
   }
@@ -157,6 +152,18 @@
       background-color: #fff;
     }
   }
+}
+
+.container--one .explore--details h2 {
+  width: 60%;
+}
+
+.container--one .explore--details p {
+  width: 70%;
+}
+
+.container--two .explore--details h2 {
+  width: 100%;
 }
 
 // accordion styles
@@ -213,7 +220,7 @@
 @media screen and (max-width: 1190px) {
   .container--two,
   .container--one {
-    h3 {
+    h2 {
       width: 100%;
       margin-top: .25rem;
       font-size: 30px;

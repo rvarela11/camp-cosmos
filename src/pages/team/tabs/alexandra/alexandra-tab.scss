@@ -14,27 +14,6 @@
   gap: 40px;
 }
 
-.alexandra-tab--description__title {
-  line-height: normal;
-  font-family: 'Work Sans', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3.5rem;
-  line-height: 55px;
-}
-
-.alexandra-tab--description__content {
-  p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 25px;
-    letter-spacing: 0.005em;
-    color: #FFFFFF;
-  }
-}
-
 .alexandra-tab--image {
   display: flex;
   align-items: flex-start;
@@ -53,7 +32,7 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
@@ -66,9 +45,9 @@
   border: 1px solid #FFFFFF;
 }
 
-@media screen and (max-width: 1259px) {
+@media screen and (max-width: 1000px) {
   .alexandra-tab {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .alexandra-tab--image {
     justify-content: center;
@@ -76,9 +55,6 @@
 }
 
 @media screen and (max-width: 690px) {
-  .alexandra-tab--description__title {
-    font-size: 2.25rem;
-  }
   .alexandra-tab--description__actions {
     flex-direction: column;
     align-items: center;

@@ -37,14 +37,14 @@ const Cosmos = () => {
                         <a>
                           <div key={`explore--item-${id}`} className={`explore--item explore--item-${index}`}>
                             <h6>{subTitle}</h6>
-                            <h3>{title}</h3>
+                            <h2>{title}</h2>
                             <button className='explore--arrow-container'>
                               <div className='explore--arrow'></div>
                             </button>
                             <img className="explore--background" src={image.src} alt={image.alt} />
                             <div className='explore--details'>
                               <div>
-                                <h3>{secondaryTitle}</h3>
+                                <h2>{secondaryTitle}</h2>
                                 {description}
                               </div>
                               <button className='explore--arrow-container'>
