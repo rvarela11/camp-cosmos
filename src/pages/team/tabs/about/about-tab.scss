@@ -10,7 +10,6 @@
 
 .about-tab--description {
   position: absolute;
-  padding: 10rem 5rem;
 }
 
 .about-tab--description__title {
@@ -30,12 +29,5 @@
   }
   .about-tab--description__content {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .about-tab--description {
-    padding: 9rem 2rem;
-    padding-bottom: 3rem;
   }
 }

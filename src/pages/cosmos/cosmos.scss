@@ -1,8 +1,4 @@
 .explore--container {
-  padding-top: 8rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 3rem;
   display: flex;
   flex-direction: row;
 }
@@ -278,6 +274,10 @@
   }
 
   .container--two {
+    .explore--item-0 {
+      margin-top: 2rem;
+    }
+
     .explore--item-0 .explore--background,
     .explore--item-1 .explore--background {
       top: -12rem;
@@ -304,18 +304,7 @@
   }
 }
 
-@media screen and (max-width: 760px) {
-  .explore--container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .explore--container {
-    padding-top: 5rem;
-  }
-  
+@media screen and (max-width: 700px) {
   .container--two {
     .explore--item-0 .explore--background,
     .explore--item-1 .explore--background {

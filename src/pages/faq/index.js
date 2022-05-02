@@ -16,7 +16,7 @@ const FAQ = () => {
 
   return (
     <Layout>
-      <div className="faq">
+      <div className="faq page-layout">
         <h2 className="faq--title"><span>Frequently</span> Asked Questions</h2>
         {
           QUESTIONS.map(({
