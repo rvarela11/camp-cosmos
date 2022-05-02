@@ -45,11 +45,14 @@
   border: 1px solid #FFFFFF;
 }
 
+// NOTE - `gap: 40px` not showing on mobile. Solution is to remove gap and add margin-bottom.
 @media screen and (max-width: 1135px) {
   .alexandra-tab {
     flex-direction: column-reverse;
+    gap: 0px;
   }
   .alexandra-tab--image {
+    margin-bottom: 40px;
     justify-content: center;
   }
 }
