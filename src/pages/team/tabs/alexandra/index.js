@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import alexandraImage from '../../../../../public/images/camp-cosmos-alexandra.png';
 
 const AlexandraTab = () => (
   <div className="alexandra-tab">
@@ -14,7 +16,11 @@ const AlexandraTab = () => (
       </div>
     </div>
     <div className="alexandra-tab--image">
-      <img className="alexandra-tab--img" src="/images/camp-cosmos-alexandra.png" alt="Alexandra image" />
+      <Image
+        src={alexandraImage}
+        alt="Alexandra image"
+        priority={true}
+      />
     </div>
   </div>
 );

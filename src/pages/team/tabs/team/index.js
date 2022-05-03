@@ -4,7 +4,6 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-
 import TeamCardFront from './team-card-front';
 import TeamCardBack from './team-card-back';
 

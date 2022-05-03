@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
@@ -8,6 +9,7 @@ import { Discord } from './icons/discord';
 import { Instagram } from './icons/instagram';
 import MobileNav from './mobile-nav';
 import { NAV_ROUTES, ROUTES } from '../../../src/utils/routes';
+import logoImage from '../../../public/images/camp-cosmos-logo.svg';
 
 const Header = () => {
   const { pathname } = useRouter();
@@ -23,7 +25,11 @@ const Header = () => {
         <div className="header--logo">
           <Link href={ROUTES.HOME}>
             <a>
-              <img src="images/camp-cosmos-logo.svg" alt="Camp Cosmos" />
+              <Image
+                src={logoImage}
+                alt="Camp Cosmos logo"
+                priority={true}
+              />
             </a>
           </Link>
         </div>

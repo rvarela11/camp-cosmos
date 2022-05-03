@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   IconButton,
@@ -11,6 +12,7 @@ import { Twitter } from '../icons/twitter';
 import { Discord } from '../icons/discord';
 import { Instagram } from '../icons/instagram';
 import { NAV_ROUTES, ROUTES } from '../../../utils/routes';
+import logoImage from '../../../../public/images/camp-cosmos-logo.svg';
 
 const MobileNav = ({ handleDrawerToggle, isMobileMenuOpen }) => (
   <Box component="nav">
@@ -23,7 +25,13 @@ const MobileNav = ({ handleDrawerToggle, isMobileMenuOpen }) => (
     >
       <div className="mobile-nav__close">
         <Link href={ROUTES.HOME}>
-         <a><img src="images/camp-cosmos-logo.svg" alt="Camp Cosmos" /></a>
+          <a>
+            <Image
+              src={logoImage}
+              alt="Camp Cosmos logo"
+              priority={true}
+            />
+          </a>
         </Link>
         <IconButton
           aria-label="open menu"
