@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import loreImage from '../../../../../public/images/camp-cosmos-lore.png';
 
 const AboutTab = () => (
   <div className="about-tab">
@@ -9,7 +11,15 @@ const AboutTab = () => (
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
       </div>
     </div>
-    <img className="about-tab--background" src="/images/camp-cosmos-lore.png" alt="About page background image" />
+    <div className="about-tab--background">
+        <Image
+          src={loreImage}
+          alt="About page background image"
+          layout="responsive"
+          objectFit="cover"
+          priority={true}
+        />
+      </div>
   </div>
 );
 

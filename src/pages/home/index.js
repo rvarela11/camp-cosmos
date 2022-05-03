@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Layout from '../../components/layout';
 import ArrowCard from '../../components/arrow-card';
 import { ROUTES } from '../../../src/utils/routes';
-import homePageImage from '../../../public/images/camp-cosmos-home.png';
+import homeImage from '../../../public/images/camp-cosmos-home.png';
 
 const Home = () => (
   <Layout>
     <div className="home page-layout">
       <div className="home--img">
         <Image
-          src={homePageImage}
+          src={homeImage}
           alt="Camp Cosmos home image"
           priority={true}
         />
