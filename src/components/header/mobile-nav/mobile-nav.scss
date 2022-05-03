@@ -12,6 +12,10 @@
     display: flex;
     justify-content: space-between;
 
+    & a > span {
+      height: 100% !important;
+    }
+
     svg {
       font-size: 2rem;
     }
