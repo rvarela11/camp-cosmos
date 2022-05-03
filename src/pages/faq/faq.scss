@@ -1,6 +1,4 @@
 .faq {
-  padding: 10rem 5rem 0 5rem;
-
   & * {
     color: #FFFFFF;
   }
@@ -29,12 +27,5 @@
     font-weight: 500;
     font-size: 25px;
     line-height: 25px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .faq {
-    padding: 9rem 2rem 0 2rem;
-    padding-bottom: 3rem;
   }
 }

@@ -6,7 +6,7 @@ import { ROUTES } from '../../../src/utils/routes';
 
 const Home = () => (
   <Layout>
-    <div className="home">
+    <div className="home page-layout">
       <div className="home--img">
         <img src="images/camp-cosmos-home.png" alt="Camp Cosmos home image" />
       </div>

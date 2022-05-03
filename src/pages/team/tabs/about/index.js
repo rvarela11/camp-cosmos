@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutTab = () => (
   <div className="about-tab">
-    <div className="about-tab--description">
+    <div className="about-tab--description page-layout">
      <h2 className="about-tab--description__title">Who We Are <span>& What We Do</span></h2>
       <div className="about-tab--description__content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>

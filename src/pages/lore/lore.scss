@@ -11,7 +11,6 @@
 .lore--description {
   position: absolute;
   z-index: 1;
-  padding: 10rem 5rem 0 5rem;
 }
 
 .lore--description__title {
@@ -33,26 +32,15 @@
 }
 
 @media screen and (max-width: 912px) {
-
   .lore--background {
     width: auto;
     height: auto;
-  }
-  .lore--description {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 3rem;
   }
   .lore--description__title {
     margin-bottom: 40px;
   }
   .lore--description__content {
     width: 100%;
-  }
-  .lore--description {
-    p {
-      font-size: 15px;
-    }
   }
 }
 

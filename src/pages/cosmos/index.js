@@ -17,7 +17,7 @@ const Cosmos = () => {
 
   return (
     <Layout>
-      <div className='explore--container'>
+      <div className='explore--container page-layout'>
         {
           Object.keys(COSMOS_COLUMNS).map((column) => {
             return (

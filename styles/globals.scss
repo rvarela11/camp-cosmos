@@ -88,3 +88,13 @@ svg {
 * {
   box-sizing: border-box;
 }
+
+.page-layout {
+  padding: 10rem 5rem 3rem 5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .page-layout {
+    padding: 9rem 2rem 3rem 2rem;
+  }
+}
