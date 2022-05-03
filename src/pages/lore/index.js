@@ -4,7 +4,7 @@ import Layout from '../../components/layout';
 const Lore = () => (
   <Layout>
     <div className="lore">
-      <div className="lore--description">
+      <div className="lore--description page-layout">
         <h2 className="lore--description__title">Welcome to <span>Camp Cosmos</span></h2>
         <div className="lore--description__content">
           <p>Camp Cosmos is a haven for the creatively gifted, altruistic, and philosophically curious of the universe, located on Planet Earth in the Milky Way Galaxy. Upon arrival, you’ll be joined by 9,999 other campers from across the cosmos who are eager to share all of the transcendental knowledge the universe has offered them, as well as stellar art and some pretty great music too.</p>

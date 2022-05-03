@@ -14,27 +14,6 @@
   gap: 40px;
 }
 
-.alexandra-tab--description__title {
-  line-height: normal;
-  font-family: 'Work Sans', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3.5rem;
-  line-height: 55px;
-}
-
-.alexandra-tab--description__content {
-  p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 25px;
-    letter-spacing: 0.005em;
-    color: #FFFFFF;
-  }
-}
-
 .alexandra-tab--image {
   display: flex;
   align-items: flex-start;
@@ -53,7 +32,7 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
@@ -66,21 +45,22 @@
   border: 1px solid #FFFFFF;
 }
 
-@media screen and (max-width: 1259px) {
+// NOTE - `gap: 40px` not showing on mobile. Solution is to remove gap and add margin-bottom.
+@media screen and (max-width: 1135px) {
   .alexandra-tab {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 0px;
   }
   .alexandra-tab--image {
+    margin-bottom: 40px;
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 690px) {
-  .alexandra-tab--description__title {
-    font-size: 2.25rem;
-  }
+@media screen and (max-width: 700px) {
   .alexandra-tab--description__actions {
     flex-direction: column;
     align-items: center;
+    font-size: 15px;
   }
 }
