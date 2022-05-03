@@ -1,3 +1,8 @@
+import frankieImage from '../../../public/images/team-members/frankie.png';
+import galenImage from '../../../public/images/team-members/galen.png';
+import johnImage from '../../../public/images/team-members/john.png';
+import robImage from '../../../public/images/team-members/rob.png';
+
 export const TABS = [
   {
     id: 0,
@@ -162,3 +167,10 @@ export const CORE_MEMBERS = [
     social: '@johncwingfield',
   },
 ];
+
+export const MEMBER_IMAGES = {
+  frankie: frankieImage,
+  galen: galenImage,
+  john: johnImage,
+  rob: robImage,
+};

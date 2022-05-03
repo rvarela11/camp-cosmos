@@ -1,10 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 import { Twitter } from '../../../../../components/header/icons/twitter';
+import { MEMBER_IMAGES } from '../../../constants';
 
 const TeamCardFront = ({ member, name, position, social }) => (
   <div className="team-tab-grid__card-front">
-    <img className="team-tab-grid__card-image" src={`/images/team-members/${member}.png`} alt={`${member} image`} />
+    <Image
+      className="team-tab-grid__card-image"
+      src={MEMBER_IMAGES[member]}
+      alt={`${member} image`}
+      priority={true}
+    />
     <div className="team-tab-grid__card-role">
       <p>{name}</p>
       <p>{position}</p>
