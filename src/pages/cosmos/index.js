@@ -33,7 +33,7 @@ const Cosmos = () => {
                     route,
                   }, index) => (
                     <>
-                      <Link href={route}>
+                      <Link key={route} href={route}>
                         <a>
                           <div key={`explore--item-${id}`} className={`explore--item explore--item-${index}`}>
                             <h6>{subTitle}</h6>
