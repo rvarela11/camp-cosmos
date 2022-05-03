@@ -10,6 +10,26 @@
   width: 100%;
   height: calc(100% - 165px);
   margin-bottom: 10px;
+
+  & > span {
+    display: flex !important;
+    height: 100% !important;
+
+    & span {
+      display: none !important;
+    }
+
+    & img {
+      position: initial !important;
+      width: initial !important;
+      min-width: initial !important;
+      max-width: 100% !important;
+      height: initial !important;
+      min-height: initial !important;
+      max-height: initial !important;
+      margin: initial !important;
+    }
+  }
 }
 
 .home--card-container {
