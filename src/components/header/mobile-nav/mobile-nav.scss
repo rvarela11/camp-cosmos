@@ -24,19 +24,32 @@
   .mobile-nav__nav {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
 
     .mobile-nav__nav-button {
       width: 100%;
-      padding: 2rem 0.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #C4C4C4;
       font-family: 'Work Sans', sans-serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 1.25rem;
-      line-height: 25px;
+      font-size: 1.75rem;
+      line-height: 22px;
+    }
+  }
+
+  .mobile-nav_nav-socials {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+    
+    .mobile-nav__nav-button {
+      padding-top: 2rem;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 }

@@ -50,9 +50,11 @@ const MobileNav = ({ handleDrawerToggle, isMobileMenuOpen }) => (
             </Link>
           ))
         }
-        <button aria-label="Twitter icon button" className="mobile-nav__nav-button" type="button">Twitter <Twitter /></button>
-        <button aria-label="Instagram icon button" className="mobile-nav__nav-button" type="button">Instagram <Instagram /></button>
-        <button aria-label="Discord icon button" className="mobile-nav__nav-button" type="button">Discord <Discord /></button>
+        <div className="mobile-nav_nav-socials">
+          <button aria-label="Twitter icon button" className="mobile-nav__nav-button" type="button">Twitter <Twitter /></button>
+          <button aria-label="Instagram icon button" className="mobile-nav__nav-button" type="button">Instagram <Instagram /></button>
+          <button aria-label="Discord icon button" className="mobile-nav__nav-button" type="button">Discord <Discord /></button>
+        </div>
       </div>
     </Drawer>
   </Box>
