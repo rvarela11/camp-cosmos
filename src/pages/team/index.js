@@ -5,13 +5,14 @@ import Box from '@mui/material/Box';
 import AboutTab from './tabs/about';
 import AlexandraTab from './tabs/alexandra';
 import TeamTab from './tabs/team';
+import WestCoastTab from './tabs/west-coast';
 import Layout from '../../components/layout';
 import { TABS, WEST_COAST_MEMBERS, CORE_MEMBERS } from './constants';
 
 const TabContent = {
   0: <AboutTab />,
   1: <AlexandraTab />,
-  2: <TeamTab members={WEST_COAST_MEMBERS} title="West Coast" />,
+  2: <WestCoastTab />,
   3: <TeamTab members={CORE_MEMBERS} title="Core Team" />,
 };
 
@@ -24,7 +25,7 @@ const Team = () => {
 
   return (
     <Layout>
-      <Box className={value < 2 ? "" : "team page-layout"} sx={{ width: '100%' }}>
+      <Box className={value === 3 ? "team page-layout" : ""} sx={{ width: '100%' }}>
         <div className="team--tabs-content">{TabContent[value]}</div>
         <Box sx={{
           backgroundColor: 'rgba(0,0,0,0.3)',
