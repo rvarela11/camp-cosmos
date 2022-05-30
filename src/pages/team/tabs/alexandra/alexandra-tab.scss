@@ -38,11 +38,22 @@
   color: #FFFFFF;
 }
 
+.alexandra-tab--description__action-social {
+  width: 70px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFFFFF;
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .alexandra-tab--description__action--color {
   background-image: linear-gradient(95.34deg, #5A6FE8 7.87%, #9B51E0 100.96%);
-}
-.alexandra-tab--description__action--clear {
-  border: 1px solid #FFFFFF;
 }
 
 // NOTE - `gap: 40px` not showing on mobile. Solution is to remove gap and add margin-bottom.

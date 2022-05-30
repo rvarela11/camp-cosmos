@@ -1,5 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+
+import { Twitter } from '../../../../components/header/icons/twitter';
+import { Instagram } from '../../../../components/header/icons/instagram';
 import alexandraImage from '../../../../../public/images/camp-cosmos-alexandra.png';
 
 const AlexandraTab = () => (
@@ -11,8 +14,9 @@ const AlexandraTab = () => (
         <p>Zutto uses vivid hues and hand-drawn, liquid textures to create enchanting and complex scenes. Zuttos world is a playground of the bright, colorful and surreal, drawing the viewer in to absorb its beautiful complexity.</p>
       </div>
       <div className="alexandra-tab--description__actions">
-        <button type="button" className="alexandra-tab--description__action alexandra-tab--description__action--color">More about "Zutto"</button>
-        <button type="button" className="alexandra-tab--description__action alexandra-tab--description__action--clear">Website</button>
+        <button type="button" className="alexandra-tab--description__action alexandra-tab--description__action--color">Behance</button>
+        <button aria-label="Twitter icon button" className="alexandra-tab--description__action alexandra-tab--description__action-social" type="button"><Twitter /></button>
+        <button aria-label="Instagram icon button" className="alexandra-tab--description__action alexandra-tab--description__action-social" type="button"><Instagram /></button>
       </div>
     </div>
     <div className="alexandra-tab--image">
