@@ -3,13 +3,15 @@ import Image from 'next/image';
 
 import { Twitter } from '../../../../components/header/icons/twitter';
 import { Instagram } from '../../../../components/header/icons/instagram';
-import alexandraImage from '../../../../../public/images/camp-cosmos-alexandra.png';
+// TODO: Replace loreImage with new Alexandra background image
+// import alexandraImage from '../../../../../public/images/camp-cosmos-alexandra.png';
+import loreImage from '../../../../../public/images/camp-cosmos-lore.png';
 
 const AlexandraTab = () => (
-  <div className="alexandra-tab">
-    <div className="alexandra-tab--description">
-      <h2 className="alexandra-tab--description__title">Alexandra "Zutto"</h2>
-      <div className="alexandra-tab--description__content">
+  <div className="team-tab">
+    <div className="team-tab--description page-layout">
+     <h2 className="team-tab--description__title">Alexandra "Zutto"</h2>
+      <div className="team-tab--description__content">
         <p>"Zutto" is a highly acclaimed freelance illustrator based in Brooklyn, New York. Originally from a small town in central Russia, Alexandra has spent over a decade developing her unique style. She is completely self-taught, and over the last ten years, she's worked with high-profile brands such as Apple, The Washington Post, and more.</p>
         <p>Zutto uses vivid hues and hand-drawn, liquid textures to create enchanting and complex scenes. Zuttos world is a playground of the bright, colorful and surreal, drawing the viewer in to absorb its beautiful complexity.</p>
       </div>
@@ -19,10 +21,12 @@ const AlexandraTab = () => (
         <button aria-label="Instagram icon button" className="alexandra-tab--description__action alexandra-tab--description__action-social" type="button"><Instagram /></button>
       </div>
     </div>
-    <div className="alexandra-tab--image">
+    <div className="team-tab--background">
       <Image
-        src={alexandraImage}
-        alt="Alexandra image"
+        src={loreImage}
+        alt="Alexandra tab background image"
+        layout="responsive"
+        objectFit="cover"
         priority={true}
       />
     </div>
