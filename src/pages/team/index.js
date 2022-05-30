@@ -7,7 +7,7 @@ import AlexandraTab from './tabs/alexandra';
 import TeamTab from './tabs/team';
 import WestCoastTab from './tabs/west-coast';
 import Layout from '../../components/layout';
-import { TABS, WEST_COAST_MEMBERS, CORE_MEMBERS } from './constants';
+import { TABS, CORE_MEMBERS } from './constants';
 
 const TabContent = {
   0: <AboutTab />,

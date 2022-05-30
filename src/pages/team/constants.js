@@ -6,7 +6,7 @@ import robImage from '../../../public/images/team-members/rob.png';
 export const TABS = [
   {
     id: 0,
-    label: "About"
+    label: "About Us"
   },
   {
     id: 1,
@@ -14,7 +14,7 @@ export const TABS = [
   },
   {
     id: 2,
-    label: "West Coast"
+    label: "WestCoast NFT"
   },
   {
     id: 3,
