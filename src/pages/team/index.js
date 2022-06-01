@@ -8,6 +8,7 @@ import TeamTab from './tabs/team';
 import WestCoastTab from './tabs/west-coast';
 import Layout from '../../components/layout';
 import { TABS, CORE_MEMBERS } from './constants';
+import { useWindowDimensions } from '../../utils/hooks';
 
 const TabContent = {
   0: <AboutTab />,
@@ -18,6 +19,8 @@ const TabContent = {
 
 const Team = () => {
   const [value, setValue] = useState(0);
+  const { windowWidth } = useWindowDimensions();
+  console.log({ windowWidth });
 
   const handleChange = (_, newValue) => {
     setValue(newValue);
