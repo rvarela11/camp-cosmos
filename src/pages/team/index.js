@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import AboutTab from './tabs/about';
-import AlexandraTab from './tabs/alexandra';
-import TeamTab from './tabs/team';
-import WestCoastTab from './tabs/west-coast';
+import CarouselTabs from './tabs/carousel';
+import MUITabs from './tabs/mui';
+import AboutTab from './tab-content/about';
+import AlexandraTab from './tab-content/alexandra';
+import TeamTab from './tab-content/team';
+import WestCoastTab from './tab-content/west-coast';
 import Layout from '../../components/layout';
 import { TABS, CORE_MEMBERS } from './constants';
 import { useWindowDimensions } from '../../utils/hooks';
@@ -20,12 +21,8 @@ const TabContent = {
 const Team = () => {
   const [value, setValue] = useState(0);
   const { windowWidth } = useWindowDimensions();
-  console.log({ windowWidth });
-
-  const handleChange = (_, newValue) => {
-    setValue(newValue);
-  };
-
+  const Tabs = (windowWidth < 700) ? CarouselTabs : MUITabs;
+  
   return (
     <Layout>
       <Box className={value === 3 ? "team page-layout" : ""} sx={{ width: '100%' }}>
@@ -37,13 +34,7 @@ const Team = () => {
           bottom: 0,
           left: 0,
         }}>
-          <Tabs
-            aria-label="Team page tabs"
-            className="team--tabs"
-            onChange={handleChange}
-            TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
-            value={value}
-          >
+          <Tabs setValue={setValue} value={value}>
             {
               TABS.map(({ id, label }) => (
                 <Tab

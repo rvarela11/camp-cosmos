@@ -1,9 +1,22 @@
-@import './tabs/tabs.scss';
-@import './tabs/alexandra/alexandra-tab.scss';
-@import './tabs/team/team-tab.scss';
+@import './tab-content/tab-content.scss';
+@import './tab-content/alexandra/alexandra-tab.scss';
+@import './tab-content/team/team-tab.scss';
 
 .team.page-layout {
   padding-bottom: 10rem;
+}
+
+.team--tabs__tab {
+  width: 100%;
+  max-width: none;
+  text-transform: none;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
 }
 
 .team--tabs {
@@ -16,16 +29,8 @@
   }
 
   .team--tabs__tab {
-    max-width: none;
+    @extend .team--tabs__tab;
     height: 100px;
-    text-transform: none;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: -1px;
-    color: #FFFFFF;
     flex: 1;
     border-right: 1px solid #C4C4C4;
     background: rgba(0, 0, 0, 0.3);
@@ -41,6 +46,14 @@
       backdrop-filter: blur(150px);
     }
   }
+}
+
+.team--tabs-carousel {
+  border-top: 0.5px solid #C4C4C4;
+
+  .team--tabs__tab {
+    @extend .team--tabs__tab;
+  }  
 }
 
 @media screen and (max-width: 700px) {
