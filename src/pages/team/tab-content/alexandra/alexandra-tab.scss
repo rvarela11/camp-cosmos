@@ -1,0 +1,44 @@
+.alexandra-tab--description__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.alexandra-tab--description__action {
+  width: 231px;
+  height: 50px;
+  padding: 13px 33px;
+  border-radius: 1rem 0 1rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.alexandra-tab--description__action-social {
+  width: 70px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFFFFF;
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.alexandra-tab--description__action--color {
+  background-image: linear-gradient(95.34deg, #5A6FE8 7.87%, #9B51E0 100.96%);
+}
+
+@media screen and (max-width: 700px) {
+  .alexandra-tab--description__actions {
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+}
