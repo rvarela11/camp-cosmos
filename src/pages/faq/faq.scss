@@ -12,11 +12,37 @@
   letter-spacing: -2px;
 }
 
-.faq--tabs {
-  border: 1px solid red;
+.faq--tabs-content {
+  // border: 1px solid red;
   display: flex;
+  padding-left: 2rem;
 
-  .faq--tabs-tabs {
-    border: 1px solid blue;
+  .faq--tabs__title {
+    margin: 0 0 1rem 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  .MuiTabs-indicator {
+    display: none;
+  }
+
+  .faq--tabs__tab {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+
+    &.Mui-selected {
+      color: #FFFFFF;
+    }
   }
 }

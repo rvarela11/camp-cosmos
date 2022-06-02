@@ -8,7 +8,6 @@ const MUITabs = ({
   children,
   orientation,
   setValue,
-  TabIndicatorProps,
   value,
 }) => (
   <Tabs
@@ -16,7 +15,6 @@ const MUITabs = ({
     className={className}
     onChange={(_, newValue) => setValue(newValue)}
     orientation={orientation}
-    TabIndicatorProps={TabIndicatorProps}
     value={value}
   >
     {children}
@@ -28,7 +26,6 @@ MUITabs.propTypes = {
   className: PropTypes.string,
   orientation: PropTypes.string,
   setValue: PropTypes.func.isRequired,
-  TabIndicatorProps: PropTypes.shape({}),
   value: PropTypes.number.isRequired,
 };
 
@@ -36,7 +33,6 @@ MUITabs.defaultProps = {
   ariaLabel: '',
   className: '',
   orientation: 'horizontal',
-  TabIndicatorProps: {},
 };
 
 export default MUITabs;

@@ -17,27 +17,30 @@ const TabContent = {
 const FAQ = () => {
   const [value, setValue] = useState(0);
   const { windowWidth } = useWindowDimensions();
-
+  console.log({ value });
   return (
     <Layout>
       <div className="faq page-layout">
         <h2 className="faq--title"><span>You’ve Got Questions?</span>Pandora Has Answers:</h2>
-        <Box className="faq--tabs" sx={{ width: '100%' }}>
-          {
-            <Tabs className="faq--tabs__tabs" orientation="vertical" setValue={setValue} value={value}>
-              {
-                TAB_LABELS.map(({ id, label }) => (
-                  <Tab
-                    key={id}
-                    className="faq--tabs__tab"
-                    disableRipple
-                    label={label}
-                  />
-                ))
-              }
-            </Tabs>
-          }
-          <div className="faq--tabs-content">{TabContent[value]}</div>
+        <Box className="faq--tabs-content">
+          <Box>
+            <h5 className="faq--tabs__title">FAQs</h5>
+            {
+              <Tabs orientation="vertical" setValue={setValue} value={value}>
+                {
+                  TAB_LABELS.map(({ id, label }) => (
+                    <Tab
+                      key={id}
+                      className="faq--tabs__tab"
+                      disableRipple
+                      label={label}
+                    />
+                  ))
+                }
+              </Tabs>
+            }
+          </Box>
+          <div>{TabContent[value]}</div>
         </Box>
       </div>
     </Layout>

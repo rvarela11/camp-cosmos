@@ -7,7 +7,7 @@ const MUITabs = ({ children, setValue, value }) => (
     aria-label="Team page tabs"
     className="team--tabs"
     onChange={(_, newValue) => setValue(newValue)}
-    TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
+    // TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
     value={value}
   >
     {children}
