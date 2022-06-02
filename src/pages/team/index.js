@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import Tab from '@mui/material/Tab';
 import CarouselTabs from './tabs/carousel';
 import MUITabs from './tabs/mui';
 import AboutTab from './tab-content/about';

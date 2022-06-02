@@ -35,7 +35,7 @@ MUITabs.propTypes = {
 MUITabs.defaultProps = {
   ariaLabel: '',
   className: '',
-  orientation: 'vertical',
+  orientation: 'horizontal',
   TabIndicatorProps: {},
 };
 

@@ -2,30 +2,21 @@
   & * {
     color: #FFFFFF;
   }
+}
 
-  .faq--accordion {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    .MuiAccordionSummary-expandIconWrapper {
-      margin-right: 1rem;
-    }
-  }
+.faq--title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 60px;
+  letter-spacing: -2px;
+}
 
-  .faq--title {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    margin-bottom: 60px;
-    letter-spacing: -2px;
-  }
+.faq--tabs {
+  border: 1px solid red;
+  display: flex;
 
-  h4 {
-    margin: 0;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 25px;
+  .faq--tabs-tabs {
+    border: 1px solid blue;
   }
 }
