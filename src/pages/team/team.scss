@@ -58,10 +58,11 @@
 
 .team--tabs-carousel {
   border-top: 0.5px solid #C4C4C4;
-  height: 100px;
+  height: 90px;
 
   .team--tabs__tab {
     @extend .team--tabs__tab;
+    height: 90px;
   }
 
   & .MuiIconButton-root {
