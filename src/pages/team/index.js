@@ -8,7 +8,7 @@ import AlexandraTab from './tab-content/alexandra';
 import TeamTab from './tab-content/team';
 import WestCoastTab from './tab-content/west-coast';
 import Layout from '../../components/layout';
-import { TABS, CORE_MEMBERS } from './constants';
+import { TAB_LABELS, CORE_MEMBERS } from './constants';
 import { useWindowDimensions } from '../../utils/hooks';
 
 const TabContent = {
@@ -38,7 +38,7 @@ const Team = () => {
             windowWidth && (
               <Tabs setValue={setValue} value={value}>
                 {
-                  TABS.map(({ id, label }) => (
+                  TAB_LABELS.map(({ id, label }) => (
                     <Tab
                       key={id}
                       className="team--tabs__tab"
