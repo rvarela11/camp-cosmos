@@ -34,18 +34,22 @@ const Team = () => {
           bottom: 0,
           left: 0,
         }}>
-          <Tabs setValue={setValue} value={value}>
-            {
-              TABS.map(({ id, label }) => (
-                <Tab
-                  key={id}
-                  className="team--tabs__tab"
-                  disableRipple
-                  label={label}
-                />
-              ))
-            }
-          </Tabs>
+          {
+            windowWidth && (
+              <Tabs setValue={setValue} value={value}>
+                {
+                  TABS.map(({ id, label }) => (
+                    <Tab
+                      key={id}
+                      className="team--tabs__tab"
+                      disableRipple
+                      label={label}
+                    />
+                  ))
+                }
+              </Tabs>
+            )
+          }
         </Box>
       </Box>
     </Layout>
