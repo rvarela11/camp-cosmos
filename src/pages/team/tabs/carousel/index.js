@@ -9,6 +9,7 @@ const CarouselTabs = ({ children, setValue }) => (
     className="team--tabs-carousel"
     indicators={false}
     navButtonsAlwaysVisible
+    navButtonsProps={{ disableRipple: true }}
     next={(newValue) => setValue(newValue)}
     prev={(newValue) => setValue(newValue)}
   >

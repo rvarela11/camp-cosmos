@@ -8,15 +8,26 @@
 
 .team--tabs__tab {
   width: 100%;
+  height: 100px;
   max-width: none;
   text-transform: none;
   font-family: 'Work Sans', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 22px;
-  letter-spacing: -1px;
   color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(18px);
+  opacity: 1;
+
+  & > span {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .team--tabs {
@@ -30,11 +41,8 @@
 
   .team--tabs__tab {
     @extend .team--tabs__tab;
-    height: 100px;
     flex: 1;
     border-right: 1px solid #C4C4C4;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
 
     &:last-of-type {
       border-right: none;
@@ -50,10 +58,21 @@
 
 .team--tabs-carousel {
   border-top: 0.5px solid #C4C4C4;
+  height: 100px;
 
   .team--tabs__tab {
     @extend .team--tabs__tab;
-  }  
+  }
+
+  & .MuiIconButton-root {
+    border-radius: 12px;
+    background-color: rgb(44, 48, 50);
+
+    &:hover {
+      background-color: rgb(55, 60, 62) !important;
+      opacity: 1 !important;
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {

@@ -1,3 +1,5 @@
+import React from 'react';
+
 import frankieImage from '../../../public/images/team-members/frankie.png';
 import galenImage from '../../../public/images/team-members/galen.png';
 import johnImage from '../../../public/images/team-members/john.png';
@@ -6,19 +8,19 @@ import robImage from '../../../public/images/team-members/rob.png';
 export const TABS = [
   {
     id: 0,
-    label: "About Us"
+    label: <><span>Learn More</span>About Us</>
   },
   {
     id: 1,
-    label: "Alexandra 'Zutto'"
+    label: <><span>Visionary Artist</span>Alexandra 'Zutto'</>
   },
   {
     id: 2,
-    label: "WestCoast NFT"
+    label: <><span>Our Partner</span>WestCoastNFT</>
   },
   {
     id: 3,
-    label: "Core Team"
+    label: <><span>Camp Cosmos</span>Core Team</>
   },
 ];
 
