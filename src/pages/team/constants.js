@@ -16,7 +16,7 @@ export const TABS = [
   },
   {
     id: 2,
-    label: <><span>Our Partner</span>WestCoastNFT</>
+    label: <><span>Our Partner</span>WestCoast NFT</>
   },
   {
     id: 3,
