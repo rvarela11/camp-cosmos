@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import Layout from '../../components/layout';
@@ -6,6 +7,7 @@ import Tabs from '../../components/tabs/mui';
 import TabContent from './tab-content';
 import { FAQ_QUESTIONS, TAB_LABELS } from './constants';
 import { useWindowDimensions } from '../../utils/hooks';
+import backgroundImage from '../../../public/images/pages-background/faq.png';
 
 const FAQ = () => {
   const [questions, setQuestions] = useState([]);
@@ -44,6 +46,13 @@ const FAQ = () => {
             <TabContent questions={questions} />
           </div>
         </Box>
+      </div>
+      <div className="faq--background">
+        <Image
+          src={backgroundImage}
+          alt="FAQ page background image"
+          priority={true}
+        />
       </div>
     </Layout>
   );

@@ -1,4 +1,7 @@
 .faq {
+  position: absolute;
+  z-index: 1;
+
   & * {
     color: #FFFFFF;
   }
@@ -71,5 +74,23 @@
         margin-bottom: 0;
       }
     }
+  }
+}
+
+.faq--background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+
+  & > span {
+    height: 100% !important;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .faq--background {
+    width: auto;
+    height: auto;
   }
 }
