@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FAQTab = ({ questions }) => (
+const FAQTabContent = ({ questions }) => (
   <>
     {
       questions.map(({ question, answer }, index) => (
@@ -14,7 +14,7 @@ const FAQTab = ({ questions }) => (
   </>
 );
 
-FAQTab.propTypes = {
+FAQTabContent.propTypes = {
   questions: PropTypes.arrayOf(
     PropTypes.shape({
     question: PropTypes.node,
@@ -23,4 +23,4 @@ FAQTab.propTypes = {
   ).isRequired,
 };
 
-export default FAQTab;
+export default FAQTabContent;
