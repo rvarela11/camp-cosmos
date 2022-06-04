@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-// TODO: Replace loreImage with new WestCoast background image
-import loreImage from '../../../../../public/images/camp-cosmos-lore.png';
+import backgroundImage from '../../../../../public/images/pages-background/west-coast.png';
 
 const WestCoastTab = () => (
   <div className="team-tab">
@@ -13,12 +12,10 @@ const WestCoastTab = () => (
         <p>Pushing the boundaries of web3 is at the forefront of our mission and we hope to bring you along on our journey!</p>
       </div>
     </div>
-    <div className="team-tab--background">
+    <div className="team-tab--background team-tab--background--60">
         <Image
-          src={loreImage}
-          alt="About page background image"
-          layout="responsive"
-          objectFit="cover"
+          src={backgroundImage}
+          alt="WestCoast page background image"
           priority={true}
         />
       </div>
