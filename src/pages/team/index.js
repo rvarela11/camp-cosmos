@@ -21,7 +21,7 @@ const TabContent = {
 const Team = () => {
   const [value, setValue] = useState(0);
   const { windowWidth } = useWindowDimensions();
-  const Tabs = (windowWidth < 700) ? TabsMobile : TabsDesktop;
+  const Tabs = (windowWidth <= 700) ? TabsMobile : TabsDesktop;
   
   return (
     <Layout>

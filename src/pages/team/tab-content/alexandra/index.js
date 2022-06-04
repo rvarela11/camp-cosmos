@@ -1,9 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-
 import { Twitter } from '../../../../components/header/icons/twitter';
 import { Instagram } from '../../../../components/header/icons/instagram';
-
 import backgroundImage from '../../../../../public/images/pages-background/zutto.png';
 
 const AlexandraTab = () => (
@@ -23,7 +21,7 @@ const AlexandraTab = () => (
     <div className="team-tab--background team-tab--background--50">
       <Image
         src={backgroundImage}
-        alt="Alexandra tab background image"
+        alt="Alexandra page background image"
         priority={true}
       />
     </div>
