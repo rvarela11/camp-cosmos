@@ -5,7 +5,7 @@ import galenImage from '../../../public/images/team-members/galen.png';
 import johnImage from '../../../public/images/team-members/john.png';
 import robImage from '../../../public/images/team-members/rob.png';
 
-export const TABS = [
+export const TAB_LABELS = [
   {
     id: 0,
     label: <><span>Learn More</span>About Us</>

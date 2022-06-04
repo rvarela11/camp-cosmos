@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import CarouselTabs from './tabs/carousel';
-import MUITabs from './tabs/mui';
+import Tab from '@mui/material/Tab';
+import TabsMobile from './tabs/mobile';
+import TabsDesktop from './tabs/desktop';
 import AboutTab from './tab-content/about';
 import AlexandraTab from './tab-content/alexandra';
 import TeamTab from './tab-content/team';
 import WestCoastTab from './tab-content/west-coast';
 import Layout from '../../components/layout';
-import { TABS, CORE_MEMBERS } from './constants';
+import { TAB_LABELS, CORE_MEMBERS } from './constants';
 import { useWindowDimensions } from '../../utils/hooks';
 
 const TabContent = {
@@ -21,7 +21,7 @@ const TabContent = {
 const Team = () => {
   const [value, setValue] = useState(0);
   const { windowWidth } = useWindowDimensions();
-  const Tabs = (windowWidth < 700) ? CarouselTabs : MUITabs;
+  const Tabs = (windowWidth <= 700) ? TabsMobile : TabsDesktop;
   
   return (
     <Layout>
@@ -38,7 +38,7 @@ const Team = () => {
             windowWidth && (
               <Tabs setValue={setValue} value={value}>
                 {
-                  TABS.map(({ id, label }) => (
+                  TAB_LABELS.map(({ id, label }) => (
                     <Tab
                       key={id}
                       className="team--tabs__tab"

@@ -14,8 +14,6 @@ const AboutTab = () => (
         <Image
           src={loreImage}
           alt="About page background image"
-          layout="responsive"
-          objectFit="cover"
           priority={true}
         />
       </div>

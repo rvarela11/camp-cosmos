@@ -1,11 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-
 import { Twitter } from '../../../../components/header/icons/twitter';
 import { Instagram } from '../../../../components/header/icons/instagram';
-// TODO: Replace loreImage with new Alexandra background image
-// import alexandraImage from '../../../../../public/images/camp-cosmos-alexandra.png';
-import loreImage from '../../../../../public/images/camp-cosmos-lore.png';
+import backgroundImage from '../../../../../public/images/pages-background/zutto.png';
 
 const AlexandraTab = () => (
   <div className="team-tab">
@@ -21,12 +18,10 @@ const AlexandraTab = () => (
         <button aria-label="Instagram icon button" className="alexandra-tab--description__action alexandra-tab--description__action-social" type="button"><Instagram /></button>
       </div>
     </div>
-    <div className="team-tab--background">
+    <div className="team-tab--background team-tab--background--50">
       <Image
-        src={loreImage}
-        alt="Alexandra tab background image"
-        layout="responsive"
-        objectFit="cover"
+        src={backgroundImage}
+        alt="Alexandra page background image"
         priority={true}
       />
     </div>

@@ -1,31 +1,44 @@
+@import './faq-content/faq-content.scss';
+
 .faq {
+  position: absolute;
+  z-index: 1;
+
   & * {
     color: #FFFFFF;
   }
+}
 
-  .faq--accordion {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    .MuiAccordionSummary-expandIconWrapper {
-      margin-right: 1rem;
-    }
+.faq--title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 60px;
+  letter-spacing: -2px;
+}
+
+.faq--background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+
+  & > span {
+    height: 100% !important;
   }
+}
 
-  .faq--title {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    margin-bottom: 60px;
-    letter-spacing: -2px;
+@media screen and (max-width: 912px) {
+  .faq--background {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    width: 60%;
   }
+}
 
-  h4 {
-    margin: 0;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 25px;
+@media screen and (max-width: 700px) {
+  .faq.page-layout {
+    padding-top: 6rem;
   }
 }
