@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
-import CarouselTabs from './tabs/carousel';
-import MUITabs from './tabs/mui';
+import TabsMobile from './tabs/mobile';
+import TabsDesktop from './tabs/desktop';
 import AboutTab from './tab-content/about';
 import AlexandraTab from './tab-content/alexandra';
 import TeamTab from './tab-content/team';
@@ -21,7 +21,7 @@ const TabContent = {
 const Team = () => {
   const [value, setValue] = useState(0);
   const { windowWidth } = useWindowDimensions();
-  const Tabs = (windowWidth < 700) ? CarouselTabs : MUITabs;
+  const Tabs = (windowWidth < 700) ? TabsMobile : TabsDesktop;
   
   return (
     <Layout>

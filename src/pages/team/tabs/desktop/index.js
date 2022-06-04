@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
+import Tabs from '../../../../components/tabs/mui';
 
 const MUITabs = ({ children, setValue, value }) => (
   <Tabs
-    aria-label="Team page tabs"
+    ariaLabel="Team page tabs"
     className="team--tabs"
-    onChange={(_, newValue) => setValue(newValue)}
-    // TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
+    setValue={setValue}
     value={value}
   >
     {children}
