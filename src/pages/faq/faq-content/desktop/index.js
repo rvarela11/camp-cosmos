@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
-import Tabs from '../../../../components/tabs/mui';
+import Tabs from './tabs';
 import TabContent from './tab-content';
-import { FAQ_QUESTIONS, TAB_LABELS } from '../constants';
+import { FAQ_QUESTIONS } from '../constants';
 
 const FAQContentDesktop = () => {
   const [questions, setQuestions] = useState([]);
@@ -18,20 +17,7 @@ const FAQContentDesktop = () => {
     <Box className="faq--content">
       <Box>
         <h5 className="faq--content__tabs-title">FAQs</h5>
-        {
-          <Tabs orientation="vertical" setValue={setValue} value={value}>
-            {
-              TAB_LABELS.map(({ id, label }) => (
-                <Tab
-                  key={id}
-                  className="faq--content__tabs-tab"
-                  disableRipple
-                  label={label}
-                />
-              ))
-            }
-          </Tabs>
-        }
+        <Tabs setValue={setValue} value={value} />
       </Box>
       <div className="faq--content__questions">
         <TabContent questions={questions} />
