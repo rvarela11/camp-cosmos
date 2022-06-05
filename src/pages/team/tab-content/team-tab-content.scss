@@ -1,16 +1,11 @@
-.team-tab--description {
+.team--tabs-content {
   position: absolute;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.team-tab--description__title {
-  display: flex;
-  flex-direction: column;
-}
-
-.team-tab--description__content {
+.team--tabs-content-summary {
   width: 35%;
 }
 
@@ -27,6 +22,10 @@
 }
 
 @media screen and (max-width: 912px) {
+  .team--tabs-content-summary {
+    width: 100%;
+  }
+
   .team-tab--background {
     width: auto;
     height: auto;
@@ -39,14 +38,10 @@
       width: 60%;
     }
   }
-
-  .team-tab--description__content {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 700px) {
-  .team-tab--description.page-layout {
+  .team--tabs-content.page-layout {
     padding: 13rem 2rem 8rem 2rem;
   }
 }

@@ -13,11 +13,7 @@ const TeamTabContent = {
   3: <TeamTab members={CORE_MEMBERS} title="Core Team" />,
 };
 
-const TabContent = ({ value }) => (
-  <div className="team--tabs-content">
-    {TeamTabContent[value]}
-  </div>
-);
+const TabContent = ({ value }) => TeamTabContent[value];
 
 TabContent.propTypes = {
   value: PropTypes.number.isRequired,
