@@ -4,7 +4,7 @@ import Tabs from '../../../../components/tabs/mui';
 
 const MUITabs = ({ children, setValue, value }) => (
   <Tabs
-    ariaLabel="Team page tabs"
+    ariaLabel="Fireside page tabs"
     setValue={setValue}
     value={value}
   >

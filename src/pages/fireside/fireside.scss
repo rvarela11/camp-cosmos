@@ -1,17 +1,15 @@
-@import './tab-content/tab-content.scss';
-@import './tab-content/alexandra/alexandra-tab.scss';
-@import './tab-content/team/team-tab.scss';
+// @import './fireside-content/fireside-content.scss';
 
-.team.page-layout {
+.fireside.page-layout {
   padding-bottom: 10rem;
 }
 
-.team--tabs-carousel {
+.fireside--tabs-carousel {
   border-top: 0.5px solid #C4C4C4;
   height: 90px;
 
-  .team--tabs__tab {
-    @extend .team--tabs__tab;
+  .fireside--tabs__tab {
+    @extend .fireside--tabs__tab;
     height: 90px;
   }
 
@@ -27,7 +25,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .team.page-layout {
+  .fireside.page-layout {
     padding: 6rem 2rem 8rem;
   }
 }

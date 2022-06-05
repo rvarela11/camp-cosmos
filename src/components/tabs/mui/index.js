@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import Tabs from '@mui/material/Tabs';
 
 const MUITabs = ({
@@ -12,7 +13,7 @@ const MUITabs = ({
 }) => (
   <Tabs
     aria-label={ariaLabel}
-    className={className}
+    className={classNames("mui-tabs", className)}
     onChange={(_, newValue) => setValue(newValue)}
     orientation={orientation}
     value={value}

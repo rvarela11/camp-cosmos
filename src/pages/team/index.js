@@ -41,7 +41,7 @@ const Team = () => {
                   TAB_LABELS.map(({ id, label }) => (
                     <Tab
                       key={id}
-                      className="team--tabs__tab"
+                      className="mui-tabs__tab"
                       disableRipple
                       label={label}
                     />
