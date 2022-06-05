@@ -1,90 +1,13 @@
-@import './tab-content/tab-content.scss';
-@import './tab-content/alexandra/alexandra-tab.scss';
-@import './tab-content/team/team-tab.scss';
+@import './tab-content/team-tab-content.scss';
+@import './tab-content/alexandra/team-tab-content-alexandra.scss';
+@import './tab-content/team/team-tab-content-team.scss';
 
 .team.page-layout {
   padding-bottom: 10rem;
 }
 
-.team--tabs__tab {
-  width: 100%;
-  height: 100px;
-  max-width: none;
-  text-transform: none;
-  font-family: 'Work Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 22px;
-  color: #FFFFFF;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(18px);
-  opacity: 1;
-
-  & > span {
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-  }
-}
-
-.team--tabs {
-  border-top: 1px solid #C4C4C4;
-
-  & .MuiTabs-indicator {
-    height: 3px;
-    top: 0;
-    background-color: #FFFFFF;
-  }
-
-  .team--tabs__tab {
-    @extend .team--tabs__tab;
-    flex: 1;
-    border-right: 1px solid #C4C4C4;
-
-    &:last-of-type {
-      border-right: none;
-    }
-
-    &.Mui-selected {
-      color: #FFFFFF;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(150px);
-    }
-  }
-}
-
-.team--tabs-carousel {
-  border-top: 0.5px solid #C4C4C4;
-  height: 90px;
-
-  .team--tabs__tab {
-    @extend .team--tabs__tab;
-    height: 90px;
-  }
-
-  & .MuiIconButton-root {
-    border-radius: 12px;
-    background-color: rgb(44, 48, 50);
-
-    &:hover {
-      background-color: rgb(55, 60, 62) !important;
-      opacity: 1 !important;
-    }
-  }
-}
-
 @media screen and (max-width: 700px) {
   .team.page-layout {
     padding: 6rem 2rem 8rem;
-  }
-
-  .team--tabs {
-    .team--tabs__tab {
-      height: auto;
-      font-size: 1rem;
-    }
   }
 }

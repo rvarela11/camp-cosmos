@@ -4,7 +4,7 @@ import Tabs from './tabs';
 import TabContent from './tab-content';
 import { FAQ_QUESTIONS } from '../constants';
 
-const FAQContentDesktop = () => {
+const FAQDesktop = () => {
   const [questions, setQuestions] = useState([]);
   const [value, setValue] = useState(0);
 
@@ -15,15 +15,10 @@ const FAQContentDesktop = () => {
 
   return (
     <Box className="faq--content">
-      <Box>
-        <h5 className="faq--content__tabs-title">FAQs</h5>
-        <Tabs setValue={setValue} value={value} />
-      </Box>
-      <div className="faq--content__questions">
-        <TabContent questions={questions} />
-      </div>
+      <Tabs setValue={setValue} value={value} />
+      <TabContent questions={questions} />
     </Box>
   );
 };
 
-export default FAQContentDesktop;
+export default FAQDesktop;

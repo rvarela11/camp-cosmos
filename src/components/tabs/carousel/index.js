@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import Carousel from 'react-material-ui-carousel';
 
-const CarouselTabs = ({ children, setValue }) => (
+const CarouselTabs = ({
+  children,
+  className,
+  setValue,
+}) => (
   <Carousel
     animation="slide"
     autoPlay={false}
-    className="team--tabs-carousel"
+    className={classNames("mui-tabs-carousel", className)}
     indicators={false}
     navButtonsAlwaysVisible
     navButtonsProps={{ disableRipple: true }}
@@ -18,7 +23,12 @@ const CarouselTabs = ({ children, setValue }) => (
 );
 
 CarouselTabs.propTypes = {
+  className: PropTypes.string,
   setValue: PropTypes.func.isRequired,
+};
+
+CarouselTabs.defaultProps = {
+  className: '',
 };
 
 export default CarouselTabs;

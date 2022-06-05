@@ -1,4 +1,4 @@
-.faq--content__tabs-title {
+.faq--content-tabs-title {
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -6,17 +6,16 @@
   color: #FFFFFF;
 }
 
-.faq--content__questions {
+.faq--content-tab {
   padding: 0 1rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.faq--content__questions-question {
+.faq--content-tab-summary {
   h6 {
     margin: 0;
-    font-family: 'Poppins';
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
@@ -32,13 +31,18 @@
   }
 }
 
+// faq-content/desktop
 .faq--content {
   display: flex;
   gap: 6rem;
   padding: 0 2rem;
 
-  .faq--content__tabs-title {
-    @extend .faq--content__tabs-title;
+  .faq--content-tabs {
+    border: none;
+  }
+
+  .faq--content-tabs-title {
+    @extend .faq--content-tabs-title;
     margin: 0 0 1rem 0;
   }
 
@@ -46,7 +50,7 @@
     display: none;
   }
 
-  .faq--content__tabs-tab {
+  .faq--content-tabs-tab {
     display: flex;
     align-items: flex-start;
     font-family: 'Work Sans', sans-serif;
@@ -62,34 +66,35 @@
     }
   }
 
-  .faq--content__questions {
-    @extend .faq--content__questions;
+  .faq--content-tab {
+    @extend .faq--content-tab;
     width: 45%;
   }
 }
 
+// faq-content/mobile
 .faq--content-mobile {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
-  .faq--content-mobile-title {
-    @extend .faq--content__tabs-title;
+  .faq--content-mobile-title{
+    @extend .faq--content-tabs-title;
     margin: 0;
   }
-  .faq--content-mobile__questions {
-    @extend .faq--content__questions;
+  .faq--content-tab-mobile {
+    @extend .faq--content-tab;
     padding: 0;
   }
-  .faq--content-mobile__questions-label {
+  .faq--content-tab-mobile-label {
     font-family: 'Work Sans';
     font-weight: 500;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 1.5px;
   }
-  .faq--content-mobile__questions-question {
-    @extend .faq--content__questions-question;
+  .faq--content-tab-mobile-summary {
+    @extend .faq--content-tab-summary;
     padding-left: 1rem;
   }
 }

@@ -20,12 +20,12 @@ const TeamTab = ({ members, title }) => {
       <div className="team-tab-grid">
         {
           members.map((props, index) => (
-            <div key={index} className="team-tab-grid__card">
+            <div key={index} className="team-tab-grid-card">
               <TeamCardFront {...props} />
               <TeamCardBack {...props} />
               <Accordion
                 key={index}
-                className="team-tab-grid__card-about"
+                className="team-tab-grid-card-about"
                 expanded={expanded === index}
                 onChange={handleChange(index)}
                 sx={{ '&:before': { display: 'none' } }}
