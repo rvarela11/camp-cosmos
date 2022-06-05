@@ -13,7 +13,7 @@ export const TAB_CONTENT = [
     header: <h2>The Future</h2>,
     content: [
       {
-        label: <h6>Entertainment Conten</h6>,
+        label: <h6>Entertainment Content</h6>,
         summary: <p>We will develop various projects that will engage our current audience, as well as attract a mainstream audience to our brand and introduce new collectors to web3. Some of our targets are a children's book series, graphic novels, and an animated web/tv series.</p>,
       },
       {
