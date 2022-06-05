@@ -4,7 +4,7 @@ import Tabs from './tabs';
 import TabContent from './tab-content';
 import { FAQ_QUESTIONS } from '../constants';
 
-const FAQContentDesktop = () => {
+const FAQDesktop = () => {
   const [questions, setQuestions] = useState([]);
   const [value, setValue] = useState(0);
 
@@ -21,4 +21,4 @@ const FAQContentDesktop = () => {
   );
 };
 
-export default FAQContentDesktop;
+export default FAQDesktop;

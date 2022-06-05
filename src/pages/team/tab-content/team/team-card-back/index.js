@@ -5,25 +5,25 @@ import { Twitter } from '../../../../../components/header/icons/twitter';
 import { MEMBER_IMAGES } from '../../../constants';
 
 const TeamCardBack = ({ description, member, name, position, social }) => (
-  <div className="team-tab-grid__card-back">
-    <div className="team-tab-grid__card-role">
-      <div className="team-tab-grid__card-role-image">
+  <div className="team-tab-grid-card-back">
+    <div className="team-tab-grid-card-role">
+      <div className="team-tab-grid-card-role-image">
         <Image
-          className="team-tab-grid__card-image"
+          className="team-tab-grid-card-image"
           src={MEMBER_IMAGES[member]}
           alt={`${member} image`}
           priority={true}
         />
       </div>
-      <div className="team-tab-grid__card-role-description">
+      <div className="team-tab-grid-card-role-description">
         <p>{name}</p>
         <p>{position}</p>
       </div>
     </div>
-    <div className="team-tab-grid__card-description">
+    <div className="team-tab-grid-card-description">
       <p>{description}</p>
     </div>
-    <div className="team-tab-grid__card-social">
+    <div className="team-tab-grid-card-social">
       <p>{social}</p>
       <Twitter />
     </div>

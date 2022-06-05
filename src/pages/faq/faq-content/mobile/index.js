@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { FAQ_QUESTIONS, TAB_LABELS } from '../constants';
 
-const FAQContentMobile = () => (
+const FAQMobile = () => (
   <div className="faq--content-mobile">
     <h5 className="faq--content-mobile-title">FAQs</h5>
     {
@@ -24,4 +24,4 @@ const FAQContentMobile = () => (
   </div>
 )
 
-export default FAQContentMobile;
+export default FAQMobile;

@@ -1,30 +1,30 @@
-.team-tab-grid__card-back {
+.team-tab-grid-card-back {
   display: none;
   background: linear-gradient(48.78deg, #2D3C67 42.82%, rgba(30, 39, 49, 0) 182.04%);
   border-radius: 25px;
   height: 100%;
   padding: 1rem;
 
-  .team-tab-grid__card-role {
+  .team-tab-grid-card-role {
     padding-bottom: 1.5rem;
 
-    .team-tab-grid__card-role-image {
+    .team-tab-grid-card-role-image {
       width: 60px;
       height: 60px;
     }
 
-    .team-tab-grid__card-role-description {
+    .team-tab-grid-card-role-description {
       p {
         margin: 0;
       }
     }
   }
 
-  .team-tab-grid__card-description {
+  .team-tab-grid-card-description {
     height: 100%;
   }
 
-  .team-tab-grid__card-social {
+  .team-tab-grid-card-social {
     p {
       margin: 0;
     }
