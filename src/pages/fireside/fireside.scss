@@ -4,26 +4,6 @@
   padding-bottom: 10rem;
 }
 
-.fireside--tabs-carousel {
-  border-top: 0.5px solid #C4C4C4;
-  height: 90px;
-
-  .fireside--tabs__tab {
-    @extend .fireside--tabs__tab;
-    height: 90px;
-  }
-
-  & .MuiIconButton-root {
-    border-radius: 12px;
-    background-color: rgb(44, 48, 50);
-
-    &:hover {
-      background-color: rgb(55, 60, 62) !important;
-      opacity: 1 !important;
-    }
-  }
-}
-
 @media screen and (max-width: 700px) {
   .fireside.page-layout {
     padding: 6rem 2rem 8rem;

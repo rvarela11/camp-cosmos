@@ -1,18 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Carousel from 'react-material-ui-carousel';
+import Carousel from '../../../../components/tabs/carousel';
 
 const CarouselTabs = ({ children, setValue }) => (
-  <Carousel
-    animation="slide"
-    autoPlay={false}
-    className="team--tabs-carousel"
-    indicators={false}
-    navButtonsAlwaysVisible
-    navButtonsProps={{ disableRipple: true }}
-    next={(newValue) => setValue(newValue)}
-    prev={(newValue) => setValue(newValue)}
-  >
+  <Carousel setValue={setValue}>
     {children}
   </Carousel>
 );

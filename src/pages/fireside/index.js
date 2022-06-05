@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
-// import TabsMobile from './tabs/mobile';
+import TabsMobile from './tabs/mobile';
 import TabsDesktop from './tabs/desktop';
 import Layout from '../../components/layout';
 import { TAB_LABELS } from './constants';
@@ -10,8 +10,7 @@ import { useWindowDimensions } from '../../utils/hooks';
 const Fireside = () => {
   const [value, setValue] = useState(0);
   const { windowWidth } = useWindowDimensions();
-  // const Tabs = (windowWidth <= 700) ? TabsMobile : TabsDesktop;
-  const Tabs = TabsDesktop;
+  const Tabs = (windowWidth <= 700) ? TabsMobile : TabsDesktop;
 
   return (
     <Layout>
