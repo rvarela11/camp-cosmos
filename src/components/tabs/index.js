@@ -18,26 +18,24 @@ const Tabs = ({ setValue, value, TAB_LABELS }) => {
   const TabsComponent = (windowWidth <= 700) ? TabsMobile : TabsDesktop;
 
   return (
-    <>
-      <Box sx={sx}>
-        {
-          windowWidth && (
-            <TabsComponent setValue={setValue} value={value}>
-              {
-                TAB_LABELS.map(({ id, label }) => (
-                  <Tab
-                    key={id}
-                    className="mui-tabs__tab"
-                    disableRipple
-                    label={label}
-                  />
-                ))
-              }
-            </TabsComponent>
-          )
-        }
-      </Box>
-    </>
+    <Box sx={sx}>
+      {
+        windowWidth && (
+          <TabsComponent setValue={setValue} value={value}>
+            {
+              TAB_LABELS.map(({ id, label }) => (
+                <Tab
+                  key={id}
+                  className="mui-tabs__tab"
+                  disableRipple
+                  label={label}
+                />
+              ))
+            }
+          </TabsComponent>
+        )
+      }
+    </Box>
   );
 };
 

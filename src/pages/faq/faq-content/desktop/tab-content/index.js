@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const FAQTabContent = ({ questions }) => (
-  <>
+  <div className="faq--content__questions">
     {
       questions.map(({ question, answer }, index) => (
         <div className="faq--content__questions-question" key={index}>
@@ -11,7 +11,7 @@ const FAQTabContent = ({ questions }) => (
         </div>
       ))
     }
-  </>
+  </div>
 );
 
 FAQTabContent.propTypes = {

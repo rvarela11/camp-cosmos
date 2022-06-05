@@ -15,13 +15,8 @@ const FAQContentDesktop = () => {
 
   return (
     <Box className="faq--content">
-      <Box>
-        <h5 className="faq--content__tabs-title">FAQs</h5>
-        <Tabs setValue={setValue} value={value} />
-      </Box>
-      <div className="faq--content__questions">
-        <TabContent questions={questions} />
-      </div>
+      <Tabs setValue={setValue} value={value} />
+      <TabContent questions={questions} />
     </Box>
   );
 };

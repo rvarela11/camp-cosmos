@@ -37,6 +37,10 @@
   gap: 6rem;
   padding: 0 2rem;
 
+  .faq--content__tabs {
+    border: none;
+  }
+
   .faq--content__tabs-title {
     @extend .faq--content__tabs-title;
     margin: 0 0 1rem 0;
