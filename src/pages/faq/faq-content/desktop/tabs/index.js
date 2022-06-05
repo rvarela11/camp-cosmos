@@ -7,13 +7,13 @@ import { TAB_LABELS } from '../../constants';
 
 const FAQTabs = ({ setValue, value }) => (
   <Box>
-    <h5 className="faq--content__tabs-title">FAQs</h5>
-    <Tabs className="faq--content__tabs" orientation="vertical" setValue={setValue} value={value}>
+    <h5 className="faq--content-tabs-title">FAQs</h5>
+    <Tabs className="faq--content-tabs" orientation="vertical" setValue={setValue} value={value}>
       {
         TAB_LABELS.map(({ id, label }) => (
           <Tab
             key={id}
-            className="faq--content__tabs-tab"
+            className="faq--content-tabs-tab"
             disableRipple
             label={label}
           />
