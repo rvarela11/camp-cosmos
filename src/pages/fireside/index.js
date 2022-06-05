@@ -17,9 +17,7 @@ const Fireside = () => {
   return (
     <Layout>
       <Box className="fireside page-layout">
-        <div className="fireside--tabs-content">
-          <TabContent content={content} />
-        </div>
+        <TabContent content={content} />
         <Tabs
           setValue={setTabValue}
           value={tabValue}
