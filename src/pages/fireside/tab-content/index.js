@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import Image from 'next/image';
+import loreImage from '../../../../public/images/camp-cosmos-lore.png';
 
 const TabContent = ({ content: { header, content = [] } }) => (
-  <div className="fireside--tabs-content">
-    {header}
-    {
-      content.map(({ label, summary }, index) => (
-        <div key={index}>
-          {label}
-          {summary}
-        </div>
-      ))
-    }
-  </div>
+  <>
+    <div className="fireside--tabs-content page-layout">
+      {header}
+      <div className="fireside--tabs-content-summary">
+        {
+          content.map(({ label, summary }, index) => (
+            <Fragment key={index}>
+              {label}
+              {summary}
+            </Fragment>
+          ))
+        }
+      </div>
+    </div>
+    <div className="fireside-tab--background">
+      <Image
+        src={loreImage}
+        alt="Fireside page background image"
+        priority={true}
+      />
+    </div>
+  </>
 );
 
 TabContent.propTypes = {

@@ -1,9 +1,1 @@
-.fireside.page-layout {
-  padding-bottom: 10rem;
-}
-
-@media screen and (max-width: 700px) {
-  .fireside.page-layout {
-    padding: 6rem 2rem 8rem;
-  }
-}
+@import './tab-content/fireside-tab-content.scss';

@@ -1,7 +1,7 @@
 export const TAB_CONTENT = [
   {
     id: 0,
-    header: <h4>About Us</h4>,
+    header: <h2>About Us</h2>,
     content: [
       {
         summary: <p>Camp Cosmos is a collection of 10,000 Campers living on the blockchain as ERC-721 tokens. Holding a Camper will provide you with access to the world of Camp Cosmos, a Web3 entertainment brand focused on storytelling and art from the visionary mind of Zutto. Your journey through the Cosmos begins with IRL events, airdrops, physical merchandise, brand partnerships and more.</p>,
@@ -10,7 +10,7 @@ export const TAB_CONTENT = [
   },
   {
     id: 1,
-    header: <h4>The Future</h4>,
+    header: <h2>The Future</h2>,
     content: [
       {
         label: <h6>Entertainment Conten</h6>,
@@ -32,7 +32,7 @@ export const TAB_CONTENT = [
   },
   {
     id: 2,
-    header: <h4>Additional Explorations</h4>,
+    header: <h2>Additional Explorations</h2>,
     content: [
       {
         label: <h6>Web3 Activations</h6>,

@@ -10,7 +10,7 @@ const Team = () => {
 
   return (
     <Layout>
-      <Box className={tabValue === 3 ? "team page-layout" : ""} sx={{ width: '100%' }}>
+      <Box className={tabValue === 3 ? "team page-layout" : ""}>
         <TabContent value={tabValue} />
         <Tabs
           setValue={setTabValue}

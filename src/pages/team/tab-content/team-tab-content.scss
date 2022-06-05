@@ -1,0 +1,53 @@
+.team-tab--description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.team-tab--description__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-tab--description__content {
+  width: 35%;
+}
+
+.team-tab--background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+
+  & > span {
+    height: 100% !important;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .team-tab--background {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+
+    &--50 {
+      width: 50%;
+    }
+    &--60 {
+      width: 60%;
+    }
+  }
+
+  .team-tab--description__content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .team-tab--description.page-layout {
+    padding: 13rem 2rem 8rem 2rem;
+  }
+}
+  

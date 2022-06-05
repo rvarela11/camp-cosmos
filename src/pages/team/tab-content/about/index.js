@@ -3,7 +3,7 @@ import Image from 'next/image';
 import loreImage from '../../../../../public/images/camp-cosmos-lore.png';
 
 const AboutTab = () => (
-  <div className="team-tab">
+  <>
     <div className="team-tab--description page-layout">
      <h2 className="team-tab--description__title">Who We Are <span>& What We Do</span></h2>
       <div className="team-tab--description__content">
@@ -11,13 +11,13 @@ const AboutTab = () => (
       </div>
     </div>
     <div className="team-tab--background">
-        <Image
-          src={loreImage}
-          alt="About page background image"
-          priority={true}
-        />
-      </div>
-  </div>
+      <Image
+        src={loreImage}
+        alt="About page background image"
+        priority={true}
+      />
+    </div>
+  </>
 );
 
 export default AboutTab;
