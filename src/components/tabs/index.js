@@ -26,7 +26,7 @@ const Tabs = ({ setValue, value, TAB_LABELS }) => {
               TAB_LABELS.map(({ id, label }) => (
                 <Tab
                   key={id}
-                  className="mui-tabs__tab"
+                  className="mui-tabs-tab"
                   disableRipple
                   label={label}
                 />
