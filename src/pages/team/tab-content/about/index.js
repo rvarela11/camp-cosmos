@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
-import loreImage from '../../../../../public/images/camp-cosmos-lore.png';
+import PageBGImg from '../../../../components/page-bg-img';
+import backgroundImage from '../../../../../public/images/camp-cosmos-lore.png';
 
 const AboutTab = () => (
   <>
@@ -10,13 +10,10 @@ const AboutTab = () => (
         <p>The Camp Cosmos team is made up of artists, investors, and visionaries across various fields of skill and expertise. We believe the future of the internet is decentralized, and we are committed to pushing the boundaries of web3.</p>
       </div>
     </div>
-    <div className="team-tab--background">
-      <Image
-        src={loreImage}
-        alt="About page background image"
-        priority={true}
-      />
-    </div>
+    <PageBGImg
+      alt="About page background image"
+      src={backgroundImage}
+    />
   </>
 );
 

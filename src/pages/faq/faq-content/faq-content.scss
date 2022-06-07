@@ -82,18 +82,18 @@
     @extend .faq--content-tabs-title;
     margin: 0;
   }
-  .faq--content-tab-mobile {
+  .faq--content-mobile-tab {
     @extend .faq--content-tab;
     padding: 0;
   }
-  .faq--content-tab-mobile-label {
+  .faq--content-mobile-tab-label {
     font-family: 'Work Sans';
     font-weight: 500;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 1.5px;
   }
-  .faq--content-tab-mobile-summary {
+  .faq--content-mobile-tab-summary {
     @extend .faq--content-tab-summary;
     padding-left: 1rem;
   }

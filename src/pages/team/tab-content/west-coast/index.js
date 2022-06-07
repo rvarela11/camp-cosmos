@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import PageBGImg from '../../../../components/page-bg-img';
 import backgroundImage from '../../../../../public/images/pages-background/west-coast.png';
 
 const WestCoastTab = () => (
@@ -12,13 +12,11 @@ const WestCoastTab = () => (
         <p>Pushing the boundaries of web3 is at the forefront of our mission and we hope to bring you along on our journey!</p>
       </div>
     </div>
-    <div className="team-tab--background team-tab--background--60">
-        <Image
-          src={backgroundImage}
-          alt="WestCoast page background image"
-          priority={true}
-        />
-      </div>
+    <PageBGImg
+      alt="WestCoast page background image"
+      className="page-bg-img--60"
+      src={backgroundImage}
+    />
   </>
 );
 

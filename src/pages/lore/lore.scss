@@ -19,26 +19,9 @@
   }
 }
 
-.lore--background {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-
-  & > span {
-    height: 100% !important;
-    z-index: -1;
-  }
-}
-
 @media screen and (max-width: 912px) {
   .lore--content-summary {
     width: 100%;
-  }
-  .lore--background {
-    width: auto;
-    height: auto;
-    margin-left: auto;
   }
 }
 

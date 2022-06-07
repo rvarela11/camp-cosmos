@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import Image from 'next/image';
-import loreImage from '../../../../public/images/camp-cosmos-lore.png';
+import PageBGImg from '../../../components/page-bg-img';
+import backgroundImage from '../../../../public/images/camp-cosmos-lore.png';
 
 const TabContent = ({ content: { header, content = [] } }) => (
   <>
@@ -18,13 +18,11 @@ const TabContent = ({ content: { header, content = [] } }) => (
         }
       </div>
     </div>
-    <div className="fireside-tab--background">
-      <Image
-        src={loreImage}
-        alt="Fireside page background image"
-        priority={true}
-      />
-    </div>
+    <PageBGImg
+      alt="Fireside page background image"
+      className="fireside-tab--background"
+      src={backgroundImage}
+    />
   </>
 );
 

@@ -7,7 +7,7 @@
     padding: 1rem;
   }
 
-  .mobile-nav__close {
+  .mobile-nav--close {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -21,13 +21,13 @@
     }
   }
 
-  .mobile-nav__nav {
+  .mobile-nav--nav {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
 
-    .mobile-nav__nav-button {
+    .mobile-nav--nav-button {
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -40,10 +40,10 @@
     }
   }
 
-  .mobile-nav_nav-socials {
+  .mobile-nav--nav-socials {
     border-top: 0.5px solid rgba(255, 255, 255, 0.5);
     
-    .mobile-nav__nav-button {
+    .mobile-nav--nav-button {
       padding-top: 2rem;
 
       svg {

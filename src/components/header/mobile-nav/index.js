@@ -23,7 +23,7 @@ const MobileNav = ({ handleDrawerToggle, isMobileMenuOpen }) => (
       variant="temporary"
       ModalProps={{ keepMounted: true }}
     >
-      <div className="mobile-nav__close">
+      <div className="mobile-nav--close">
         <Link href={ROUTES.HOME}>
           <a>
             <Image
@@ -42,18 +42,18 @@ const MobileNav = ({ handleDrawerToggle, isMobileMenuOpen }) => (
           <CloseIcon />
         </IconButton>
       </div>
-      <div className="mobile-nav__nav">
+      <div className="mobile-nav--nav">
         {
           Object.entries(NAV_ROUTES).map(([label, route]) => (
             <Link key={route} href={route}>
-              <a><button aria-label={`${label} button`} className="mobile-nav__nav-button" type="button" >{label}</button></a>
+              <a><button aria-label={`${label} button`} className="mobile-nav--nav-button" type="button" >{label}</button></a>
             </Link>
           ))
         }
-        <div className="mobile-nav_nav-socials">
-          <button aria-label="Twitter icon button" className="mobile-nav__nav-button" type="button">Twitter <Twitter /></button>
-          <button aria-label="Instagram icon button" className="mobile-nav__nav-button" type="button">Instagram <Instagram /></button>
-          <button aria-label="Discord icon button" className="mobile-nav__nav-button" type="button">Discord <Discord /></button>
+        <div className="mobile-nav--nav-socials">
+          <button aria-label="Twitter icon button" className="mobile-nav--nav-button" type="button">Twitter <Twitter /></button>
+          <button aria-label="Instagram icon button" className="mobile-nav--nav-button" type="button">Instagram <Instagram /></button>
+          <button aria-label="Discord icon button" className="mobile-nav--nav-button" type="button">Discord <Discord /></button>
         </div>
       </div>
     </Drawer>
