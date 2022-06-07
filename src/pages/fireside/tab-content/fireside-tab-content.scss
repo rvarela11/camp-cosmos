@@ -28,18 +28,9 @@
 }
 
 .fireside-tab--background {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
   position: relative;
   top: -100px;
   right: -320px;
-
-  & > span {
-    height: 100% !important;
-    z-index: -1;
-  }
 }
 
 @media screen and (max-width: 912px) {
@@ -58,9 +49,6 @@
   }
   
   .fireside-tab--background {
-    width: auto;
-    height: auto;
-    margin-left: auto;
     top: 0;
     right: 0;
   }

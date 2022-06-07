@@ -1,8 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 import FAQDesktop from './faq-content/desktop';
 import FAQMobile from './faq-content/mobile';
 import Layout from '../../components/layout';
+import PageBGImg from '../../components/page-bg-img';
 import { useWindowDimensions } from '../../utils/hooks';
 import backgroundImage from '../../../public/images/pages-background/faq.png';
 
@@ -15,13 +15,11 @@ const FAQ = () => {
         <h2 className="faq--title"><span>You’ve Got Questions?</span>Pandora Has Answers:</h2>
         { (windowWidth <= 912) ? <FAQMobile /> : <FAQDesktop /> }
       </div>
-      <div className="faq--background">
-        <Image
-          src={backgroundImage}
-          alt="FAQ page background image"
-          priority={true}
-        />
-      </div>
+      <PageBGImg
+        alt="FAQ page background image"
+        className="page-bg-img--50"
+        src={backgroundImage}
+      />
     </Layout>
   );
 }

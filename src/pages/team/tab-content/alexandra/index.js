@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import PageBGImg from '../../../../components/page-bg-img';
 import { Twitter } from '../../../../components/header/icons/twitter';
 import { Instagram } from '../../../../components/header/icons/instagram';
 import backgroundImage from '../../../../../public/images/pages-background/zutto.png';
@@ -18,13 +18,11 @@ const AlexandraTab = () => (
         <button aria-label="Instagram icon button" className="alexandra-tab--description-actions-social" type="button"><Instagram /></button>
       </div>
     </div>
-    <div className="team-tab--background team-tab--background--50">
-      <Image
-        src={backgroundImage}
-        alt="Alexandra page background image"
-        priority={true}
-      />
-    </div>
+    <PageBGImg
+      alt="Alexandra page background image"
+      className="page-bg-img--50"
+      src={backgroundImage}
+    />
   </>
 );
 

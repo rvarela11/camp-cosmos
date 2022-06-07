@@ -1,7 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
 import Layout from '../../components/layout';
-import loreImage from '../../../public/images/camp-cosmos-lore.png';
+import PageBGImg from '../../components/page-bg-img';
+import backgroundImage from '../../../public/images/camp-cosmos-lore.png';
 
 const Lore = () => (
   <Layout>
@@ -13,13 +13,10 @@ const Lore = () => (
         <p>‍‍Camp Cosmos is Altair’s brainchild, serving as a constant reminder of the virtues and action necessary to sustain and nurture a healthy planet and treat all living things with the preciousness and dignity that they deserve.</p>
       </div>
     </div>
-    <div className="lore--background">
-      <Image
-        src={loreImage}
-        alt="Lore page background image"
-        priority={true}
-      />
-    </div>
+    <PageBGImg
+      alt="Lore page background image"
+      src={backgroundImage}
+    />
   </Layout>
 );
 
