@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import Link from 'next/link';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -19,66 +19,63 @@ const Cosmos = () => {
     <Layout>
       <div className='explore--container page-layout'>
         {
-          Object.keys(COSMOS_COLUMNS).map((column) => {
-            return (
-              <div key={`container--${column}`} className={`explore--item-container container--${column}`}>
-                {
-                  COSMOS_COLUMNS[column].map(({
-                    id,
-                    title,
-                    subTitle,
-                    image,
-                    secondaryTitle,
-                    description,
-                    route,
-                  }, index) => (
-                    <>
-                      <Link key={route} href={route}>
-                        <a>
-                          <div key={`explore--item-${id}`} className={`explore--item explore--item-${index}`}>
-                            <h6>{subTitle}</h6>
-                            <h2>{title}</h2>
+          Object.keys(COSMOS_COLUMNS).map((column) => (
+            <div key={`container--${column}`} className={`explore--item-container container--${column}`}>
+              {
+                COSMOS_COLUMNS[column].map(({
+                  id,
+                  title,
+                  subTitle,
+                  image,
+                  secondaryTitle,
+                  description,
+                  route,
+                }, index) => (
+                  <Fragment key={route}>
+                    <Link href={route}>
+                      <a>
+                        <div key={`explore--item-${id}`} className={`explore--item explore--item-${index}`}>
+                          <h6>{subTitle}</h6>
+                          <h2>{title}</h2>
+                          <button className='explore--arrow-container'>
+                            <div className='explore--arrow'></div>
+                          </button>
+                          <img className="explore--background" src={image.src} alt={image.alt} />
+                          <div className='explore--details'>
+                            <div>
+                              <h2>{secondaryTitle}</h2>
+                              {description}
+                            </div>
                             <button className='explore--arrow-container'>
                               <div className='explore--arrow'></div>
                             </button>
-                            <img className="explore--background" src={image.src} alt={image.alt} />
-                            <div className='explore--details'>
-                              <div>
-                                <h2>{secondaryTitle}</h2>
-                                {description}
-                              </div>
-                              <button className='explore--arrow-container'>
-                                <div className='explore--arrow'></div>
-                              </button>
-                            </div>
                           </div>
-                        </a>
-                      </Link>
-                      <Accordion
-                        key={`explore--item-accordion-${id}`}
-                        className="explore--item-accordion"
-                        expanded={expanded === id}
-                        onChange={handleChange(id)}
-                        sx={{ '&:before': { display: 'none' } }}
+                        </div>
+                      </a>
+                    </Link>
+                    <Accordion
+                      className="explore--item-accordion"
+                      expanded={expanded === id}
+                      onChange={handleChange(id)}
+                      sx={{ '&:before': { display: 'none' } }}
+                    >
+                      <AccordionSummary
+                        aria-controls="panel1d-content"
+                        id="panel1d-header"
+                        expandIcon={(expanded === id) ? <RemoveIcon /> : <AddIcon/>}
+                        sx={{ flexDirection: 'row-reverse' }}
                       >
-                        <AccordionSummary
-                          aria-controls="panel1d-content"
-                          id="panel1d-header"
-                          expandIcon={(expanded === id) ? <RemoveIcon /> : <AddIcon/>}
-                          sx={{ flexDirection: 'row-reverse' }}
-                        >
-                          <p>More details</p>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          {description}
-                        </AccordionDetails>
-                      </Accordion>
-                    </>
-                  ))
-                }
-              </div>
-            )
-          })
+                        <p>More details</p>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        {description}
+                      </AccordionDetails>
+                    </Accordion>
+                  </ Fragment>
+                ))
+              }
+            </div>
+          ))
         }
       </div>
     </Layout>
