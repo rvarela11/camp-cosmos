@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 
-.home--card__title {
+.home--card-title {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -58,7 +58,7 @@
   color: #FFE600;
 }
 
-.home--card__content {
+.home--card-content {
   font-family: 'Work Sans', sans-serif;
   font-size: 2rem;
   line-height: 22px;
@@ -77,10 +77,10 @@
     padding: 12px;
     pointer-events: none;
   }
-  .home--card__title {
+  .home--card-title {
     font-size: 0.75rem;
   }
-  .home--card__content {
+  .home--card-content {
     font-size: 1.5rem;
   }
 }

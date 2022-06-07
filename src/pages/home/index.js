@@ -20,8 +20,8 @@ const Home = () => (
         <Link href={ROUTES.COSMOS}>
           <a>
             <ArrowCard className="home--card">
-              <h6 className="home--card__title">ARE YOU READY?</h6>
-              <h3 className="home--card__content">Follow me!</h3>
+              <h6 className="home--card-title">ARE YOU READY?</h6>
+              <h3 className="home--card-content">Follow me!</h3>
             </ArrowCard>
           </a>
         </Link>
