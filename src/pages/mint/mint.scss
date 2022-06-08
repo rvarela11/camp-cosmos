@@ -1,0 +1,32 @@
+.mint.page-layout {
+  width: 100%;
+  height: 100vh;
+  padding: 20rem 0 0 0;
+  position: absolute;
+}
+
+.mint--content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  .mint--content-summary {
+    padding: 0 5rem;
+
+    h2 {
+      display: flex;
+      flex-direction: column;
+    }
+    p {
+      color: #E2E2E2;
+      margin: 22px 0;
+    }
+  }
+
+  footer {
+    border-top: 0.5px solid #FFFFFF;
+    padding: 2.5rem 5rem;
+  }
+}
