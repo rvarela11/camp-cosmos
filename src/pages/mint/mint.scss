@@ -1,3 +1,5 @@
+@import './footer/mint-footer.scss';
+
 .mint.page-layout {
   width: 100%;
   height: 100vh;
@@ -11,7 +13,6 @@
   flex-direction: column;
   justify-content: space-between;
 
-
   .mint--content-summary {
     padding: 0 5rem;
 
@@ -24,9 +25,12 @@
       margin: 22px 0;
     }
   }
+}
 
-  footer {
-    border-top: 0.5px solid #FFFFFF;
-    padding: 2.5rem 5rem;
+@media screen and (max-width: 700px) {
+  .mint--content {
+    .mint--content-summary {
+      padding: 0 2rem;
+    }
   }
 }
