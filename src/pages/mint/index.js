@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../../components/layout';
 import PageBGImg from '../../components/page-bg-img';
+import MintInfoCenter from './info-center';
 import MintFooter from './footer';
 import backgroundImage from '../../../public/images/pages-background/mint.png';
 import { ROLES } from './constants';
@@ -20,7 +21,7 @@ const Mint = () => (
               <div className="mint--content-summary">
                 <h2>Welcome To The <span>{ROLES[userRole]} Pre-Sale</span></h2>
                 <p>Counter</p>
-                <p>Button</p>
+                <MintInfoCenter address={address} status={status} />
               </div>
               <MintFooter address={address} status={status} />
             </div>

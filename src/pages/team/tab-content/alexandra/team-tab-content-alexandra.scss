@@ -2,21 +2,8 @@
   display: flex;
   gap: 10px;
 
-  & > button {
-    width: 231px;
-    height: 50px;
-    padding: 13px 33px;
-    border-radius: 1rem 0 1rem 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 27px;
-    text-align: center;
-    color: #FFFFFF;
-  }
-
   .alexandra-tab--description-actions-color {
+    width: 231px;
     background-image: linear-gradient(95.34deg, #5A6FE8 7.87%, #9B51E0 100.96%);
   }
 
@@ -39,6 +26,5 @@
   .alexandra-tab--description-actions {
     flex-direction: column;
     align-items: center;
-    font-size: 15px;
   }
 }
