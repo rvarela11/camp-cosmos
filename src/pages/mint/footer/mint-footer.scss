@@ -12,11 +12,13 @@
     font-size: 16px;
     cursor: initial;
   }
-  
-  p {
+
+  h5 {
     margin: 0;
     padding: 4px 0;
+    font-family: 'Work Sans';
     font-weight: 500;
+    font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
   }
@@ -27,9 +29,5 @@
     height: auto;
     padding: 1rem 2rem;
     justify-content: center;
-
-    p {
-      font-size: 16px;
-    }
   }
 }

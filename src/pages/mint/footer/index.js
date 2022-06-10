@@ -10,7 +10,7 @@ const MintFooter = () => {
       {
         (META_MASK_STATUS.connected === status)
           ? <button className='f-button' type='button'>{`CONNECTED TO: ${address.substring(0, 5)}...${address.substring(((address.length - 1) - 4), (address.length - 1))}`}</button>
-          : <p>1 CAMP COSMOS = 0.1 ETH</p>
+          : <h5>1 CAMP COSMOS = 0.1 ETH</h5>
       }
     </footer>
   )
