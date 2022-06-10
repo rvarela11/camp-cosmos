@@ -15,4 +15,8 @@ MintInfoCenter.propTypes = {
   status: PropTypes.string.isRequired,
 };
 
+MintInfoCenter.defaultProps = {
+  address: '',
+};
+
 export default MintInfoCenter;

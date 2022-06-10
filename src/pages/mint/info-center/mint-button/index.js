@@ -18,7 +18,8 @@ const MintButton = ({ status }) => {
   const [label, setLabel] = useState('');
 
   useEffect(() => {
-    setLabel(MINT_BUTTON_LABELS[META_MASK_STATUS[status]])
+    setLabel(MINT_BUTTON_LABELS[META_MASK_STATUS[status]]);
+    setDisabled(status === META_MASK_STATUS.connecting || status === META_MASK_STATUS.minting);
   }, [status]);
 
   const handleOnClick = () => {

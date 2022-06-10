@@ -1,23 +1,29 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import { META_MASK_STATUS } from './constants';
+import { ROLES } from '../constants';
 
 const MintContext = createContext({});
 
 export const useMintContext = () => useContext(MintContext);
 
-const walletAddress = '0x1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234';
-
 const MintContextProvider = ({ children }) => {
   const [metaMaskData, setMetaMaskData] = useState({
-    address: walletAddress,
+    address: undefined,
     status: META_MASK_STATUS.notConnected,
+  });
+
+  const [mintData, setMintData] = useState({
+    remaining: 2,
+    role: ROLES.explorers,
+    quantity: 0,
   });
 
   useEffect(() => {
     if (metaMaskData.status === META_MASK_STATUS.connecting) {
       setTimeout(() => setMetaMaskData((prevProps) => ({
         ...prevProps,
+        address: '0x1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234',
         status: META_MASK_STATUS.connected,
       })), 1000)
     }
@@ -34,8 +40,15 @@ const MintContextProvider = ({ children }) => {
 
   const value = useMemo(() => ({
     metaMaskData,
+    mintData,
     setMetaMaskData,
-  }), [metaMaskData, setMetaMaskData]);
+    setMintData,
+  }), [
+    metaMaskData,
+    mintData,
+    setMetaMaskData,
+    setMintData,
+  ]);
 
   return <MintContext.Provider value={value}>{children}</MintContext.Provider>;
 };
