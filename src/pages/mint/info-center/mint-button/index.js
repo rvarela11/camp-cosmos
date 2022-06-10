@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { META_MASK_STATUS } from '../../context/constants';
 
+// NOTE: useMintContext is for testing ONLY. Remove once endpoint/contract is connected.
+import { useMintContext } from '../../context';
+
 const MINT_BUTTON_LABELS = {
   [META_MASK_STATUS.notConnected]: 'Connect Wallet',
   [META_MASK_STATUS.connecting]: 'Connecting...',
@@ -10,16 +13,31 @@ const MINT_BUTTON_LABELS = {
 };
 
 const MintButton = ({ status }) => {
+  const { setMetaMaskData } = useMintContext();
+  const [disabled, setDisabled] = useState(false);
   const [label, setLabel] = useState('');
 
   useEffect(() => {
     setLabel(MINT_BUTTON_LABELS[META_MASK_STATUS[status]])
   }, [status]);
 
-  console.log({ label });
+  const handleOnClick = () => {
+    if (status === META_MASK_STATUS.notConnected) {
+      setMetaMaskData((prevProps) => ({
+        ...prevProps,
+        status: META_MASK_STATUS.connecting,
+      }));
+    }
+    if (status === META_MASK_STATUS.connected) {
+      setMetaMaskData((prevProps) => ({
+        ...prevProps,
+        status: META_MASK_STATUS.minting,
+      }));
+    }
+  };
 
   return (
-    <button type="button" className="mint-button tear-button">{label}</button>
+    <button type="button" className="mint-button tear-button" disabled={disabled} onClick={handleOnClick}>{label}</button>
   );
 }
 
