@@ -4,29 +4,35 @@ import PageBGImg from '../../components/page-bg-img';
 import MintFooter from './footer';
 import backgroundImage from '../../../public/images/pages-background/mint.png';
 import { ROLES } from './constants';
-// NOTE: MintContextProvider is for testing ONLY. Remove once connected to endpoint/contract
-import { MintContextProvider } from './context';
+// NOTE: MintContext is for testing ONLY. Remove once endpoint/contract is connected.
+import { MintContext, MintContextProvider } from './context';
 
 const userRole = 'explorers';
 
 const Mint = () => (
   <MintContextProvider>
-    <Layout>
-      <div className="mint page-layout">
-        <div className="mint--content">
-          <div className="mint--content-summary">
-            <h2>Welcome To The <span>{ROLES[userRole]} Pre-Sale</span></h2>
-            <p>Counter</p>
-            <p>Button</p>
+    <MintContext.Consumer>
+    {({ metaMaskData: { address, status } }) => {
+      return (
+        <Layout>
+          <div className="mint page-layout">
+            <div className="mint--content">
+              <div className="mint--content-summary">
+                <h2>Welcome To The <span>{ROLES[userRole]} Pre-Sale</span></h2>
+                <p>Counter</p>
+                <p>Button</p>
+              </div>
+              <MintFooter address={address} status={status} />
+            </div>
           </div>
-          <MintFooter />
-        </div>
-      </div>
-      <PageBGImg
-        alt="Mint page background image"
-        src={backgroundImage}
-      />
-    </Layout>
+          <PageBGImg
+            alt="Mint page background image"
+            src={backgroundImage}
+          />
+        </Layout>
+      )
+    }}
+    </MintContext.Consumer>
   </MintContextProvider>
 );
 
