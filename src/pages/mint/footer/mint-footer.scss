@@ -1,0 +1,35 @@
+.mint-footer {
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  border-top: 0.5px solid #FFFFFF;
+
+  .f-button {
+    padding: 4px 20px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 45px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: initial;
+  }
+  
+  p {
+    margin: 0;
+    padding: 4px 0;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mint-footer {
+    height: auto;
+    padding: 1rem 2rem;
+    justify-content: center;
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
