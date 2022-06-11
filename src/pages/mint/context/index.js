@@ -36,10 +36,6 @@ const MintContextProvider = ({ children }) => {
           ...prevProps,
           status: META_MASK_STATUS.connected,
         }));
-        setMetaMaskData((prevProps) => ({
-          ...prevProps,
-          status: META_MASK_STATUS.connected,
-        }));
         setMintData((prevProps) => ({
           ...prevProps,
           remaining: prevProps.remaining - mintData.quantity,
