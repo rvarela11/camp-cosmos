@@ -25,6 +25,7 @@ const Mint = () => {
       </div>
       <PageBGImg
         alt="Mint page background image"
+        className="page-bg-img--70"
         src={backgroundImage}
       />
     </Layout>

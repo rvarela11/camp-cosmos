@@ -13,7 +13,7 @@
 }
 
 .mint--content {
-  padding: 0 5rem;
+  padding: 0 5rem 40px 5rem;
 
   h2 {
     display: flex;
@@ -33,8 +33,13 @@
 }
 
 @media screen and (max-width: 700px) {
+  .mint.page-layout {
+    padding-top: 13rem;
+  }
+
   .mint--content {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     .mint--content-summary {
       width: 100%;
