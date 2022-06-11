@@ -1,31 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import MintCounter from './mint-counter';
 import MintButton from './mint-button';
-import { META_MASK_STATUS } from '../context/constants';
 
-const MintInfoCenter = ({ metaMaskData: { address, status }, mintData }) => {
+// NOTE: context is for testing ONLY. Remove once endpoint/contract is connected.
+import { useMintContext } from '../context';
+
+const MintInfoCenter = () => {
+  const { metaMaskData: { address } } = useMintContext();
 
   return (
     <>
-      { address && <MintCounter mintData={mintData} /> }
-      <MintButton status={status} />
+      { address && <MintCounter /> }
+      <MintButton />
     </>
   );
-}
-
-MintInfoCenter.propTypes = {
-  metaMaskData: PropTypes.shape({
-    address: PropTypes.string,
-    status: PropTypes.string.isRequired,
-  }).isRequired,
-  mintData: PropTypes.shape({}).isRequired,
-};
-
-MintInfoCenter.defaultProps = {
-  metaMaskData: {
-    address: '',
-  }
 };
 
 export default MintInfoCenter;

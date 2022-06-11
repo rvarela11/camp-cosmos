@@ -1,26 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import { META_MASK_STATUS } from '../../context/constants';
 
-// NOTE: useMintContext is for testing ONLY. Remove once endpoint/contract is connected.
+// NOTE: context is for testing ONLY. Remove once endpoint/contract is connected.
 import { useMintContext } from '../../context';
 
 const MINT_BUTTON_LABELS = {
-  [META_MASK_STATUS.notConnected]: 'Connect Wallet',
-  [META_MASK_STATUS.connecting]: 'Connecting...',
-  [META_MASK_STATUS.connected]: 'Mint 1 - 0.1 ETH',
-  [META_MASK_STATUS.minting]: 'Minting 1 Camp Cosmos...',
+  [META_MASK_STATUS.notConnected]: () => 'Connect Wallet',
+  [META_MASK_STATUS.connecting]: () => 'Connecting...',
+  [META_MASK_STATUS.connected]: (quantity, price) => `Mint ${quantity} - ${quantity * price} ETH`,
+  [META_MASK_STATUS.minting]: (quantity) => `Minting ${quantity} Camp Cosmos...`,
 };
 
-const MintButton = ({ status }) => {
-  const { setMetaMaskData } = useMintContext();
+const MintButton = () => {
+  const { metaMaskData, mintData, setMetaMaskData } = useMintContext();
+  const { status } = metaMaskData;
+  const { price, quantity } = mintData;
+
   const [disabled, setDisabled] = useState(false);
   const [label, setLabel] = useState('');
-
-  useEffect(() => {
-    setLabel(MINT_BUTTON_LABELS[META_MASK_STATUS[status]]);
-    setDisabled(status === META_MASK_STATUS.connecting || status === META_MASK_STATUS.minting);
-  }, [status]);
 
   const handleOnClick = () => {
     if (status === META_MASK_STATUS.notConnected) {
@@ -37,13 +34,16 @@ const MintButton = ({ status }) => {
     }
   };
 
-  return (
-    <button type="button" className="mint-button tear-button" disabled={disabled} onClick={handleOnClick}>{label}</button>
-  );
-}
+  useEffect(() => {
+    setLabel(MINT_BUTTON_LABELS[META_MASK_STATUS[status]](quantity, price));
+    setDisabled(status === META_MASK_STATUS.connecting || status === META_MASK_STATUS.minting);
+  }, [price, quantity, status]);
 
-MintButton.propTypes = {
-  status: PropTypes.string.isRequired,
+  return (
+    <button type="button" className="mint-button tear-button" disabled={disabled} onClick={handleOnClick}>
+      {label}
+    </button>
+  );
 };
 
 export default MintButton;

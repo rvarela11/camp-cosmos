@@ -14,7 +14,8 @@ const MintContextProvider = ({ children }) => {
   });
 
   const [mintData, setMintData] = useState({
-    quantity: 0,
+    price: 0.1,
+    quantity: 2,
     remaining: 2,
     role: ROLES.explorers,
     total: 2,

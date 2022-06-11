@@ -1,0 +1,39 @@
+.mint-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mint-counter--label {
+  margin: 0 0 24px 0;
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.mint-counter--buttons {
+  display: flex;
+  gap: 20px;
+
+  .mint-counter--button {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .mint-counter--button-selected {
+    border: 3px solid #FFFFFF;
+    background: #8C58E2;
+  }
+
+  .mint-counter--button-disabled {
+    opacity: 0.2;
+  }
+}

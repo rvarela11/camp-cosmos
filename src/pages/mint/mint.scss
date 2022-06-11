@@ -1,4 +1,5 @@
 @import './info-center/mint-button/mint-button.scss';
+@import './info-center/mint-counter/mint-counter.scss';
 @import './footer/mint-footer.scss';
 
 .mint.page-layout {
@@ -6,32 +7,32 @@
   height: 100vh;
   padding: 20rem 0 0 0;
   position: absolute;
-}
-
-.mint--content {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.mint--content {
+  padding: 0 5rem;
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    color: #E2E2E2;
+    margin: 22px 0;
+  }
 
   .mint--content-summary {
-    padding: 0 5rem;
-
-    h2 {
-      display: flex;
-      flex-direction: column;
-    }
-    p {
-      color: #E2E2E2;
-      margin: 22px 0;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .mint--content {
-    .mint--content-summary {
-      padding: 0 2rem;
-    }
+    padding: 0 2rem;
   }
 }
