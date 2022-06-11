@@ -4,23 +4,28 @@ import MintCounter from './mint-counter';
 import MintButton from './mint-button';
 import { META_MASK_STATUS } from '../context/constants';
 
-const MintInfoCenter = ({ address, status }) => {
+const MintInfoCenter = ({ metaMaskData: { address, status }, mintData }) => {
 
   return (
     <>
-      { address && <MintCounter /> }
+      { address && <MintCounter mintData={mintData} /> }
       <MintButton status={status} />
     </>
   );
 }
 
 MintInfoCenter.propTypes = {
-  address: PropTypes.string.isRequired,
-  status: PropTypes.string.isRequired,
+  metaMaskData: PropTypes.shape({
+    address: PropTypes.string,
+    status: PropTypes.string.isRequired,
+  }).isRequired,
+  mintData: PropTypes.shape({}).isRequired,
 };
 
 MintInfoCenter.defaultProps = {
-  address: '',
+  metaMaskData: {
+    address: '',
+  }
 };
 
 export default MintInfoCenter;

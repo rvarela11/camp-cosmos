@@ -14,9 +14,10 @@ const MintContextProvider = ({ children }) => {
   });
 
   const [mintData, setMintData] = useState({
+    quantity: 0,
     remaining: 2,
     role: ROLES.explorers,
-    quantity: 0,
+    total: 2,
   });
 
   useEffect(() => {
