@@ -16,7 +16,7 @@ const MintContextProvider = ({ children }) => {
   const [mintData, setMintData] = useState({
     price: 0.1,
     quantity: 0,
-    remaining: 2,
+    remaining: 4,
     role: ROLES.public,
     total: 5,
   });
@@ -36,12 +36,23 @@ const MintContextProvider = ({ children }) => {
           ...prevProps,
           status: META_MASK_STATUS.connected,
         }));
+        setMetaMaskData((prevProps) => ({
+          ...prevProps,
+          status: META_MASK_STATUS.connected,
+        }));
+        setMintData((prevProps) => ({
+          ...prevProps,
+          remaining: prevProps.remaining - mintData.quantity,
+        }));
       }, 1000)
     }
-  }, [metaMaskData.status]);
+  }, [metaMaskData.status, mintData.quantity]);
 
   useEffect(() => {
-    setMintData((prevProps) => ({...prevProps, quantity: mintData.remaining }));
+    setMintData((prevProps) => ({
+      ...prevProps,
+      quantity: mintData.remaining,
+    }));
   }, [mintData.remaining])
 
   const value = useMemo(() => ({
