@@ -24,7 +24,7 @@ const MintCounter = () => {
     <>
       <span className="mint-divider" />
       <div className="mint-counter">
-        <h5 className="mint-counter--label">{`You can mint up to ${remaining} Camp Cosmos`}</h5>
+        <h5 className="mint--content-subtitle">{`You can mint up to ${remaining} Camp Cosmos`}</h5>
         <div className="mint-counter--buttons">
           {
             [...Array(total)].map((_, index) => {

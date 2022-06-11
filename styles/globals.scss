@@ -109,6 +109,9 @@ svg {
 
 .tear-button {
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 13px 33px;
   border-radius: 1rem 0 1rem 1rem;
   font-family: 'Poppins', sans-serif;
