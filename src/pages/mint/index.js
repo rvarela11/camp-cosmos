@@ -13,14 +13,14 @@ const userRole = 'explorers';
 const Mint = () => (
   <MintContextProvider>
     <MintContext.Consumer>
-    {({ metaMaskData: { address, status } }) => {
+    {({ metaMaskData: { address, status }, mintData }) => {
       return (
         <Layout>
           <div className="mint page-layout">
             <div className="mint--content">
               <div className="mint--content-summary">
                 <h2>Welcome To The <span>{ROLES[userRole]} Pre-Sale</span></h2>
-                <p>Counter</p>
+                <p>Total Supply</p>
                 <MintInfoCenter address={address} status={status} />
               </div>
               <MintFooter address={address} status={status} />
