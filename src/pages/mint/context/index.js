@@ -17,8 +17,8 @@ const MintContextProvider = ({ children }) => {
     price: 0.1,
     quantity: 0,
     remaining: 2,
-    role: ROLES.altair,
-    total: 3,
+    role: ROLES.public,
+    total: 5,
   });
 
   useEffect(() => {
