@@ -15,8 +15,8 @@ const MintContextProvider = ({ children }) => {
 
   const [mintData, setMintData] = useState({
     price: 0.1,
-    quantity: 3,
-    remaining: 3,
+    quantity: 0,
+    remaining: 2,
     role: ROLES.altair,
     total: 3,
   });
@@ -39,6 +39,10 @@ const MintContextProvider = ({ children }) => {
       }, 1000)
     }
   }, [metaMaskData.status]);
+
+  useEffect(() => {
+    setMintData((prevProps) => ({...prevProps, quantity: mintData.remaining }));
+  }, [mintData.remaining])
 
   const value = useMemo(() => ({
     metaMaskData,

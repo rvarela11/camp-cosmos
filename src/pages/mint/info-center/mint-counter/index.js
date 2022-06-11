@@ -29,6 +29,8 @@ const MintCounter = () => {
           {
             [...Array(total)].map((_, index) => {
               const current = index + 1;
+              const isDisabled = current > remaining;
+
               return (
                 <button
                   key={index}
@@ -36,10 +38,10 @@ const MintCounter = () => {
                     classNames(
                       "mint-counter--button tear-button",
                       { ["mint-counter--button-selected"]: current === quantity },
-                      { ["mint-counter--button-disabled"]: disabled },
+                      { ["mint-counter--button-disabled"]: disabled || isDisabled },
                     )
                   }
-                  disabled={disabled}
+                  disabled={disabled || isDisabled}
                   onClick={() => handleOnClick(current)}
                   type="button"
                 >
