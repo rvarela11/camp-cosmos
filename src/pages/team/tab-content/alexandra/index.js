@@ -13,9 +13,9 @@ const AlexandraTab = () => (
         <p>Zutto uses vivid hues and hand-drawn, liquid textures to create enchanting and complex scenes. Zuttos world is a playground of the bright, colorful and surreal, drawing the viewer in to absorb its beautiful complexity.</p>
       </div>
       <div className="alexandra-tab--description-actions">
-        <button type="button" className="alexandra-tab--description-actions-color">Behance</button>
-        <button aria-label="Twitter icon button" className="alexandra-tab--description-actions-social" type="button"><Twitter /></button>
-        <button aria-label="Instagram icon button" className="alexandra-tab--description-actions-social" type="button"><Instagram /></button>
+        <button type="button" className="alexandra-tab--description-actions-color tear-button">Behance</button>
+        <button aria-label="Twitter icon button" className="alexandra-tab--description-actions-social tear-button" type="button"><Twitter /></button>
+        <button aria-label="Instagram icon button" className="alexandra-tab--description-actions-social tear-button" type="button"><Instagram /></button>
       </div>
     </div>
     <PageBGImg

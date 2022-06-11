@@ -1,0 +1,24 @@
+.mint--content-message-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.mint--content-message-title-total {
+  font-family: 'Work Sans';
+  font-weight: 700;
+  color: #7B61FF;
+}
+
+.mint--content-message-button {
+  width: 300px;
+  margin-top: 40px;
+  padding: 0;
+  border: 1px solid #FFFFFF;
+}
+
+@media screen and (max-width: 700px) {
+  .mint--content-message-button {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

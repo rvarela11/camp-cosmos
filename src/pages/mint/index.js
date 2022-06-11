@@ -1,39 +1,29 @@
 import React from 'react';
 import Layout from '../../components/layout';
 import PageBGImg from '../../components/page-bg-img';
+import MintInfoCenter from './info-center';
+import MintMessageCenter from './message-center';
 import MintFooter from './footer';
 import backgroundImage from '../../../public/images/pages-background/mint.png';
-import { ROLES } from './constants';
-// NOTE: MintContext is for testing ONLY. Remove once endpoint/contract is connected.
-import { MintContext, MintContextProvider } from './context';
-
-const userRole = 'explorers';
 
 const Mint = () => (
-  <MintContextProvider>
-    <MintContext.Consumer>
-    {({ metaMaskData: { address, status } }) => {
-      return (
-        <Layout>
-          <div className="mint page-layout">
-            <div className="mint--content">
-              <div className="mint--content-summary">
-                <h2>Welcome To The <span>{ROLES[userRole]} Pre-Sale</span></h2>
-                <p>Counter</p>
-                <p>Button</p>
-              </div>
-              <MintFooter address={address} status={status} />
-            </div>
-          </div>
-          <PageBGImg
-            alt="Mint page background image"
-            src={backgroundImage}
-          />
-        </Layout>
-      )
-    }}
-    </MintContext.Consumer>
-  </MintContextProvider>
+  <Layout>
+    <div className="mint page-layout">
+      <div className="mint--content">
+        <MintMessageCenter />
+        <div className="mint--content-summary">
+          <p>Total Supply</p>
+          <MintInfoCenter />
+        </div>
+      </div>
+      <MintFooter />
+    </div>
+    <PageBGImg
+      alt="Mint page background image"
+      className="page-bg-img--70"
+      src={backgroundImage}
+    />
+  </Layout>
 );
 
 export default Mint;

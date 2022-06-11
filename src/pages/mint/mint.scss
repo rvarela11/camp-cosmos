@@ -1,3 +1,6 @@
+@import './info-center/mint-button/mint-button.scss';
+@import './info-center/mint-counter/mint-counter.scss';
+@import './message-center/message-center.scss';
 @import './footer/mint-footer.scss';
 
 .mint.page-layout {
@@ -5,32 +8,62 @@
   height: 100vh;
   padding: 20rem 0 0 0;
   position: absolute;
-}
-
-.mint--content {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.mint--content {
+  padding: 0 5rem 40px 5rem;
+
+  p {
+    color: #E2E2E2;
+    margin: 22px 0;
+  }
 
   .mint--content-summary {
-    padding: 0 5rem;
-
-    h2 {
-      display: flex;
-      flex-direction: column;
-    }
-    p {
-      color: #E2E2E2;
-      margin: 22px 0;
-    }
+    width: 335px;
   }
 }
 
+.mint--content,
+.mint--content-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mint--content-subtitle {
+  margin: 0 0 24px 0;
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 700px) {
+  .mint.page-layout {
+    padding-top: 13rem;
+  }
+
   .mint--content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
     .mint--content-summary {
-      padding: 0 2rem;
+      width: 100%;
     }
+  }
+
+  .mint--content,
+  .mint--content-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mint--content-subtitle {
+    font-size: 12px;
   }
 }
