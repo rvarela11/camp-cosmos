@@ -7,7 +7,7 @@ import { useMintContext } from '../../context';
 const MINT_BUTTON_LABELS = {
   [META_MASK_STATUS.notConnected]: () => 'Connect Wallet',
   [META_MASK_STATUS.connecting]: () => 'Connecting...',
-  [META_MASK_STATUS.connected]: (quantity, price) => `Mint ${quantity} - ${quantity * price} ETH`,
+  [META_MASK_STATUS.connected]: (quantity, price) => `Mint ${quantity} - ${(quantity * price).toFixed(1)} ETH`,
   [META_MASK_STATUS.minting]: (quantity) => `Minting ${quantity} Camp Cosmos...`,
 };
 
