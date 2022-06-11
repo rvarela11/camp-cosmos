@@ -6,12 +6,16 @@ import MintButton from './mint-button';
 import { useMintContext } from '../context';
 
 const MintInfoCenter = () => {
-  const { metaMaskData: { address } } = useMintContext();
+  const { metaMaskData: { address }, mintData: { remaining } } = useMintContext();
 
   return (
     <>
-      { address && <MintCounter /> }
-      <MintButton />
+      { (remaining > 0) && (
+        <>
+          { address && <MintCounter /> }
+          <MintButton />
+        </>
+      )}
     </>
   );
 };
