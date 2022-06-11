@@ -10,6 +10,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
@@ -32,5 +33,11 @@
 
   .mint-counter--button-disabled {
     opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mint-counter--label {
+    font-size: 12px;
   }
 }
