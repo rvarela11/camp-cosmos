@@ -32,7 +32,6 @@ const MintContextProvider = ({ children }) => {
     }
     if (metaMaskData.status === META_MASK_STATUS.minting) {
       setTimeout(() => {
-        console.log('SUCCESS');
         setMetaMaskData((prevProps) => ({
           ...prevProps,
           status: META_MASK_STATUS.connected,
