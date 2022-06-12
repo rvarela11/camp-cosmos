@@ -21,9 +21,7 @@ const MintCounter = () => {
   }, [status]);
 
   return (
-    <>
-      <span className="mint-divider" />
-      <div className="mint-counter">
+    <div className="mint-counter">
         <h5 className="mint--content-subtitle">{`You can mint up to ${remaining} Camp Cosmos`}</h5>
         <div className="mint-counter--buttons">
           {
@@ -51,8 +49,7 @@ const MintCounter = () => {
             })
           } 
         </div>
-      </div>
-    </>
+    </div>
   );
 };
 
