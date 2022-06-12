@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import PageBGImg from '../../../components/page-bg-img';
+import PageBGImg from '../../../components/shared/page-bg-img';
 import backgroundImage from '../../../../public/images/camp-cosmos-lore.png';
 
 const TabContent = ({ content: { header, content = [] } }) => (

@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import TabsMobile from './carousel';
 import TabsDesktop from './mui';
-import { useWindowDimensions } from '../../utils/hooks';
+import { useWindowDimensions } from '../../../utils/hooks';
 
 const sx = {
   backgroundColor: 'rgba(0,0,0,0.3)',

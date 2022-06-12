@@ -1,8 +1,8 @@
 import React from 'react';
 import FAQDesktop from './faq-content/desktop';
 import FAQMobile from './faq-content/mobile';
-import Layout from '../../components/layout';
-import PageBGImg from '../../components/page-bg-img';
+import Layout from '../../components/shared/layout';
+import PageBGImg from '../../components/shared/page-bg-img';
 import { useWindowDimensions } from '../../utils/hooks';
 import backgroundImage from '../../../public/images/pages-background/faq.png';
 

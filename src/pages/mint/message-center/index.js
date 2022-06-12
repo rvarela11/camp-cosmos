@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import TearDropButton from '../../../components/shared/teardrop-button';
 import { ROUTES } from '../../../../src/utils/routes';
 
 // NOTE: context is for testing ONLY. Remove once endpoint/contract is connected.
@@ -21,9 +22,9 @@ const MintMessageCenter = () => {
         </h2>
         <Link href={ROUTES.HOME}>
           <a>
-            <button className="mint--content-message-button tear-button" type="button">
+            <TearDropButton ariaLabel="Home page link" className="mint--content-message-button">
               Back to home page
-            </button>
+            </TearDropButton>
           </a>
         </Link>
       </>

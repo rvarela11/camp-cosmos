@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
-import Layout from '../../components/layout';
-import Tabs from '../../components/tabs';
+import Layout from '../../components/shared/layout';
+import Tabs from '../../components/shared/tabs';
 import TabContent from './tab-content';
 import { TAB_CONTENT, TAB_LABELS } from './constants';
 

@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Work+Sans:wght@500;600&display=swap');
 
 /* @components */
-@import '../src/components/arrow/arrow.scss';
 @import '../src/components/arrow-card/arrow-card.scss';
 @import '../src/components/header/header.scss';
-@import '../src/components/page-bg-img/page-bg-img.scss';
-@import '../src/components/tabs/tabs.scss';
+@import '../src/components/shared/shared.scss';
 
 /* @pages */
 @import '../src/pages/home/home.scss';
@@ -107,26 +105,8 @@ svg {
   transition: all 0.6s ease;
 }
 
-.tear-button {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 13px 33px;
-  border-radius: 1rem 0 1rem 1rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 27px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
 @media screen and (max-width: 700px) {
   .page-layout {
     padding: 9rem 2rem 3rem 2rem;
-  }
-  .tear-button {
-    font-size: 15px;
   }
 }
