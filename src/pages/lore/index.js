@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/shared/layout';
 import PageBGImg from '../../components/shared/page-bg-img';
-import backgroundImage from '../../../public/images/camp-cosmos-lore.png';
+import backgroundImage from '../../../public/images/pages-background/lore.png';
 
 const Lore = () => (
   <Layout>

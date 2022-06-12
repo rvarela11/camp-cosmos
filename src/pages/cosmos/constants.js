@@ -8,7 +8,7 @@ export const COSMOS_COLUMNS = {
       title: 'Light The Fireside!',
       subTitle: 'LEARN ABOUT US',
       image: {
-        src: '/images/camp-cosmos-cosmos.png',
+        src: '/images/cc-cosmos.png',
         alt: 'Explore background image',
       },
       secondaryTitle: 'Explore The Cosmos',
@@ -25,7 +25,7 @@ export const COSMOS_COLUMNS = {
       title: 'Read The Lore!',
       subTitle: 'LEARN ABOUT US',
       image: {
-        src: '/images/camp-cosmos-cosmos.png',
+        src: '/images/cc-cosmos.png',
         alt: 'Explore background image',
       },
       secondaryTitle: 'Explore The Cosmos',

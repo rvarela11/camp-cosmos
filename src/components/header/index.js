@@ -9,7 +9,7 @@ import { Discord } from './icons/discord';
 import { Instagram } from './icons/instagram';
 import MobileNav from './mobile-nav';
 import { NAV_ROUTES, ROUTES } from '../../../src/utils/routes';
-import logoImage from '../../../public/images/camp-cosmos-logo.svg';
+import logoImage from '../../../public/images/cc-logo.svg';
 
 const Header = () => {
   const { pathname } = useRouter();
