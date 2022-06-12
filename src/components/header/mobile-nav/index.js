@@ -12,7 +12,7 @@ import { Twitter } from '../icons/twitter';
 import { Discord } from '../icons/discord';
 import { Instagram } from '../icons/instagram';
 import { NAV_ROUTES, ROUTES } from '../../../utils/routes';
-import logoImage from '../../../../public/images/camp-cosmos-logo.svg';
+import logoImage from '../../../../public/images/cc-logo.svg';
 
 const MobileNav = ({ handleDrawerToggle, isMobileMenuOpen }) => (
   <Box component="nav">

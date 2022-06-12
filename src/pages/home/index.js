@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Layout from '../../components/shared/layout';
 import ArrowCard from '../../components/arrow-card';
 import { ROUTES } from '../../../src/utils/routes';
-import homeImage from '../../../public/images/camp-cosmos-home.png';
+import homeImage from '../../../public/images/cc-logo-floating.png';
 
 const Home = () => (
   <Layout>

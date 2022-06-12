@@ -54,7 +54,7 @@ const SEO = (props) => {
           }),
         }}
       />
-      <link rel="icon" type="image/x-icon" href="/images/camp-cosmos-home.png" />
+      <link rel="icon" type="image/x-icon" href="/images/cc-logo-floating.png" />
     </Head>
   )
 };
@@ -73,7 +73,7 @@ SEO.propTypes = {
 
 SEO.defaultProps = {
   description: 'A collection of 10,000 Campers from across the cosmos spreading wonder and joy.',
-  image: '/images/camp-cosmos-home.png',
+  image: '/images/cc-logo-floating.png',
   openGraphType: 'website',
   schemaType: 'Article',
   social: {
