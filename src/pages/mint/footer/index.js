@@ -1,7 +1,7 @@
 import React from 'react';
-import { META_MASK_STATUS } from '../context/constants';
 
 // NOTE: context is for testing ONLY. Remove once endpoint/contract is connected.
+import { META_MASK_STATUS } from '../context/constants';
 import { useMintContext } from '../context';
 
 const MintFooter = () => {
