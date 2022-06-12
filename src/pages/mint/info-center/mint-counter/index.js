@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
-import { META_MASK_STATUS } from '../../context/constants';
+import TearDropButton from '../../../../components/shared/teardrop-button';
 
 // NOTE: context is for testing ONLY. Remove once endpoint/contract is connected.
+import { META_MASK_STATUS } from '../../context/constants';
 import { useMintContext } from '../../context';
 
 const MintCounter = () => {
@@ -30,21 +31,21 @@ const MintCounter = () => {
               const isDisabled = current > remaining;
 
               return (
-                <button
+                <TearDropButton
                   key={index}
+                  ariaLabel="Mint counter button"
                   className={
                     classNames(
-                      "mint-counter--button tear-button",
+                      "mint-counter--button",
                       { ["mint-counter--button-selected"]: current === quantity },
                       { ["mint-counter--button-disabled"]: disabled || isDisabled },
                     )
                   }
                   disabled={disabled || isDisabled}
                   onClick={() => handleOnClick(current)}
-                  type="button"
                 >
                   {current}
-                </button>
+                </TearDropButton>
               )
             })
           } 

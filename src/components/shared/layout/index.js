@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../header';
-import SEO from '../SEO';
+import Header from '../../header';
+import SEO from '../../SEO';
 
 const Layout = ({ children }) => (
   <>

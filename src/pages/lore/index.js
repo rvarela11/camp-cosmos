@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../../components/layout';
-import PageBGImg from '../../components/page-bg-img';
+import Layout from '../../components/shared/layout';
+import PageBGImg from '../../components/shared/page-bg-img';
 import backgroundImage from '../../../public/images/camp-cosmos-lore.png';
 
 const Lore = () => (

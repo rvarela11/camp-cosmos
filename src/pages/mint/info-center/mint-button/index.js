@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { META_MASK_STATUS } from '../../context/constants';
+import TearDropButton from '../../../../components/shared/teardrop-button';
 
 // NOTE: context is for testing ONLY. Remove once endpoint/contract is connected.
+import { META_MASK_STATUS } from '../../context/constants';
 import { useMintContext } from '../../context';
 
 const MINT_BUTTON_LABELS = {
@@ -40,9 +41,14 @@ const MintButton = () => {
   }, [price, quantity, status]);
 
   return (
-    <button type="button" className="mint-button tear-button" disabled={disabled} onClick={handleOnClick}>
+    <TearDropButton
+      ariaLabel="Mint action button"
+      className="mint-button"
+      disabled={disabled}
+      onClick={handleOnClick}
+    >
       {label}
-    </button>
+    </TearDropButton>
   );
 };
 
