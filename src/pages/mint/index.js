@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../../components/layout';
 import PageBGImg from '../../components/page-bg-img';
+import MintTotalSupply from './total-supply';
 import MintInfoCenter from './info-center';
 import MintMessageCenter from './message-center';
 import MintFooter from './footer';
@@ -12,8 +13,8 @@ const Mint = () => (
       <div className="mint--content">
         <MintMessageCenter />
         <div className="mint--content-summary">
-          <p>Total Supply</p>
           <MintInfoCenter />
+          <MintTotalSupply />
         </div>
       </div>
       <MintFooter />

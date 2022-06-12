@@ -19,6 +19,7 @@ const MintContextProvider = ({ children }) => {
     remaining: 4,
     role: ROLES.public,
     total: 5,
+    totalSupply: 9000,
   });
 
   useEffect(() => {
@@ -49,7 +50,17 @@ const MintContextProvider = ({ children }) => {
       ...prevProps,
       quantity: mintData.remaining,
     }));
-  }, [mintData.remaining])
+  }, [mintData.remaining]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setMintData((prevProps) => ({
+        ...prevProps,
+        totalSupply: prevProps.totalSupply + 1,
+      }));
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   const value = useMemo(() => ({
     metaMaskData,
