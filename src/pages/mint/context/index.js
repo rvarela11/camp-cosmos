@@ -22,13 +22,19 @@ const MintContextProvider = ({ children }) => {
     totalSupply: 9000,
   });
 
+  const [notification, setNotification] = useState({
+    content: undefined,
+    severity: undefined,
+    title: undefined,
+  });
+
   useEffect(() => {
     if (metaMaskData.status === META_MASK_STATUS.connecting) {
       setTimeout(() => setMetaMaskData((prevProps) => ({
         ...prevProps,
         address: '0x1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234',
         status: META_MASK_STATUS.connected,
-      })), 1000)
+      })), 1000);
     }
     if (metaMaskData.status === META_MASK_STATUS.minting) {
       setTimeout(() => {
@@ -36,11 +42,15 @@ const MintContextProvider = ({ children }) => {
           ...prevProps,
           status: META_MASK_STATUS.connected,
         }));
-        setMintData((prevProps) => ({
-          ...prevProps,
-          remaining: prevProps.remaining - mintData.quantity,
-        }));
-      }, 1000)
+        setNotification({
+          content: 'Something went wrong and you were not able to mint, please try again',
+          severity: 'error',
+        });
+        // setMintData((prevProps) => ({
+        //   ...prevProps,
+        //   remaining: prevProps.remaining - mintData.quantity,
+        // }));
+      }, 1000);
     }
   }, [metaMaskData.status, mintData.quantity]);
 
@@ -64,13 +74,17 @@ const MintContextProvider = ({ children }) => {
   const value = useMemo(() => ({
     metaMaskData,
     mintData,
+    notification,
     setMetaMaskData,
     setMintData,
+    setNotification,
   }), [
     metaMaskData,
     mintData,
+    notification,
     setMetaMaskData,
     setMintData,
+    setNotification,
   ]);
 
   return <MintContext.Provider value={value}>{children}</MintContext.Provider>;
