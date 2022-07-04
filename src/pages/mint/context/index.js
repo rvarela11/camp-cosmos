@@ -42,14 +42,15 @@ const MintContextProvider = ({ children }) => {
           ...prevProps,
           status: META_MASK_STATUS.connected,
         }));
-        setNotification({
-          content: 'Something went wrong and you were not able to mint, please try again',
-          severity: 'error',
-        });
-        // setMintData((prevProps) => ({
-        //   ...prevProps,
-        //   remaining: prevProps.remaining - mintData.quantity,
-        // }));
+        setMintData((prevProps) => ({
+          ...prevProps,
+          remaining: prevProps.remaining - mintData.quantity,
+        }));
+        // NOTE: Uncomment to display error notification
+        // setNotification({
+        //   content: 'Something went wrong and you were not able to mint, please try again',
+        //   severity: 'error',
+        // });
       }, 1000);
     }
   }, [metaMaskData.status, mintData.quantity]);
