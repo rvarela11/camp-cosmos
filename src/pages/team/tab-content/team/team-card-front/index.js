@@ -18,8 +18,8 @@ const TeamCardFront = ({ member, name, position, social }) => (
       <p>{position}</p>
     </div>
     <div className="team-tab-grid-card-social">
-      { social?.twitter && <Twitter /> }
-      { social?.instagram && <Instagram /> }
+      { social?.twitter && <a href={social.twitter}><Twitter /></a> }
+      { social?.instagram && <a href={social.instagram}><Instagram /></a> }
     </div>
   </div>
 );

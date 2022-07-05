@@ -90,4 +90,10 @@
   .team-tab-grid {
     grid-template-columns: 1fr;
   }
+  .team-tab-grid-card-social {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
