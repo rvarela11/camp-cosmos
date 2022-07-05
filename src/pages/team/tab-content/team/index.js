@@ -38,9 +38,7 @@ const TeamTab = ({ members, title }) => {
                 >
                   <p>About</p>
                 </AccordionSummary>
-                <AccordionDetails>
-                  <p>{props.description}</p>
-                </AccordionDetails>
+                <AccordionDetails>{props.description}</AccordionDetails>
               </Accordion>
             </div>
           ))

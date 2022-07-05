@@ -21,9 +21,7 @@ const TeamCardBack = ({ description, member, name, position, social }) => (
         <p>{position}</p>
       </div>
     </div>
-    <div className="team-tab-grid-card-description">
-      <p>{description}</p>
-    </div>
+    <div className="team-tab-grid-card-description">{description}</div>
     <div className="team-tab-grid-card-social">
       { social?.twitter && <a href={social.twitter}><Twitter /></a> }
       { social?.instagram && <a href={social.instagram}><Instagram /></a> }
@@ -32,7 +30,7 @@ const TeamCardBack = ({ description, member, name, position, social }) => (
 );
 
 TeamCardBack.propTypes = {
-  description: PropTypes.string.isRequired,
+  description: PropTypes.node.isRequired,
   member: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   position: PropTypes.string.isRequired,

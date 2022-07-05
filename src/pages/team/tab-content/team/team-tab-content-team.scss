@@ -61,6 +61,12 @@
       color: #FFFFFF;
     }
 
+    .MuiAccordionDetails-root {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
     p {
       margin: 0;
     }

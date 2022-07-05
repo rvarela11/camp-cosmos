@@ -27,7 +27,12 @@ export const TAB_LABELS = [
 
 export const CORE_MEMBERS = [
   {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    description: (
+      <>
+        <p>Freelance photographer, Copywriter, Social Media Marketer, very serious person</p>
+        <p>Brand partnerships: REI, Adobe, GMC, Columbia, Nikon, Anheuser-Busch, Coleman, Jeep</p>
+      </>
+    ),
     member: 'john',
     name: 'John Wingfield',
     position: 'Founder',
@@ -37,7 +42,12 @@ export const CORE_MEMBERS = [
     },
   },
   {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    description: (
+      <>
+        <p>NFT Analyst, Photographer, Project manager</p>
+        <p>Athlete and Chief Vibes Officer</p>
+      </>
+    ),
     member: 'frankie',
     name: 'Frankie',
     position: 'Brand Strategist',
@@ -47,7 +57,7 @@ export const CORE_MEMBERS = [
     },
   },
   {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    description: <p>Photographer, tour guide, lifeguard</p>,
     member: 'eamon',
     name: 'Eamon',
     position: 'Social Media Coordinator',
@@ -56,7 +66,12 @@ export const CORE_MEMBERS = [
     },
   },
   {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    description: (
+      <>
+        <p>Marketing veteran, Event Coordinator, Producer, rugged 1x by fake Doodles</p>
+        <p>Sony Alpha Global, System 9, Shedd Aquarium, FCB (Miller-Coors, Yum! Brands, Boeing)</p>
+      </>
+    ),
     member: 'tanqer',
     name: 'Tanqer',
     position: 'Business Development',
@@ -65,7 +80,12 @@ export const CORE_MEMBERS = [
     },
   },
   {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    description: (
+      <>
+        <p>Commercial photographer, wannabe stock trader</p>
+        <p>Brand Partnerships: Land Rover, GMC, LG, Canon, BMW, Chicago Bulls, Alaska Airlines, Amazon, Adidas</p>
+      </>
+    ),
     member: 'rob',
     name: 'Rob',
     position: 'Community Director',
@@ -75,7 +95,7 @@ export const CORE_MEMBERS = [
     },
   },
   {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    description: <p>Photographer, tour guide, high school graduate</p>,
     member: 'galen',
     name: 'Galen',
     position: 'Community Manager',
@@ -84,13 +104,13 @@ export const CORE_MEMBERS = [
     },
   },
   {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    description: <p>Writer and Musician</p>,
     member: 'winter',
     name: 'Winter',
     position: 'Writer and Musician',
   },
   {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    description: <p>NFT analyst, Community lead for Fewoworld</p>,
     member: 'james',
     name: 'James',
     position: 'Lead front-end dev',
