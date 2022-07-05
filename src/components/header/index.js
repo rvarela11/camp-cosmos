@@ -10,6 +10,7 @@ import { Instagram } from './icons/instagram';
 import MobileNav from './mobile-nav';
 import { NAV_ROUTES, ROUTES } from '../../../src/utils/routes';
 import logoImage from '../../../public/images/cc-logo.svg';
+import { SOCIAL_MEDIA_LINKS } from '../../utils/links';
 
 const Header = () => {
   const { pathname } = useRouter();
@@ -53,9 +54,9 @@ const Header = () => {
         </div>
         <div className="header--socials">
           <div className="h-button--group" aria-label="socials menu">
-            <button type="button" className="h-button"><Twitter /></button>
-            <button type="button" className="h-button"><Instagram /></button>
-            <button type="button" className="h-button"><Discord /></button>
+            <a className="h-button" href={SOCIAL_MEDIA_LINKS.twitter}><Twitter /></a>
+            <a className="h-button" href={SOCIAL_MEDIA_LINKS.instagram}><Instagram /></a>
+            <a className="h-button" href={SOCIAL_MEDIA_LINKS.discord}><Discord /></a>
           </div>
         </div>
         <div className="header--menu">

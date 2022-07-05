@@ -13,6 +13,7 @@ import { Discord } from '../icons/discord';
 import { Instagram } from '../icons/instagram';
 import { NAV_ROUTES, ROUTES } from '../../../utils/routes';
 import logoImage from '../../../../public/images/cc-logo.svg';
+import { SOCIAL_MEDIA_LINKS } from '../../../utils/links';
 
 const MobileNav = ({ handleDrawerToggle, isMobileMenuOpen }) => (
   <Box component="nav">
@@ -51,9 +52,9 @@ const MobileNav = ({ handleDrawerToggle, isMobileMenuOpen }) => (
           ))
         }
         <div className="mobile-nav--nav-socials">
-          <button aria-label="Twitter icon button" className="mobile-nav--nav-button" type="button">Twitter <Twitter /></button>
-          <button aria-label="Instagram icon button" className="mobile-nav--nav-button" type="button">Instagram <Instagram /></button>
-          <button aria-label="Discord icon button" className="mobile-nav--nav-button" type="button">Discord <Discord /></button>
+          <a className="mobile-nav--nav-button" href={SOCIAL_MEDIA_LINKS.twitter}>Twitter <Twitter /></a>
+          <a className="mobile-nav--nav-button" href={SOCIAL_MEDIA_LINKS.instagram}>Instagram <Instagram /></a>
+          <a className="mobile-nav--nav-button" href={SOCIAL_MEDIA_LINKS.discord}>Discord <Discord /></a>
         </div>
       </div>
     </Drawer>
