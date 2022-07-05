@@ -4,6 +4,7 @@ import { Instagram } from '../../../../components/header/icons/instagram';
 import PageBGImg from '../../../../components/shared/page-bg-img';
 import TearDropButton from '../../../../components/shared/teardrop-button';
 import backgroundImage from '../../../../../public/images/pages-background/zutto.png';
+import { ZUTTO_LINKS } from '../../../../utils/links';
 
 const AlexandraTab = () => (
   <>
@@ -14,9 +15,15 @@ const AlexandraTab = () => (
         <p>Zutto uses vivid hues and hand-drawn, liquid textures to create enchanting and complex scenes. Zuttos world is a playground of the bright, colorful and surreal, drawing the viewer in to absorb its beautiful complexity.</p>
       </div>
       <div className="alexandra-tab--description-actions">
-        <TearDropButton ariaLabel="Behance button" className="alexandra-tab--description-actions-color">Behance</TearDropButton>
-        <TearDropButton ariaLabel="Twitter icon button" className="alexandra-tab--description-actions-social"><Twitter /></TearDropButton>
-        <TearDropButton ariaLabel="Instagram icon button" className="alexandra-tab--description-actions-social"><Instagram /></TearDropButton>
+        <a href={ZUTTO_LINKS.behance}>
+          <TearDropButton ariaLabel="Behance button" className="alexandra-tab--description-actions-color">Behance</TearDropButton>
+        </a>
+        <a href={ZUTTO_LINKS.twitter}>
+          <TearDropButton ariaLabel="Twitter icon button" className="alexandra-tab--description-actions-social"><Twitter /></TearDropButton>
+        </a>
+        <a href={ZUTTO_LINKS.instagram}>
+          <TearDropButton ariaLabel="Instagram icon button" className="alexandra-tab--description-actions-social"><Instagram /></TearDropButton>
+        </a>
       </div>
     </div>
     <PageBGImg
