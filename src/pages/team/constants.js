@@ -4,6 +4,7 @@ import frankieImage from '../../../public/images/team-members/frankie.png';
 import galenImage from '../../../public/images/team-members/galen.png';
 import johnImage from '../../../public/images/team-members/john.png';
 import robImage from '../../../public/images/team-members/rob.png';
+import winterImage from '../../../public/images/team-members/winter.jpeg'
 
 export const TAB_LABELS = [
   {
@@ -24,155 +25,83 @@ export const TAB_LABELS = [
   },
 ];
 
-export const WEST_COAST_MEMBERS = [
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-];
-
 export const CORE_MEMBERS = [
   {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     member: 'john',
     name: 'John Wingfield',
     position: 'Founder',
-    social: '@johncwingfield',
+    social: {
+      instagram: 'https://instagram.com/johnwingfield',
+      twitter: 'https://twitter.com/johncwingfield',
+    },
   },
   {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     member: 'frankie',
-    name: 'Frankie Sutera',
-    position: 'Camper',
-    social: '@frankiesutera',
+    name: 'Frankie',
+    position: 'Brand Strategist',
+    social: {
+      instagram: 'https://instagram.com/frankiesutera',
+      twitter: 'https://twitter.com/Frankie_Sutera',
+    },
   },
   {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'galen',
-    name: 'Galen Lott',
-    position: 'Camper',
-    social: '@galenlott',
+    member: 'eamon',
+    name: 'Eamon',
+    position: 'Social Media Coordinator',
+    social: {
+      twitter: 'https://twitter.com/eamonsphotoss',
+    },
+  },
+  {
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    member: 'tanqer',
+    name: 'Tanqer',
+    position: 'Business Development',
+    social: {
+      twitter: 'https://twitter.com/phives',
+    },
   },
   {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     member: 'rob',
-    name: 'Rob Sese',
-    position: 'Camper',
-    social: '@robsese',
+    name: 'Rob',
+    position: 'Community Director',
+    social: {
+      instagram: 'https://instagram.com/rob_sese',
+      twitter: 'https://twitter.com/rob_sese',
+    },
   },
   {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
+    member: 'galen',
+    name: 'Galen',
+    position: 'Community Manager',
+    social: {
+      twitter: 'https://twitter.com/ga1enlott',
+    },
   },
   {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
+    member: 'winter',
+    name: 'Winter',
+    position: 'Writer and Musician',
   },
   {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
-  },
-  {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    member: 'john',
-    name: 'John Wingfield',
-    position: 'Founder',
-    social: '@johncwingfield',
+    member: 'james',
+    name: 'James',
+    position: 'Lead front-end dev',
   },
 ];
 
 export const MEMBER_IMAGES = {
+  default: johnImage,
   frankie: frankieImage,
   galen: galenImage,
   john: johnImage,
   rob: robImage,
+  winter: winterImage,
 };

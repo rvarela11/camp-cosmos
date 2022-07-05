@@ -15,11 +15,23 @@
     border-radius: 1rem 0 1rem 1rem;
   }
 
-  .team-tab-grid-card-role,
-  .team-tab-grid-card-social {
+  .team-tab-grid-card-role {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .team-tab-grid-card-social {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
   }
 
   .team-tab-grid-card-role {
@@ -58,8 +70,6 @@
 @media screen and (min-width: 789px) {
   .team-tab-grid-card:hover,
   .team-tab-grid-card:active {
-    cursor: pointer;
-
     .team-tab-grid-card-front {
       display: none;
     }
