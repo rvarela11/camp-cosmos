@@ -13,20 +13,29 @@ export const TAB_CONTENT = [
     header: <h2>The Future</h2>,
     content: [
       {
-        label: <h6>Entertainment Content</h6>,
-        summary: <p>We will develop various projects that will engage our current audience, as well as attract a mainstream audience to our brand and introduce new collectors to web3. Some of our targets are a children's book series, graphic novels, and an animated web/tv series.</p>,
-      },
-      {
-        label: <h6>IRL Events</h6>,
-        summary: <p>Our goal is to host various in real life events, with the main events being summer camps. These camps will be both adult and youth friendly, and will have an emphasis on both web3 and outdoor education. We also plan on hosting smaller, NFT focused events throughout the year, as well as educational workshops and art shows.</p>,
-      },
-      {
-        label: <h6>Merch and Collectibles</h6>,
-        summary: <p>We plan on releasing various physical merchandise and collectibles in the months following launch. Some of the items we'll offer are: Plush dolls, bobbleheads, clothing, camp gear, and more.</p>,
+        label: '',
+        summary:  (
+          <>
+            <p>Pandora has been hard at work developing an exciting future for Camp Cosmos. We are committed to bringing value to our community of holders, through a variety of future executions both in web3 and IRL.</p>
+            <p>Our team is committed to building and innovating in web3 alongside our partners at West Coast NFT, and we understand the importance of being able to pivot as the space grows and changes. Our values, ethics, and vision for the brand will be key in determining how we move forward after launch.</p>
+          </>
+        ),
       },
       {
         label: <h6>Brand Partnerships</h6>,
-        summary:  <p>Our team will utilize the connections we've made from over 10 years in the field of freelance art, photography, filmmaking and event planning. We're connected with many of the most prominent outdoor brands such as REI, Coleman, The North Face and more. We will also capitalize on Zutto's relationship with other brands who align with Camp Cosmos, such as Cartoon Network, NASA, and Adobe.</p>,
+        summary: <p>Pandora hand-selected the team behind Camp Cosmos due to their vast Terrestrial networks. We will utilize our connections across various industries to secure the best partnerships for our cosmic community.</p>,
+      },
+      {
+        label: <h6>Entertainment Content</h6>,
+        summary: <p>Pandora and her team will develop various projects that will engage our current community of Campers, as well as attract a mainstream audience to our brand and introduce new people to web3. As we think of ways to expand Camp Cosmos, we will use pandoras keen artistic eye to create media that will spread the love for Camp across the galaxy.</p>,
+      },
+      {
+        label: <h6>IRL Events</h6>,
+        summary: <p>As our cosmic reach expands, the best way to make lasting connections is to converge in the present. Pandora and her team are working on ways to bring our campers together in the most meaningful way possible.</p>,
+      },
+      {
+        label: <h6>Merch and Collectibles</h6>,
+        summary: <p>As Pandora came to understand Earth and its people, she realized the importance of physical goods to represent their identity. We plan on releasing various merchandise and collectibles in the months following launch.</p>,
       },
     ],
   },
@@ -36,15 +45,15 @@ export const TAB_CONTENT = [
     content: [
       {
         label: <h6>Web3 Activations</h6>,
-        summary: <p>Following launch, we will continue to work closely with West Coast NFT to expand Camp Cosmos within web3. You can expect future airdrops utilizing innovative mechanics such as wrapped NFTs and dynamic ERC-721 tokens (@transientlabs), NFT versions of entertainment media such as tokenized books, graphic novels, and animated shorts, as well as other blockchain activations.</p>,
-      },
-      {
-        label: <h6>Webstore and gallery</h6>,
-        summary: <p>We plan on developing a store within our website, where users can purchase NFTs, physical and digital merchandise, participate in community activations, and more. We have a talented team of front end developers (formerly IBM/Google) who are currently developing our website and a gallery similar to the one found on Azuki's website.</p>,
+        summary: <p>Following launch, Pandora and the team will continue to work closely with West Coast NFT to expand Camp Cosmos within web3. As our notoriety across the blockchain grows, we plan on working closely with our developers to be innovative, artistic and distinctive across all future activations. Pandora is a philanthropist at heart, and will make it her mission to give back to her community of Campers.</p>,
       },
       {
         label: <h6>Growing the team</h6>,
-        summary: <p>It is vital that we work to scale Camp Cosmos by adding people who are experts in the fields that we aim to explore. This is including but not limited to expanding our marketing, business development, development, and design teams.</p>,
+        summary: <p>It is vital that we work to scale Camp Cosmos by adding individuals who are experts in the fields that we aim to explore. This is including but not limited to expanding our marketing, business development, web development, and design teams. Pandora has lived for eons, and understands the importance of building a strong foundation to create longevity in everything we do.</p>,
+      },
+      {
+        label: <h6>Community and IP</h6>,
+        summary: <p>Our community of Campers is the ultimate driver of our brand. Pandora has traveled vast distances across the Cosmos, and one of her most valuable insights is the importance of community empowerment. We will be working to promote our top community members and give them the freedom to expand the world of Camp Cosmos. Pandora believes in decentralization and will be giving full IP usage rights to our holders. This will allow the community to use their camper(s) as they please.</p>,
       },
     ],
   },

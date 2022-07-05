@@ -7,23 +7,15 @@ export const TAB_LABELS = [
   },
   {
     id: 1,
-    label: 'THE FUTURE'
+    label: 'HOW DO I GET ON THE CAMP LIST?'
   },
   {
     id: 2,
-    label: 'BRAND PARTNERSHIPS'
+    label: 'ROADMAP'
   },
   {
     id: 3,
-    label: 'ENTERTAINMENT CONTENT'
-  },
-  {
-    id: 4,
-    label: 'IRL EVENTS'
-  },
-  {
-    id: 5,
-    label: 'MERCH AND COLLECTIBLES'
+    label: 'LORE'
   },
 ];
 
@@ -33,7 +25,7 @@ export const FAQ_QUESTIONS = [
     questions: [
       {
         question: <h6>What is the total supply?</h6>,
-        answer: <p> 8,888 campers will converge in the form of ERC-721 tokens.</p>,
+        answer: <p>8,888 campers will converge in the form of ERC-721 tokens.</p>,
       },
       {
         question: <h6>How do I get on the Camp List?</h6>,
@@ -57,12 +49,7 @@ export const FAQ_QUESTIONS = [
     id: 1,
     questions: [
       {
-        answer: (
-          <>
-            <p>Pandora has been hard at work developing an exciting future for Camp Cosmos. We are committed to bringing value to our community of holders, through a variety of future executions both in web3 and IRL.</p>
-            <p>Our team is committed to building and innovating in web3 alongside our partners at West Coast NFT, and we understand the importance of being able to pivot as the space grows and changes. Our values, ethics, and vision for the brand will be key in determining how we move forward after launch.</p>
-          </>
-        ),
+        answer: <p>The best way to receive a CampList spot is to become an active and positive member of Camp Cosmos! You can do this by joining and engaging with our Discord community, participating in various challenges and activations throughout our Discord server, or by entering giveaways on Twitter!</p>,
       },
     ]
   },
@@ -70,7 +57,13 @@ export const FAQ_QUESTIONS = [
     id: 2,
     questions: [
       {
-        answer: <p>Pandora hand-selected the team behind Camp Cosmos due to their vast Terrestrial networks. We will utilize our connections across various industries to secure the best partnerships for our cosmic community.</p>,
+        answer: (
+          <>
+            <p>Over the last few months, we’ve been hard at work developing an exciting future for Camp Cosmos. We can’t release too many details yet, but we can say that we are committed to bringing value to our community of holders, through a variety of future executions both in web3 and IRL.</p>
+            <p>Our team is committed to building and innovating in web3 alongside our partners at West Coast NFT, and we understand the importance of being able to pivot as the space grows and changes. Our values, ethics, and vision for the brand will be key in determining how we move forward after launch. </p>
+            <p>We're excited to share more details very soon!</p>
+          </>
+        ),
       },
     ]
   },
@@ -78,23 +71,7 @@ export const FAQ_QUESTIONS = [
     id: 3,
     questions: [
       {
-        answer: <p>Pandora and her team will develop various projects that will engage our current community of Campers, as well as attract a mainstream audience to our brand and introduce new people to web3. As we think of ways to expand Camp Cosmos, we will use pandoras keen artistic eye to create media that will spread the love for Camp across the galaxy.</p>,
-      },
-    ]
-  },
-  {
-    id: 4,
-    questions: [
-      {
-        answer: <p>As our cosmic reach expands, the best way to make lasting connections is to converge in the present. Pandora and her team are working on ways to bring our campers together in the most meaningful way possible.</p>,
-      },
-    ]
-  },
-  {
-    id: 5,
-    questions: [
-      {
-        answer: <p>As Pandora came to understand Earth and its people, she realized the importance of physical goods to represent their identity. We plan on releasing various merchandise and collectibles in the months following launch.</p>,
+        answer: <p>We have hired a talented writer and musician to assist us with developing the Storytelling behind Camp Cosmos. Lore will be the backbone of the Camp Cosmos brand, and we're so excited to share it with you all!</p>,
       },
     ]
   },
