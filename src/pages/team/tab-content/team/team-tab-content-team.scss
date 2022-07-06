@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #C4C4C4;
   }
 
   .team-tab-grid-card-social {
@@ -31,14 +32,6 @@
       height: 100%;
       display: flex;
       align-items: center;
-    }
-  }
-
-  .team-tab-grid-card-role {
-    border-bottom: 1px solid #C4C4C4;
-    p {
-      font-weight: 600;
-      line-height: 24px;
     }
   }
 
@@ -70,6 +63,13 @@
     p {
       margin: 0;
     }
+  }
+}
+
+.team-tab-grid-card-role-description {
+  p {
+    font-weight: 600;
+    line-height: 24px;
   }
 }
 

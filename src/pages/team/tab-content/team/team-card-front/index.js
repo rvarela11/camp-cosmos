@@ -13,7 +13,7 @@ const TeamCardFront = ({ member, name, position, social }) => (
       alt={`${member} image`}
       priority={true}
     />
-    <div className="team-tab-grid-card-role">
+    <div className="team-tab-grid-card-role team-tab-grid-card-role-description">
       <p>{name}</p>
       <p>{position}</p>
     </div>

@@ -7,8 +7,8 @@ import { MEMBER_IMAGES } from '../../../constants';
 
 const TeamCardBack = ({ description, member, name, position, social }) => (
   <div className="team-tab-grid-card-back">
-    <div className="team-tab-grid-card-role">
-      <div className="team-tab-grid-card-role-image">
+    <div className="team-tab-grid-card-back-role">
+      <div className="team-tab-grid-card-back-role-image">
         <Image
           className="team-tab-grid-card-image"
           src={MEMBER_IMAGES[member] || MEMBER_IMAGES.default}
@@ -21,7 +21,7 @@ const TeamCardBack = ({ description, member, name, position, social }) => (
         <p>{position}</p>
       </div>
     </div>
-    <div className="team-tab-grid-card-description">{description}</div>
+    <div className="team-tab-grid-card-back-description">{description}</div>
     <div className="team-tab-grid-card-social">
       { social?.twitter && <a href={social.twitter}><Twitter /></a> }
       { social?.instagram && <a href={social.instagram}><Instagram /></a> }

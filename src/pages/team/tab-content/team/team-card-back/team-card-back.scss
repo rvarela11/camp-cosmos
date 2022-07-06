@@ -5,10 +5,13 @@
   height: 100%;
   padding: 1rem;
 
-  .team-tab-grid-card-role {
+  .team-tab-grid-card-back-role {
     padding-bottom: 1.5rem;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #C4C4C4;
 
-    .team-tab-grid-card-role-image {
+    .team-tab-grid-card-back-role-image {
       width: 60px;
       height: 60px;
     }
@@ -20,8 +23,15 @@
     }
   }
 
-  .team-tab-grid-card-description {
+  .team-tab-grid-card-back-description {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    p {
+      margin: 0;
+    }
   }
 
   .team-tab-grid-card-social {
