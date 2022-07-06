@@ -1,10 +1,12 @@
 import React from 'react';
-
+import eamonImage from '../../../public/images/team-members/eamon.png';
 import frankieImage from '../../../public/images/team-members/frankie.png';
 import galenImage from '../../../public/images/team-members/galen.png';
+import jamesImage from '../../../public/images/team-members/james.png';
 import johnImage from '../../../public/images/team-members/john.png';
+import phivesImage from '../../../public/images/team-members/phives.png';
 import robImage from '../../../public/images/team-members/rob.png';
-import winterImage from '../../../public/images/team-members/winter.jpeg'
+import winterImage from '../../../public/images/team-members/winter.png';
 
 export const TAB_LABELS = [
   {
@@ -40,6 +42,7 @@ export const CORE_MEMBERS = [
       instagram: 'https://instagram.com/johnwingfield',
       twitter: 'https://twitter.com/johncwingfield',
     },
+    src: johnImage,
   },
   {
     description: (
@@ -55,6 +58,7 @@ export const CORE_MEMBERS = [
       instagram: 'https://instagram.com/frankiesutera',
       twitter: 'https://twitter.com/Frankie_Sutera',
     },
+    src: frankieImage,
   },
   {
     description: <p>Photographer, tour guide, lifeguard</p>,
@@ -64,6 +68,7 @@ export const CORE_MEMBERS = [
     social: {
       twitter: 'https://twitter.com/eamonsphotoss',
     },
+    src: eamonImage,
   },
   {
     description: (
@@ -78,6 +83,7 @@ export const CORE_MEMBERS = [
     social: {
       twitter: 'https://twitter.com/phives',
     },
+    src: phivesImage,
   },
   {
     description: (
@@ -93,6 +99,7 @@ export const CORE_MEMBERS = [
       instagram: 'https://instagram.com/rob_sese',
       twitter: 'https://twitter.com/rob_sese',
     },
+    src: robImage,
   },
   {
     description: <p>Photographer, tour guide, high school graduate</p>,
@@ -102,26 +109,20 @@ export const CORE_MEMBERS = [
     social: {
       twitter: 'https://twitter.com/ga1enlott',
     },
+    src: galenImage,
   },
   {
     description: <p>Writer and Musician</p>,
     member: 'winter',
     name: 'Winter',
     position: 'Writer and Musician',
+    src: winterImage,
   },
   {
     description: <p>NFT analyst, Community lead for Fewoworld</p>,
     member: 'james',
     name: 'James',
     position: 'Lead front-end dev',
+    src: jamesImage,
   },
 ];
-
-export const MEMBER_IMAGES = {
-  default: johnImage,
-  frankie: frankieImage,
-  galen: galenImage,
-  john: johnImage,
-  rob: robImage,
-  winter: winterImage,
-};

@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 import { Instagram } from '../../../../../components/header/icons/instagram';
 import { Twitter } from '../../../../../components/header/icons/twitter';
-import { MEMBER_IMAGES } from '../../../constants';
 
-const TeamCardFront = ({ member, name, position, social }) => (
+const TeamCardFront = ({ member, name, position, social, src }) => (
   <div className="team-tab-grid-card-front">
     <Image
       className="team-tab-grid-card-image"
-      src={MEMBER_IMAGES[member] || MEMBER_IMAGES.default}
+      src={src}
       alt={`${member} image`}
       priority={true}
     />
@@ -32,6 +31,12 @@ TeamCardFront.propTypes = {
     instagram: PropTypes.string,
     twitter: PropTypes.string,
   }),
+  src: PropTypes.shape({
+    blurDataURL: PropTypes.string,
+    height: PropTypes.number,
+    src: PropTypes.string,
+    width: PropTypes.number,
+  }).isRequired,
 };
 
 TeamCardFront.defaultProps = {
