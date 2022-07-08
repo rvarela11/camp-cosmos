@@ -8,7 +8,7 @@ export const COSMOS_COLUMNS = {
       title: 'Light The Fireside!',
       subTitle: 'LEARN ABOUT US',
       image: {
-        src: '/images/cc-cosmos.png',
+        src: '/images/cosmos/ufo-no-back.png',
         alt: 'Explore background image',
       },
       secondaryTitle: 'Explore The Cosmos',
@@ -25,7 +25,7 @@ export const COSMOS_COLUMNS = {
       title: 'Read The Lore!',
       subTitle: 'LEARN ABOUT US',
       image: {
-        src: '/images/cc-cosmos.png',
+        src: '/images/cosmos/fire.png',
         alt: 'Explore background image',
       },
       secondaryTitle: 'Explore The Cosmos',
@@ -44,7 +44,7 @@ export const COSMOS_COLUMNS = {
       title: 'Meet The Team!',
       subTitle: 'LEARN ABOUT US',
       image: {
-        src: '/images/team-members/rob.png',
+        src: '/images/cosmos/meet-the-team.png',
         alt: 'Explore background image',
       },
       secondaryTitle: 'Explore The Cosmos',
@@ -61,7 +61,7 @@ export const COSMOS_COLUMNS = {
       title: 'FAQs',
       subTitle: 'LEARN ABOUT US',
       image: {
-        src: '/images/team-members/winter.jpeg',
+        src: '/images/pages-background/faq.png',
         alt: 'Explore background image',
       },
       secondaryTitle: 'Explore The Cosmos',

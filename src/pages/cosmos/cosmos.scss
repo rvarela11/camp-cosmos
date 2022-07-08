@@ -26,11 +26,11 @@
 
 .container--one .explore--item-0 .explore--background {
   top: -5rem;
-  right: -8rem;
+  right: 0rem;
 }
 
 .container--one .explore--item-1 .explore--background {
-  right: -5rem;
+  right: 0rem;
   top: -2rem;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .container--two .explore--item-0 .explore--background {
-  top: -4rem;
+  top: -7rem;
   left: 0;
 }
 
@@ -215,6 +215,22 @@
   }
 }
 
+@media screen and (min-width: 2000px) {
+  .container--two {
+    .explore--item-0 .explore--background{
+      top: -15rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container--two {
+    .explore--item-0 .explore--background{
+      top: -5rem;
+    }
+  }
+}
+
 @media screen and (max-width: 1190px) {
   .container--two,
   .container--one {
@@ -281,7 +297,7 @@
 
     .explore--item-0 .explore--background,
     .explore--item-1 .explore--background {
-      top: -12rem;
+      top: -18rem;
     }
 
     .explore--item-1 .explore--background {
