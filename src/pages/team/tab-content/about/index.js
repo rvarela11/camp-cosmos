@@ -1,6 +1,6 @@
 import React from 'react';
 import PageBGImg from '../../../../components/shared/page-bg-img';
-import backgroundImage from '../../../../../public/images/pages-background/lore.png';
+import backgroundImage from '../../../../../public/images/cosmos/meet-the-team.png';
 
 const AboutTab = () => (
   <>
