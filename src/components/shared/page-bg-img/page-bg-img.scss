@@ -15,6 +15,7 @@
   .page-bg-img {
     & > span > img {
       min-width: initial !important;
+      max-width: initial !important;
       width: inherit !important;
       margin-right: 0 !important;
       position: fixed !important;
