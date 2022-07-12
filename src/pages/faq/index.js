@@ -17,7 +17,7 @@ const FAQ = () => {
       </div>
       <PageBGImg
         alt="FAQ page background image"
-        className="page-bg-img--50"
+        className="page-bg-img--55"
         src={backgroundImage}
       />
     </Layout>

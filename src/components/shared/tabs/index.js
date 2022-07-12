@@ -11,6 +11,7 @@ const sx = {
   width: '100%',
   bottom: 0,
   left: 0,
+  zIndex: 2,
 };
 
 const Tabs = ({ setValue, value, TAB_LABELS }) => {

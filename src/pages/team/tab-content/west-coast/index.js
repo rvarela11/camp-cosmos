@@ -14,7 +14,7 @@ const WestCoastTab = () => (
     </div>
     <PageBGImg
       alt="WestCoast page background image"
-      className="page-bg-img--60"
+      className="page-bg-img--75"
       src={backgroundImage}
     />
   </>

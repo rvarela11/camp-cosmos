@@ -27,7 +27,7 @@ const AlexandraTab = () => (
     </div>
     <PageBGImg
       alt="Alexandra page background image"
-      className="page-bg-img--50"
+      className="page-bg-img--60"
       src={backgroundImage}
     />
   </>
