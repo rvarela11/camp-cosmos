@@ -12,6 +12,7 @@ const AboutTab = () => (
     </div>
     <PageBGImg
       alt="About page background image"
+      className="page-bg-img--65"
       src={backgroundImage}
     />
   </>
