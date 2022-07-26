@@ -3,7 +3,7 @@
   height: 100px;
   max-width: none;
   text-transform: none;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Maghfirea', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -15,10 +15,14 @@
 
   & > span {
     margin-bottom: 8px;
-    text-transform: uppercase;
+    font-family: 'Work Sans';
+    font-style: normal;
     font-weight: 500;
     font-size: 12px;
+    line-height: 22px;
+    text-align: center;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 }
 

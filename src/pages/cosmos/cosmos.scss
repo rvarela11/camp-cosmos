@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: row;
   padding-top: 8rem;
+
+  h2 {
+    -webkit-text-fill-color: #fff;
+  }
 }
 
 // left container styles
@@ -84,8 +88,9 @@
   }
 
   h6 {
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 1.5px;
@@ -122,47 +127,6 @@
     background-color: black;
     transform: rotate(-45deg) translate(6.4px, 2px);
   }
-}
-
-// on hover detail styles
-.explore--details {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-  background: linear-gradient(46.94deg, #2D3C67 38.38%, rgba(30, 39, 49, 0) 187.94%);
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 2rem;
-  overflow: scroll;
-
-  .explore--arrow-container {
-    background: linear-gradient(95.34deg, #5A6FE8 7.87%, #9B51E0 100.96%);
-  }
-
-  .explore--arrow-container .explore--arrow {
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-
-    &::after{
-      background-color: #fff;
-    }
-  }
-}
-
-.container--one .explore--details h2 {
-  width: 60%;
-}
-
-.container--one .explore--details p {
-  width: 70%;
-}
-
-.container--two .explore--details h2 {
-  width: 100%;
 }
 
 // accordion styles
@@ -209,11 +173,6 @@
   .container--two .explore--item-1 {
     height: 600px;
   }
-
-  .explore--item:hover .explore--details,
-  .explore--item:active .explore--details {
-    display: flex;
-  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -245,13 +204,6 @@
     h6 {
       font-size: 12px;
       line-height: 22px;
-    }
-  }
-
-
-  .explore--details {
-    p {
-      width: 100%;
     }
   }
 
